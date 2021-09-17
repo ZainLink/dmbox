@@ -1,0 +1,9 @@
+com\zkzy\portal\common\service\datasource\DynamicDataSourceTransactionManager.class
+com\zkzy\portal\common\service\service\CrudService.class
+com\zkzy\portal\common\service\datasource\DynamicDataSourceGlobal.class
+com\zkzy\portal\common\service\datasource\DynamicPlugin.class
+com\zkzy\portal\common\service\datasource\DynamicDataSource.class
+com\zkzy\portal\common\service\datasource\DynamicDataSourceHolder.class
+com\zkzy\portal\common\service\dao\BaseDao.class
+com\zkzy\portal\common\service\dao\JdbcDao.class
+com\zkzy\portal\common\service\dao\CrudDao.class

@@ -1,0 +1,23 @@
+{
+  "hints": [],
+  "groups": [
+    {
+      "sourceType": "com.zkzy.portal.common.web.config.UploadConfig",
+      "name": "upload",
+      "sourceMethod": "diskFileOperator()",
+      "type": "com.zkzy.portal.common.upload.DiskFileOperator"
+    }
+  ],
+  "properties": [
+    {
+      "sourceType": "com.zkzy.portal.common.upload.DiskFileOperator",
+      "name": "upload.access-url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.zkzy.portal.common.upload.DiskFileOperator",
+      "name": "upload.work-folder-name",
+      "type": "java.lang.String"
+    }
+  ]
+}

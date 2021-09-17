@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.zkzy.portal.dumu.server.system.provider.mapper.dm.DmStationBMapper">
+    <resultMap id="BaseResultMap" type="com.zkzy.zyportal.system.api.entity.dm.DmStationB">
+        <id column="UNID" property="unid" jdbcType="VARCHAR"/>
+        <result column="UNAME" property="uname" jdbcType="VARCHAR"/>
+        <result column="LNAME" property="lname" jdbcType="VARCHAR"/>
+        <result column="LTEL" property="ltel" jdbcType="VARCHAR"/>
+        <result column="ADDRESS" property="address" jdbcType="VARCHAR"/>
+        <result column="CREATER" property="creater" jdbcType="VARCHAR"/>
+        <result column="MODIFYER" property="modifyer" jdbcType="VARCHAR"/>
+        <result column="CREATEDATE" property="createdate" jdbcType="VARCHAR"/>
+        <result column="MODIFYDATE" property="modifydate" jdbcType="VARCHAR"/>
+        <result column="AREACODE" property="areacode" jdbcType="VARCHAR"/>
+        <result column="ACCOUNT" property="account" jdbcType="VARCHAR"/>
+        <result column="LNG" property="lng" jdbcType="VARCHAR"/>
+        <result column="LAT" property="lat" jdbcType="VARCHAR"/>
+        <result column="AREANAME" property="areaname" jdbcType="VARCHAR"/>
+    </resultMap>
+    <delete id="deleteByPrimaryKey" parameterType="java.lang.String">
+    delete from DM_STATION_B
+    where UNID = #{unid,jdbcType=VARCHAR}
+  </delete>
+    <insert id="insert" parameterType="com.zkzy.zyportal.system.api.entity.dm.DmStationB">
+    insert into DM_STATION_B (UNID, UNAME, LNAME, 
+      LTEL, ADDRESS, CREATER, 
+      MODIFYER, CREATEDATE, MODIFYDATE, 
+      AREACODE,ACCOUNT,LNG,LAT,AREANAME)
+    values (#{unid,jdbcType=VARCHAR}, #{uname,jdbcType=VARCHAR}, #{lname,jdbcType=VARCHAR}, 
+      #{ltel,jdbcType=VARCHAR}, #{address,jdbcType=VARCHAR}, #{creater,jdbcType=VARCHAR}, 
+      #{modifyer,jdbcType=VARCHAR}, #{createdate,jdbcType=VARCHAR}, #{modifydate,jdbcType=VARCHAR}, 
+      #{areacode,jdbcType=VARCHAR}, #{account,jdbcType=VARCHAR},#{lng,jdbcType=VARCHAR},#{lat,jdbcType=VARCHAR},#{areaname,jdbcType=VARCHAR})
+  </insert>
+    <update id="updateByPrimaryKey" parameterType="com.zkzy.zyportal.system.api.entity.dm.DmStationB">
+    update DM_STATION_B
+    set UNAME = #{uname,jdbcType=VARCHAR},
+      LNAME = #{lname,jdbcType=VARCHAR},
+      LTEL = #{ltel,jdbcType=VARCHAR},
+      ADDRESS = #{address,jdbcType=VARCHAR},
+      MODIFYER = #{modifyer,jdbcType=VARCHAR},
+      MODIFYDATE = #{modifydate,jdbcType=VARCHAR},
+      AREACODE = #{areacode,jdbcType=VARCHAR},
+      LNG = #{lng,jdbcType=VARCHAR},
+      LAT = #{lat,jdbcType=VARCHAR},
+      AREANAME = #{areaname,jdbcType=VARCHAR}
+    where UNID = #{unid,jdbcType=VARCHAR}
+  </update>
+    <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.String">
+    select UNID, UNAME, LNAME, LTEL, ADDRESS, CREATER, MODIFYER, CREATEDATE, MODIFYDATE, 
+    AREACODE,ACCOUNT,LNG,LAT,AREANAME
+    from DM_STATION_B
+    where UNID = #{unid,jdbcType=VARCHAR}
+  </select>
+
+    <select id="selectlist" resultType="com.zkzy.zyportal.system.api.entity.dm.DmStList">
+        select UNID, UNAME,LNG,LAT
+        from DM_STATION_B
+          ORDER BY
+        UNID DESC
+    </select>
+    <select id="selectAll" resultMap="BaseResultMap" parameterType="java.lang.String">
+        SELECT
+        A .UNID,
+        A .UNAME,
+        A .LNAME,
+        A .LTEL,
+        A .ADDRESS,
+        A .CREATER,
+        A .MODIFYER,
+        A .CREATEDATE,
+        A .MODIFYDATE,
+        A .AREACODE,
+        A . ACCOUNT,
+        A. AREANAME,
+        A.LNG,
+        A.LAT,
+        NVL (B.BOXNUM, 0) AS BOXNUM,
+        NVL (C.WHITENUM, 0) AS WHITENUM,
+        NVL (D .WARNNUM, 0) AS WARNNUM
+        FROM
+        DM_STATION_B A
+        LEFT JOIN (
+        SELECT
+        COUNT (*) AS BOXNUM,
+        UNID
+        FROM
+        DM_ST_R
+        WHERE
+        1 = 1
+        GROUP BY
+        UNID
+        ) B ON A .UNID = B.UNID
+        LEFT JOIN (
+        SELECT
+        COUNT (*) AS WHITENUM,
+        UNID
+        FROM
+        DM_STF_N
+        WHERE
+        1 = 1
+        GROUP BY
+        UNID
+        ) c ON A .UNID = c.UNID
+        LEFT JOIN (
+        SELECT
+        COUNT (*) AS WARNNUM,
+        UNID
+        FROM
+        DM_STRANGER_H
+        WHERE
+        1 = 1
+        GROUP BY
+        UNID
+        ) D ON A .UNID = D .UNID
+        <if test="_parameter!=null and _parameter!=''">
+            WHERE 1=1
+            ${_parameter}
+        </if>
+        ORDER BY
+        UNID DESC
+    </select>
+</mapper>

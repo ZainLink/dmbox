@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.zkzy.portal.dumu.server.system.provider.mapper.dmr.DmStRMapper">
+    <resultMap id="BaseResultMap" type="com.zkzy.zyportal.system.api.entity.dmr.DmStR">
+        <id column="UNID" property="unid" jdbcType="VARCHAR"/>
+        <id column="DEVICEUUID" property="deviceuuid" jdbcType="VARCHAR"/>
+        <result column="BINDTIME" property="bindtime" jdbcType="VARCHAR"/>
+    </resultMap>
+    <delete id="deleteByPrimaryKey" parameterType="map">
+    delete from DM_ST_R
+    where UNID = #{unid,jdbcType=VARCHAR}
+      and DEVICEUUID = #{deviceuuid,jdbcType=VARCHAR}
+  </delete>
+    <insert id="insert" parameterType="com.zkzy.zyportal.system.api.entity.dmr.DmStR">
+    insert into DM_ST_R (UNID, DEVICEUUID, BINDTIME
+      )
+    values (#{unid,jdbcType=VARCHAR}, #{deviceuuid,jdbcType=VARCHAR}, #{bindtime,jdbcType=VARCHAR}
+      )
+  </insert>
+    <update id="updateByPrimaryKey" parameterType="com.zkzy.zyportal.system.api.entity.dmr.DmStR">
+    update DM_ST_R
+    set BINDTIME = #{bindtime,jdbcType=VARCHAR}
+    where UNID = #{unid,jdbcType=VARCHAR}
+      and DEVICEUUID = #{deviceuuid,jdbcType=VARCHAR}
+  </update>
+    <select id="selectByPrimaryKey" resultMap="BaseResultMap"  parameterType="map">
+    select UNID, DEVICEUUID, BINDTIME
+    from DM_ST_R
+    where UNID = #{unid,jdbcType=VARCHAR}
+      and DEVICEUUID = #{deviceuuid,jdbcType=VARCHAR}
+  </select>
+
+    <select id="selectBindNumByUnid" resultType="java.lang.Integer"  parameterType="map">
+        select COUNT (*)
+        from DM_ST_R
+        where UNID = #{unid,jdbcType=VARCHAR}
+    </select>
+
+
+    <select id="selectBoxesByUnid" resultMap="BaseResultMap"  parameterType="java.lang.String">
+        select UNID, DEVICEUUID, BINDTIME
+        from DM_ST_R
+        where UNID = #{unid,jdbcType=VARCHAR}
+    </select>
+    <select id="selectAll" resultMap="BaseResultMap" parameterType="java.lang.String">
+        SELECT
+        A .UNID,
+        A .UNAME,
+        A .LNAME,
+        A .LTEL,
+        A .ADDRESS,
+        A .CREATER,
+        A .MODIFYER,
+        A .CREATEDATE,
+        A .MODIFYDATE,
+        A .AREACODE,
+        A . ACCOUNT,
+        B.DEVICEUUID,
+        B.BINDTIME,
+        C.DEVICEID,
+        C.DEVICEMAC,
+        C. NAME,
+        C.REMARK,
+        C.DEVICEIP
+        FROM
+        DM_STATION_B A
+        INNER JOIN DM_ST_R B ON A .UNID = B.UNID
+        INNER JOIN DM_BOX_B C ON B.DEVICEUUID = C.DEVICEUUID
+        <if test="_parameter!=null and _parameter!=''">
+            WHERE 1=1
+            ${_parameter}
+        </if>
+        ORDER BY
+        A .UNID DESC
+    </select>
+</mapper>

@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: jave:jave:1.02">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/jave/jave/1.02/jave-1.02.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/jave/jave/1.02/jave-1.02-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/jave/jave/1.02/jave-1.02-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

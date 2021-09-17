@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/zyportal-common/zyportal-common.iml" filepath="$PROJECT_DIR$/zyportal-common/zyportal-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zyportal-common/zyportal-common-api/zyportal-common-api.iml" filepath="$PROJECT_DIR$/zyportal-common/zyportal-common-api/zyportal-common-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zyportal-common/zyportal-common-quartz/zyportal-common-quartz.iml" filepath="$PROJECT_DIR$/zyportal-common/zyportal-common-quartz/zyportal-common-quartz.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zyportal-common/zyportal-common-rabbitmq/zyportal-common-rabbitmq.iml" filepath="$PROJECT_DIR$/zyportal-common/zyportal-common-rabbitmq/zyportal-common-rabbitmq.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zyportal-common/zyportal-common-redis/zyportal-common-redis.iml" filepath="$PROJECT_DIR$/zyportal-common/zyportal-common-redis/zyportal-common-redis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zyportal-common/zyportal-common-service/zyportal-common-service.iml" filepath="$PROJECT_DIR$/zyportal-common/zyportal-common-service/zyportal-common-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zyportal-common/zyportal-common-upload/zyportal-common-upload.iml" filepath="$PROJECT_DIR$/zyportal-common/zyportal-common-upload/zyportal-common-upload.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zyportal-common/zyportal-common-utils/zyportal-common-utils.iml" filepath="$PROJECT_DIR$/zyportal-common/zyportal-common-utils/zyportal-common-utils.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zyportal-common/zyportal-common-web/zyportal-common-web.iml" filepath="$PROJECT_DIR$/zyportal-common/zyportal-common-web/zyportal-common-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox.iml" filepath="$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-api/zyportal-dumubox-api.iml" filepath="$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-api/zyportal-dumubox-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-server/zyportal-dumubox-server.iml" filepath="$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-server/zyportal-dumubox-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zyportal-parent.iml" filepath="$PROJECT_DIR$/zyportal-parent.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,7 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.zkzy.portal.common.web.config.UploadConfig,\
+com.zkzy.portal.common.web.config.WebConfig
+
+#EnableAutoConfigurationImportSelector类使用了Spring Core包的SpringFactoriesLoader类的loadFactoryNamesof()方法。
+#SpringFactoriesLoader会查询META-INF/spring.factories文件中包含的JAR文件。
+#当找到spring.factories文件后，SpringFactoriesLoader将查询配置文件命名的属性。在例子中，是org.springframework.boot.autoconfigure.EnableAutoConfiguration。

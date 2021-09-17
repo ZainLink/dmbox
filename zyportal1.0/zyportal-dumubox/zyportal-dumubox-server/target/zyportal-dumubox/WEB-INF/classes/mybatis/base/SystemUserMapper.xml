@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zkzy.portal.dumu.server.system.provider.mapper.base.SystemUserMapper">
+    <resultMap id="BaseResultMap" type="com.zkzy.zyportal.system.api.entity.base.SystemUser">
+        <id column="ID" property="id" jdbcType="VARCHAR"/>
+        <result column="USERNAME" property="username" jdbcType="VARCHAR"/>
+        <result column="PASSWORD" property="password" jdbcType="VARCHAR"/>
+        <result column="REALNAME" property="realname" jdbcType="VARCHAR"/>
+        <result column="ORGANIZE_ID" property="organizeId" jdbcType="VARCHAR"/>
+        <result column="ORGANIZE_NAME" property="organizeName" jdbcType="VARCHAR"/>
+        <result column="DUTY_ID" property="dutyId" jdbcType="DECIMAL"/>
+        <result column="TITLE_ID" property="titleId" jdbcType="DECIMAL"/>
+        <result column="EMAIL" property="email" jdbcType="VARCHAR"/>
+        <result column="LANG" property="lang" jdbcType="VARCHAR"/>
+        <result column="THEME" property="theme" jdbcType="VARCHAR"/>
+        <result column="FIRST_VISIT" property="firstVisit" jdbcType="DATE"/>
+        <result column="PREVIOUS_VISIT" property="previousVisit" jdbcType="DATE"/>
+        <result column="LAST_VISITS" property="lastVisits" jdbcType="DATE"/>
+        <result column="LOGIN_COUNT" property="loginCount" jdbcType="DECIMAL"/>
+        <result column="ISEMPLOYEE" property="isemployee" jdbcType="DECIMAL"/>
+        <result column="STATUS" property="status" jdbcType="VARCHAR"/>
+        <result column="IP" property="ip" jdbcType="VARCHAR"/>
+        <result column="DESCRIPTION" property="description" jdbcType="VARCHAR"/>
+        <result column="ISONLINE" property="isonline" jdbcType="DECIMAL"/>
+        <result column="CREATE_DATE" property="createDate" jdbcType="TIMESTAMP"/>
+        <result column="UPDATE_DATE" property="updateDate" jdbcType="TIMESTAMP"/>
+        <result column="CREATER" property="creater" jdbcType="DECIMAL"/>
+        <result column="MODIFYER" property="modifyer" jdbcType="DECIMAL"/>
+        <result column="TEL" property="tel" jdbcType="VARCHAR"/>
+        <result column="ROLE_NAME" property="roleName" jdbcType="VARCHAR"/>
+        <result column="ROLE_ID" property="roleId" jdbcType="VARCHAR"/>
+        <result column="AREA" property="area" jdbcType="VARCHAR"/>
+        <result column="LOCATION" property="location" jdbcType="VARCHAR"/>
+        <result column="PHOTOURL" property="photourl" jdbcType="VARCHAR"/>
+        <result column="SEX" property="sex" jdbcType="INTEGER"/>
+        <result column="BIRTHDAY" property="birthday" jdbcType="VARCHAR"/>
+        <result column="LNG" property="lng" jdbcType="VARCHAR"/>
+        <result column="LAT" property="lat" jdbcType="VARCHAR"/>
+        <result column="OSTYPE" property="ostype" jdbcType="VARCHAR"/>
+        <result column="BROWSERTYPE" property="browsertype" jdbcType="VARCHAR"/>
+        <result column="LNG" property="lng" jdbcType="VARCHAR"/>
+        <result column="LAT" property="lat" jdbcType="VARCHAR"/>
+        <result column="RIVERGOVERNORID" property="rivergovernorid" jdbcType="VARCHAR"/>
+        <result column="NEEDIMACCOUNT" property="needImAccount" jdbcType="VARCHAR"/>
+        <result column="IMACCOUNT" property="imAccount" jdbcType="VARCHAR"/>
+        <result column="AREACODE" property="areaCode" jdbcType="VARCHAR"/>
+        <result column="OPERAMANID" property="operamanid" jdbcType="VARCHAR"/>
+        <result column="PROJECTMANID" property="projectmainid" jdbcType="VARCHAR"/>
+        <result column="OPENID" property="openid" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="selectColumns">
+        SELECT
+            a.ID,
+            a.USERNAME,
+            a.PASSWORD,
+            a.REALNAME,
+            a.ORGANIZE_ID,
+            a.ORGANIZE_NAME,
+            a.DUTY_ID,
+            a.TITLE_ID,
+            a.EMAIL,
+            a.LANG,
+            a.THEME,
+            a.FIRST_VISIT,
+            a.PREVIOUS_VISIT,
+            a.LAST_VISITS,
+            a.LOGIN_COUNT,
+            a.ISEMPLOYEE,
+            a.STATUS,
+            a.IP,
+            a.DESCRIPTION,
+            a.ISONLINE,
+            a.CREATE_DATE,
+            a.UPDATE_DATE,
+            a.CREATER,
+            a.MODIFYER,
+            a.TEL,
+            a.ROLE_NAME,
+            a.ROLE_ID,
+            a.AREA,
+            a.LOCATION,
+            a.PHOTOURL,
+            a.LNG,
+            a.LAT,
+            a.RIVERGOVERNORID,
+            a.DEPARTMENT_ID,
+            a.DEPARTMENT_NAME,
+            a.AREACODE,
+            a.OPERAMANID,
+            a.PROJECTMANID,
+            a.OPENID
+        FROM SYSTEM_USERS  a
+    </sql>
+    <!-- 根据登录名查询用户 -->
+    <select id="getByUserName" resultMap="BaseResultMap">
+        <include refid="selectColumns"/>
+        WHERE a.username = #{userName} and status='1'
+    </select>
+
+
+    <select id="getByUserNameIgnoreStatus" resultMap="BaseResultMap">
+        <include refid="selectColumns"/>
+        WHERE a.username = #{userName}
+    </select>
+
+
+    <!-- 删除用户 -->
+    <update id="deleteById">
+        DELETE SYSTEM_USERS
+        WHERE id = #{id}
+    </update>
+
+
+    <delete id="deleteUser_RoleById">
+        DELETE FROM SYSTEM_USER_ROLE
+        WHERE USER_ID = #{id}
+    </delete>
+
+    <insert id="addUserInfo" parameterType="com.zkzy.zyportal.system.api.entity.base.SystemUser">
+        insert into SYSTEM_USERS (ID, USERNAME, PASSWORD,
+        REALNAME, ORGANIZE_ID, ORGANIZE_NAME,
+        DUTY_ID, TITLE_ID, EMAIL,
+        LANG, THEME, FIRST_VISIT,
+        PREVIOUS_VISIT, LAST_VISITS, LOGIN_COUNT,
+        ISEMPLOYEE, STATUS, IP,
+        DESCRIPTION, ISONLINE, CREATE_DATE,
+        UPDATE_DATE, CREATER, MODIFYER,
+        TEL,ROLE_ID,ROLE_NAME,AREA,LOCATION,PHOTOURL,LNG,LAT,RIVERGOVERNORID,BIRTHDAY,NEEDIMACCOUNT,IMACCOUNT,
+        DEPARTMENT_ID,DEPARTMENT_NAME,AREACODE,OPERAMANID,PROJECTMANID,OPENID)
+        values (#{id,jdbcType=VARCHAR}, #{username,jdbcType=VARCHAR}, #{password,jdbcType=VARCHAR},
+        #{realname,jdbcType=VARCHAR}, #{organizeId,jdbcType=DECIMAL}, #{organizeName,jdbcType=VARCHAR},
+        #{dutyId,jdbcType=DECIMAL}, #{titleId,jdbcType=DECIMAL}, #{email,jdbcType=VARCHAR},
+        #{lang,jdbcType=VARCHAR}, #{theme,jdbcType=VARCHAR}, #{firstVisit,jdbcType=DATE},
+        #{previousVisit,jdbcType=DATE}, #{lastVisits,jdbcType=DATE}, #{loginCount,jdbcType=DECIMAL},
+        #{isemployee,jdbcType=DECIMAL}, #{status,jdbcType=VARCHAR}, #{ip,jdbcType=VARCHAR},
+        #{description,jdbcType=VARCHAR}, #{isonline,jdbcType=DECIMAL}, #{createDate,jdbcType=DATE},
+        #{updateDate,jdbcType=DATE}, #{creater,jdbcType=DECIMAL}, #{modifyer,jdbcType=DECIMAL},
+        #{tel,jdbcType=VARCHAR},#{roleId,jdbcType=VARCHAR},#{roleName,jdbcType=VARCHAR},#{area,jdbcType=VARCHAR},
+        #{location,jdbcType=VARCHAR},#{photourl,jdbcType=VARCHAR},#{lng,jdbcType=VARCHAR},#{lat,jdbcType=VARCHAR},
+        #{rivergovernorid,jdbcType=VARCHAR},#{birthday,jdbcType=VARCHAR},
+        #{needImAccount,jdbcType=VARCHAR},#{imAccount,jdbcType=VARCHAR},
+        #{departmentId,jdbcType=VARCHAR},#{departmentName,jdbcType=VARCHAR},#{areaCode,jdbcType=VARCHAR},
+        #{operamanid,jdbcType=VARCHAR},#{projectmainid},#{openid})
+    </insert>
+
+    <select id="getGropsByUserName" resultType="com.zkzy.zyportal.system.api.entity.base.Groups" parameterType="map">
+        SELECT
+	CASE
+WHEN A .PROJECTMANID IS NULL THEN
+	'admin'
+ELSE
+	A .PROJECTMANID
+END AS GROUPS
+FROM
+	SYSTEM_USERS A
+WHERE
+	1 = 1
+AND USERNAME =  #{username,jdbcType=VARCHAR}
+AND (
+	A .PROJECTMANID IS NOT NULL
+	OR A.ROLE_ID LIKE '%6ea8637e729940edb6772f33562ae68d%'
+)
+    </select>
+
+</mapper>

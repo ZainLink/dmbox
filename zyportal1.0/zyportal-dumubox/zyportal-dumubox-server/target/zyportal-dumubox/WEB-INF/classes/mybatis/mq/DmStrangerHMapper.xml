@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.zkzy.portal.dumu.server.system.provider.mapper.mq.DmStrangerHMapper">
+    <resultMap id="BaseResultMap" type="com.zkzy.zyportal.system.api.entity.mq.DmStrangerH">
+        <id column="ID" property="id" jdbcType="VARCHAR"/>
+        <result column="FACEID" property="faceid" jdbcType="DECIMAL"/>
+        <result column="CHANNELNO" property="channelno" jdbcType="DECIMAL"/>
+        <result column="FURL" property="furl" jdbcType="VARCHAR"/>
+        <result column="BURL" property="burl" jdbcType="VARCHAR"/>
+        <result column="SENDTIME" property="sendtime" jdbcType="VARCHAR"/>
+        <result column="CAPTURETIME" property="capturetime" jdbcType="VARCHAR"/>
+        <result column="RECEIVETIME" property="receivetime" jdbcType="VARCHAR"/>
+        <result column="SUBNAME" property="subname" jdbcType="VARCHAR"/>
+        <result column="UNID" property="unid" jdbcType="VARCHAR"/>
+        <result column="UNAME" property="uname" jdbcType="VARCHAR"/>
+        <result column="REMARK" property="remark" jdbcType="VARCHAR"/>
+        <result column="DEVICEUUID" property="deviceuuid" jdbcType="VARCHAR"/>
+        <result column="IMGSTATE" property="imgstate" jdbcType="VARCHAR"/>
+    </resultMap>
+    <delete id="deleteByPrimaryKey" parameterType="java.lang.String">
+    delete from DM_STRANGER_H
+    where ID = #{id,jdbcType=VARCHAR}
+  </delete>
+    <insert id="insert" parameterType="com.zkzy.zyportal.system.api.entity.mq.DmStrangerH">
+    insert into DM_STRANGER_H (ID, FACEID, CHANNELNO, 
+      FURL, BURL, SENDTIME, 
+      CAPTURETIME, RECEIVETIME, SUBNAME, 
+      UNID, UNAME, REMARK, 
+      DEVICEUUID,IMGSTATE)
+    values (#{id,jdbcType=VARCHAR}, #{faceid,jdbcType=DECIMAL}, #{channelno,jdbcType=DECIMAL}, 
+      #{furl,jdbcType=VARCHAR}, #{burl,jdbcType=VARCHAR}, #{sendtime,jdbcType=VARCHAR}, 
+      #{capturetime,jdbcType=VARCHAR}, #{receivetime,jdbcType=VARCHAR}, #{subname,jdbcType=VARCHAR}, 
+      #{unid,jdbcType=VARCHAR}, #{uname,jdbcType=VARCHAR}, #{remark,jdbcType=VARCHAR}, 
+      #{deviceuuid,jdbcType=VARCHAR},#{imgstate,jdbcType=VARCHAR})
+  </insert>
+    <update id="updateByPrimaryKey" parameterType="com.zkzy.zyportal.system.api.entity.mq.DmStrangerH">
+    update DM_STRANGER_H
+    set IMGSTATE = #{imgstate,jdbcType=VARCHAR}
+    where ID = #{id,jdbcType=VARCHAR}
+  </update>
+    <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.String">
+    select ID, FACEID, CHANNELNO, FURL, BURL, SENDTIME, CAPTURETIME, RECEIVETIME, SUBNAME, 
+    UNID, UNAME, REMARK, DEVICEUUID,IMGSTATE
+    from DM_STRANGER_H
+    where ID = #{id,jdbcType=VARCHAR}
+  </select>
+    <select id="selectAll" resultMap="BaseResultMap" parameterType="java.lang.String">
+        select ID, FACEID, CHANNELNO, FURL, BURL, SENDTIME, CAPTURETIME, RECEIVETIME, SUBNAME,
+        UNID, UNAME, REMARK, DEVICEUUID,IMGSTATE
+        from DM_STRANGER_H
+        WHERE 1=1
+        <if test="_parameter!=null and _parameter!=''">
+            ${_parameter}
+        </if>
+        ORDER BY
+        RECEIVETIME DESC,
+        ID DESC
+
+    </select>
+</mapper>

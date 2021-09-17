@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: DumuBox
+  profiles:
+    active: prod
+
+mybatis:
+  config-location: classpath:mybatis-config.xml
+  mapper-locations: classpath:mybatis/**/*.xml
+

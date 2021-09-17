@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.zkzy.portal.dumu.server.system.provider.mapper.dm.DmBoxBMapper">
+    <resultMap id="BaseResultMap" type="com.zkzy.zyportal.system.api.entity.dm.DmBoxB">
+        <id column="DEVICEUUID" property="deviceuuid" jdbcType="VARCHAR"/>
+        <result column="DEVICEID" property="deviceid" jdbcType="VARCHAR"/>
+        <result column="DEVICEMAC" property="devicemac" jdbcType="VARCHAR"/>
+        <result column="CREATETIME" property="createtime" jdbcType="VARCHAR"/>
+        <result column="NAME" property="name" jdbcType="VARCHAR"/>
+        <result column="REMARK" property="remark" jdbcType="VARCHAR"/>
+        <result column="DEVICEIP" property="deviceip" jdbcType="VARCHAR"/>
+    </resultMap>
+    <delete id="deleteByPrimaryKey" parameterType="java.lang.String">
+    delete from DM_BOX_B
+    where DEVICEUUID = #{deviceuuid,jdbcType=VARCHAR}
+  </delete>
+    <insert id="insert" parameterType="com.zkzy.zyportal.system.api.entity.dm.DmBoxB">
+    insert into DM_BOX_B (DEVICEUUID, DEVICEID, DEVICEMAC, 
+      CREATETIME
+      )
+    values (#{deviceuuid,jdbcType=VARCHAR}, #{deviceid,jdbcType=VARCHAR}, #{devicemac,jdbcType=VARCHAR}, 
+      #{createtime,jdbcType=VARCHAR}
+      )
+  </insert>
+    <update id="updateByPrimaryKey" parameterType="com.zkzy.zyportal.system.api.entity.dm.DmBoxB">
+    update DM_BOX_B
+    set
+      NAME = #{name,jdbcType=VARCHAR},
+      REMARK = #{remark,jdbcType=VARCHAR},
+      DEVICEIP= #{deviceip,jdbcType=VARCHAR}
+    where DEVICEUUID = #{deviceuuid,jdbcType=VARCHAR}
+  </update>
+    <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.String">
+    select DEVICEUUID, DEVICEID, DEVICEMAC, CREATETIME, NAME, REMARK,DEVICEIP
+    from DM_BOX_B
+    where DEVICEUUID = #{deviceuuid,jdbcType=VARCHAR}
+  </select>
+    <select id="selectAll" resultMap="BaseResultMap" parameterType="java.lang.String">
+        select DEVICEUUID, DEVICEID, DEVICEMAC, CREATETIME, NAME, REMARK,DEVICEIP
+        from DM_BOX_B
+        <if test="_parameter!=null and _parameter!=''">
+            WHERE 1=1
+            ${_parameter}
+        </if>
+        ORDER BY DEVICEUUID DESC
+    </select>
+</mapper>

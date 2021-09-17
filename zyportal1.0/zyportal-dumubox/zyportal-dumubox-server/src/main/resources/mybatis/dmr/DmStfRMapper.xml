@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.zkzy.portal.dumu.server.system.provider.mapper.dmr.DmStfRMapper">
+    <resultMap id="BaseResultMap" type="com.zkzy.zyportal.system.api.entity.dmr.DmStfR">
+        <id column="UNID" property="unid" jdbcType="VARCHAR"/>
+        <id column="PERSONTYPE" property="persontype" jdbcType="DECIMAL"/>
+        <result column="NAME" property="name" jdbcType="VARCHAR"/>
+        <result column="NUM" property="num" jdbcType="DECIMAL"/>
+        <result column="LGS" property="lgs" jdbcType="VARCHAR"/>
+    </resultMap>
+    <delete id="deleteByPrimaryKey" parameterType="map">
+    delete from DM_STF_R
+    where UNID = #{unid,jdbcType=VARCHAR}
+      and PERSONTYPE = #{persontype,jdbcType=DECIMAL}
+  </delete>
+
+    <delete id="deleteByUnid" parameterType="java.lang.String">
+    delete from DM_STF_R
+    where UNID = #{unid,jdbcType=VARCHAR}
+  </delete>
+    <insert id="insert" parameterType="com.zkzy.zyportal.system.api.entity.dmr.DmStfR">
+    insert into DM_STF_R (UNID, PERSONTYPE, NAME, 
+      NUM, LGS)
+    values (#{unid,jdbcType=VARCHAR}, #{persontype,jdbcType=DECIMAL}, #{name,jdbcType=VARCHAR}, 
+      #{num,jdbcType=DECIMAL}, #{lgs,jdbcType=VARCHAR})
+  </insert>
+    <update id="updateByPrimaryKey" parameterType="com.zkzy.zyportal.system.api.entity.dmr.DmStfR">
+    update DM_STF_R
+    set NUM = #{num,jdbcType=DECIMAL}
+    where UNID = #{unid,jdbcType=VARCHAR}
+      and PERSONTYPE = #{persontype,jdbcType=DECIMAL}
+      and  LGS = #{lgs,jdbcType=VARCHAR}
+  </update>
+
+    <update id="updateLgs" parameterType="com.zkzy.zyportal.system.api.entity.dmr.DmStfR">
+        update DM_STF_R
+        set LGS = #{lgs,jdbcType=VARCHAR}
+        where UNID = #{unid,jdbcType=VARCHAR}
+        and PERSONTYPE = #{persontype,jdbcType=DECIMAL}
+    </update>
+    <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="map">
+    select UNID, PERSONTYPE, NAME, NUM, LGS
+    from DM_STF_R
+    where UNID = #{unid,jdbcType=VARCHAR}
+      and PERSONTYPE = #{persontype,jdbcType=DECIMAL}
+  </select>
+    <select id="selectAll" resultMap="BaseResultMap">
+    select UNID, PERSONTYPE, NAME, NUM, LGS
+    from DM_STF_R
+  </select>
+</mapper>

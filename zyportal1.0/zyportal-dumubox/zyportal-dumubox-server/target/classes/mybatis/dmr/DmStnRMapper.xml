@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.zkzy.portal.dumu.server.system.provider.mapper.dmr.DmStnRMapper">
+    <resultMap id="BaseResultMap" type="com.zkzy.zyportal.system.api.entity.dmr.DmStnR">
+        <id column="UNID" property="unid" jdbcType="VARCHAR"/>
+        <id column="DEVICEUUID" property="deviceuuid" jdbcType="VARCHAR"/>
+        <id column="PERSONTYPE" property="persontype" jdbcType="DECIMAL"/>
+        <result column="BINDTIME" property="bindtime" jdbcType="VARCHAR"/>
+        <result column="NAMELISTFACENUM" property="namelistfacenum" jdbcType="DECIMAL"/>
+    </resultMap>
+    <delete id="deleteByPrimaryKey" parameterType="map">
+  delete from DM_STN_R
+  where UNID = #{unid,jdbcType=VARCHAR}
+  and DEVICEUUID = #{deviceuuid,jdbcType=VARCHAR}
+  and PERSONTYPE = #{persontype,jdbcType=DECIMAL}
+</delete>
+
+    <delete id="deleteBySt" parameterType="map">
+    delete from DM_STN_R
+    where UNID = #{unid,jdbcType=VARCHAR}
+    and DEVICEUUID = #{deviceuuid,jdbcType=VARCHAR}
+  </delete>
+    <insert id="insert" parameterType="com.zkzy.zyportal.system.api.entity.dmr.DmStnR">
+    insert into DM_STN_R (UNID, DEVICEUUID, PERSONTYPE, 
+      BINDTIME, NAMELISTFACENUM)
+    values (#{unid,jdbcType=VARCHAR}, #{deviceuuid,jdbcType=VARCHAR}, #{persontype,jdbcType=DECIMAL}, 
+      #{bindtime,jdbcType=VARCHAR}, #{namelistfacenum,jdbcType=DECIMAL})
+  </insert>
+    <update id="updateByPrimaryKey" parameterType="com.zkzy.zyportal.system.api.entity.dmr.DmStnR">
+    update DM_STN_R
+    set  NAMELISTFACENUM = #{namelistfacenum,jdbcType=DECIMAL}
+    where UNID = #{unid,jdbcType=VARCHAR}
+      and DEVICEUUID = #{deviceuuid,jdbcType=VARCHAR}
+      and PERSONTYPE = #{persontype,jdbcType=DECIMAL}
+  </update>
+    <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="map">
+  SELECT
+        A .UNID,
+        A .UNAME,
+        A .LNAME,
+        A .LTEL,
+        A .ADDRESS,
+        A .CREATER,
+        A .MODIFYER,
+        A .CREATEDATE,
+        A .MODIFYDATE,
+        A .AREACODE,
+        A . ACCOUNT,
+        B.DEVICEUUID,
+        B.PERSONTYPE,
+        B.BINDTIME,
+        B.NAMELISTFACENUM,
+        C.NAMELISTFACENUM AS TOTALNUM,
+        C. NAME,
+        C.NAMEID,
+        C.TYPE
+        FROM
+        DM_STATION_B A
+        INNER JOIN DM_STN_R B ON A .UNID = B.UNID
+        INNER JOIN DM_NAME_B C ON B.DEVICEUUID = C.DEVICEUUID
+    where  B.UNID = #{unid,jdbcType=VARCHAR}
+      and B.DEVICEUUID = #{deviceuuid,jdbcType=VARCHAR}
+      and B.PERSONTYPE = #{persontype,jdbcType=DECIMAL}
+  </select>
+
+    <select id="selectInfoByPrimaryKey" resultMap="BaseResultMap" parameterType="map">
+        SELECT
+        A .UNID,
+        A .UNAME,
+        A .LNAME,
+        A .LTEL,
+        A .ADDRESS,
+        A .CREATER,
+        A .MODIFYER,
+        A .CREATEDATE,
+        A .MODIFYDATE,
+        A .AREACODE,
+        A . ACCOUNT,
+        B.DEVICEUUID,
+        B.PERSONTYPE,
+        B.BINDTIME,
+        B.NAMELISTFACENUM
+        FROM
+        DM_STATION_B A
+        INNER JOIN DM_STN_R B ON A .UNID = B.UNID
+        where  B.UNID = #{unid,jdbcType=VARCHAR}
+        and B.DEVICEUUID = #{deviceuuid,jdbcType=VARCHAR}
+        and B.PERSONTYPE = #{persontype,jdbcType=DECIMAL}
+    </select>
+
+    <select id="selectPraviteNames" resultMap="BaseResultMap" parameterType="map">
+        select UNID, DEVICEUUID, PERSONTYPE, BINDTIME, NAMELISTFACENUM
+        from DM_STN_R
+        where UNID = #{unid,jdbcType=VARCHAR}
+        and DEVICEUUID = #{deviceuuid,jdbcType=VARCHAR}
+        and PERSONTYPE!=1
+        and PERSONTYPE!=2
+        and PERSONTYPE!=3
+    </select>
+
+    <select id="selectAll" resultMap="BaseResultMap" parameterType="java.lang.String">
+        SELECT
+        A .UNID,
+        A .UNAME,
+        A .LNAME,
+        A .LTEL,
+        A .ADDRESS,
+        A .CREATER,
+        A .MODIFYER,
+        A .CREATEDATE,
+        A .MODIFYDATE,
+        A .AREACODE,
+        A . ACCOUNT,
+        B.DEVICEUUID,
+        B.PERSONTYPE,
+        B.BINDTIME,
+        B.NAMELISTFACENUM,
+        C.NAMELISTFACENUM AS TOTALNUM,
+        C. NAME,
+        C.NAMEID,
+        C.TYPE
+        FROM
+        DM_STATION_B A
+        INNER JOIN DM_STN_R B ON A .UNID = B.UNID
+        INNER JOIN DM_NAME_B C ON B.DEVICEUUID = C.DEVICEUUID
+        <if test="_parameter!=null and _parameter!=''">
+            WHERE 1=1
+            ${_parameter}
+        </if>
+        ORDER BY
+        A .UNID DESC
+    </select>
+</mapper>

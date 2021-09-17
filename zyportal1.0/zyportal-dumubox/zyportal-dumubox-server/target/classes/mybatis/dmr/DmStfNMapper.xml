@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.zkzy.portal.dumu.server.system.provider.mapper.dmr.DmStfNMapper">
+    <resultMap id="BaseResultMap" type="com.zkzy.zyportal.system.api.entity.dmr.DmStfN">
+        <id column="UNID" property="unid" jdbcType="VARCHAR"/>
+        <id column="PERSONTYPE" property="persontype" jdbcType="DECIMAL"/>
+        <id column="UUID" property="uuid" jdbcType="VARCHAR"/>
+        <result column="DATATIME" property="datatime" jdbcType="VARCHAR"/>
+        <result column="LIMITTIME" property="limittime" jdbcType="DECIMAL"/>
+        <result column="STTM" property="sttm" jdbcType="VARCHAR"/>
+        <result column="ENDTIME" property="endtime" jdbcType="VARCHAR"/>
+    </resultMap>
+    <delete id="deleteByPrimaryKey" parameterType="map">
+    delete from DM_STF_N
+    where UNID = #{unid,jdbcType=VARCHAR}
+      and PERSONTYPE = #{persontype,jdbcType=DECIMAL}
+      and UUID = #{uuid,jdbcType=VARCHAR}
+  </delete>
+
+    <delete id="deleteByUnid" parameterType="java.lang.String">
+    delete from DM_STF_N
+    where UNID = #{unid,jdbcType=VARCHAR}
+  </delete>
+    <insert id="insert" parameterType="com.zkzy.zyportal.system.api.entity.dmr.DmStfN">
+    insert into DM_STF_N (UNID, PERSONTYPE, UUID, 
+      DATATIME, LIMITTIME, STTM, 
+      ENDTIME)
+    values (#{unid,jdbcType=VARCHAR}, #{persontype,jdbcType=DECIMAL}, #{uuid,jdbcType=VARCHAR}, 
+      #{datatime,jdbcType=VARCHAR}, #{limittime,jdbcType=DECIMAL}, #{sttm,jdbcType=VARCHAR}, 
+      #{endtime,jdbcType=VARCHAR})
+  </insert>
+    <update id="updateByPrimaryKey" parameterType="com.zkzy.zyportal.system.api.entity.dmr.DmStfN">
+    update DM_STF_N
+    set DATATIME = #{datatime,jdbcType=VARCHAR},
+      LIMITTIME = #{limittime,jdbcType=DECIMAL},
+      STTM = #{sttm,jdbcType=VARCHAR},
+      ENDTIME = #{endtime,jdbcType=VARCHAR}
+    where UNID = #{unid,jdbcType=VARCHAR}
+      and PERSONTYPE = #{persontype,jdbcType=DECIMAL}
+      and UUID = #{uuid,jdbcType=VARCHAR}
+  </update>
+    <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="map">
+    select UNID, PERSONTYPE, UUID, DATATIME, LIMITTIME, STTM, ENDTIME
+    from DM_STF_N
+    where UNID = #{unid,jdbcType=VARCHAR}
+      and PERSONTYPE = #{persontype,jdbcType=DECIMAL}
+      and UUID = #{uuid,jdbcType=VARCHAR}
+  </select>
+
+    <select id="selectByUUid" resultType="java.lang.Integer" parameterType="map">
+        select COUNT (*)
+        from DM_STF_N
+        where  UUID = #{uuid,jdbcType=VARCHAR}
+    </select>
+
+    <select id="selectWhiteList" resultMap="BaseResultMap" parameterType="map">
+    select UNID, PERSONTYPE, UUID, DATATIME, LIMITTIME, STTM, ENDTIME
+    from DM_STF_N
+    where UNID = #{unid,jdbcType=VARCHAR}
+    and PERSONTYPE = #{persontype,jdbcType=VARCHAR}
+  </select>
+
+    <select id="selectWhiteNum" resultType="java.lang.Integer" parameterType="map">
+        select count(*)
+        from DM_STF_N
+        where UNID = #{unid,jdbcType=VARCHAR}
+        and PERSONTYPE = #{persontype,jdbcType=VARCHAR}
+    </select>
+    <select id="selectAll" resultType="com.zkzy.zyportal.system.api.entity.dmr.DmWhiteList"
+            parameterType="java.lang.String">
+        SELECT
+        A .UUID,
+        A . ID,
+        A . NAME,
+        A .SEX,
+        A .TEL,
+        A .IMGURL,
+        A .NATION,
+        A .BIRTH,
+        A .ADDRESS,
+        A .ST_LABEL,
+        A .BOX_LABEL,
+        B.PERSONTYPE,
+        B.LIMITTIME,
+        B.STTM,
+        B.ENDTIME,
+        C.UNID,
+        C. NAME AS FACENAME
+        FROM
+        DM_FACE_B A
+        INNER JOIN DM_STF_N B ON A .UUID = B.UUID
+        INNER JOIN DM_STF_R C ON B.UNID = C.UNID
+        AND B.PERSONTYPE = C.PERSONTYPE
+        <if test="_parameter!=null and _parameter!=''">
+            WHERE 1=1
+            ${_parameter}
+        </if>
+        ORDER BY B.DATATIME DESC,
+        A .UUID DESC
+    </select>
+
+
+    <select id="selectFaceByBox" resultType="com.zkzy.zyportal.system.api.entity.dmr.DmBoxWhiteList"
+            parameterType="java.lang.String">
+        SELECT
+        A .UUID,
+        A . ID,
+        A . NAME,
+        A .SEX,
+        A .TEL,
+        A .IMGURL,
+        A .NATION,
+        A .BIRTH,
+        A .ADDRESS,
+        A .ST_LABEL,
+        A .BOX_LABEL,
+        B.DEVICEUUID,
+        B.PERSONTYPE,
+        B.UNID,
+        B.BINDTIME
+        FROM
+        DM_FACE_B A
+        INNER JOIN DM_STNF_R B ON A .UUID = B.UUID
+        <if test="_parameter!=null and _parameter!=''">
+            WHERE 1=1
+            ${_parameter}
+        </if>
+        ORDER BY B.BINDTIME DESC,
+        A .UUID DESC
+    </select>
+</mapper>

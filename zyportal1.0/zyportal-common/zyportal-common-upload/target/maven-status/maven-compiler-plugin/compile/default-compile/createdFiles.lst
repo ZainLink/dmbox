@@ -1,0 +1,6 @@
+com\zkzy\portal\common\upload\DiskFileOperator.class
+com\zkzy\portal\common\upload\FileOperator.class
+com\zkzy\portal\common\upload\util\FileIndex.class
+com\zkzy\portal\common\upload\util\FileManager.class
+com\zkzy\portal\common\upload\AbstractFileOperator.class
+com\zkzy\portal\common\upload\OssFileOperator.class

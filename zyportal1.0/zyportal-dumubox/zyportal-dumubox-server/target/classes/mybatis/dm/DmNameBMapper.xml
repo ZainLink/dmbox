@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.zkzy.portal.dumu.server.system.provider.mapper.dm.DmNameBMapper">
+    <resultMap id="BaseResultMap" type="com.zkzy.zyportal.system.api.entity.dm.DmNameB">
+        <id column="DEVICEUUID" property="deviceuuid" jdbcType="VARCHAR"/>
+        <id column="PERSONTYPE" property="persontype" jdbcType="DECIMAL"/>
+        <result column="NAMELISTFACENUM" property="namelistfacenum" jdbcType="DECIMAL"/>
+        <result column="UPDATETIME" property="updatetime" jdbcType="VARCHAR"/>
+        <result column="NAME" property="name" jdbcType="VARCHAR"/>
+        <result column="NAMEID" property="nameid" jdbcType="VARCHAR"/>
+        <result column="TYPE" property="type" jdbcType="DECIMAL"/>
+    </resultMap>
+    <delete id="deleteByPrimaryKey" parameterType="map">
+    delete from DM_NAME_B
+    where DEVICEUUID = #{deviceuuid,jdbcType=VARCHAR}
+      and PERSONTYPE = #{persontype,jdbcType=DECIMAL}
+  </delete>
+
+    <delete id="deleteById" parameterType="java.lang.String">
+    delete from DM_NAME_B
+    where DEVICEUUID = #{deviceuuid,jdbcType=VARCHAR}
+  </delete>
+    <insert id="insert" parameterType="com.zkzy.zyportal.system.api.entity.dm.DmNameB">
+    insert into DM_NAME_B (DEVICEUUID, PERSONTYPE, NAMELISTFACENUM, 
+      UPDATETIME,NAME,NAMEID,TYPE)
+    values (#{deviceuuid,jdbcType=VARCHAR}, #{persontype,jdbcType=DECIMAL}, #{namelistfacenum,jdbcType=DECIMAL}, 
+      #{updatetime,jdbcType=VARCHAR}, #{name,jdbcType=VARCHAR}, #{nameid,jdbcType=VARCHAR}, #{type,jdbcType=VARCHAR})
+  </insert>
+    <update id="updateByPrimaryKey" parameterType="com.zkzy.zyportal.system.api.entity.dm.DmNameB">
+    update DM_NAME_B
+    set NAMELISTFACENUM = #{namelistfacenum,jdbcType=DECIMAL},
+      UPDATETIME = #{updatetime,jdbcType=VARCHAR},
+      NAME = #{name,jdbcType=VARCHAR},
+      TYPE = #{type,jdbcType=VARCHAR}
+    where DEVICEUUID = #{deviceuuid,jdbcType=VARCHAR}
+      and PERSONTYPE = #{persontype,jdbcType=DECIMAL}
+  </update>
+    <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="map">
+    select DEVICEUUID, PERSONTYPE, NAMELISTFACENUM, UPDATETIME,NAME,NAMEID,TYPE
+    from DM_NAME_B
+    where DEVICEUUID = #{deviceuuid,jdbcType=VARCHAR}
+      and PERSONTYPE = #{persontype,jdbcType=DECIMAL}
+  </select>
+    <select id="selectAll" resultMap="BaseResultMap" parameterType="java.lang.String">
+        select DEVICEUUID, PERSONTYPE, NAMELISTFACENUM, UPDATETIME,NAME,NAMEID,TYPE
+        from DM_NAME_B
+        WHERE 1=1
+        <if test="_parameter!=null and _parameter!=''">
+            ${_parameter}
+        </if>
+        ORDER BY PERSONTYPE
+    </select>
+</mapper>

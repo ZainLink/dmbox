@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.zkzy.portal.dumu.server.system.provider.mapper.dm.DmCameraBMapper">
+    <resultMap id="BaseResultMap" type="com.zkzy.zyportal.system.api.entity.dm.DmCameraB">
+        <id column="DEVICEUUID" property="deviceuuid" jdbcType="VARCHAR"/>
+        <id column="CHANNELNO" property="channelno" jdbcType="DECIMAL"/>
+        <result column="SUBDEVICEIP" property="subdeviceip" jdbcType="VARCHAR"/>
+        <result column="SUBDEVICEUUID" property="subdeviceuuid" jdbcType="VARCHAR"/>
+        <result column="SUBNAME" property="subname" jdbcType="VARCHAR"/>
+        <result column="CREATETIME" property="createtime" jdbcType="VARCHAR"/>
+        <result column="REMARK" property="remark" jdbcType="VARCHAR"/>
+        <result column="UNID" property="unid" jdbcType="VARCHAR"/>
+        <result column="PROTOCOL" property="protocol" jdbcType="VARCHAR"/>
+    </resultMap>
+    <delete id="deleteByPrimaryKey" parameterType="map">
+    delete from DM_CAMERA_B
+    where DEVICEUUID = #{deviceuuid,jdbcType=VARCHAR}
+      and CHANNELNO = #{channelno,jdbcType=DECIMAL}
+  </delete>
+    <insert id="insert" parameterType="com.zkzy.zyportal.system.api.entity.dm.DmCameraB">
+    insert into DM_CAMERA_B (DEVICEUUID, CHANNELNO, SUBDEVICEIP, 
+      SUBDEVICEUUID, SUBNAME, CREATETIME, 
+      REMARK, UNID,PROTOCOL)
+    values (#{deviceuuid,jdbcType=VARCHAR}, #{channelno,jdbcType=DECIMAL}, #{subdeviceip,jdbcType=VARCHAR},
+      #{subdeviceuuid,jdbcType=VARCHAR}, #{subname,jdbcType=VARCHAR}, #{createtime,jdbcType=VARCHAR}, 
+      #{remark,jdbcType=VARCHAR}, #{unid,jdbcType=VARCHAR}, #{protocol,jdbcType=VARCHAR})
+  </insert>
+
+
+    <insert id="insertCamera" parameterType="map">
+    INSERT INTO DM_CAMERA_B (DEVICEUUID, CHANNELNO)
+    SELECT
+   #{deviceuuid,jdbcType=VARCHAR} AS DEVICEUUID,
+   #{channelno,jdbcType=DECIMAL} AS CHANNELNO
+FROM
+	dual
+WHERE
+	NOT EXISTS (
+		SELECT
+			DEVICEUUID,
+			CHANNELNO
+		FROM
+			DM_CAMERA_B
+		WHERE
+			1 = 1
+		AND DEVICEUUID =  #{deviceuuid,jdbcType=VARCHAR}
+	    AND CHANNELNO = #{channelno,jdbcType=DECIMAL}
+	)  </insert>
+
+    <update id="updateByPrimaryKey" parameterType="com.zkzy.zyportal.system.api.entity.dm.DmCameraB">
+    update DM_CAMERA_B
+    set CREATETIME = #{createtime,jdbcType=VARCHAR},
+        SUBDEVICEIP = #{subdeviceip,jdbcType=VARCHAR},
+        SUBDEVICEUUID = #{subdeviceuuid,jdbcType=VARCHAR}
+    where DEVICEUUID = #{deviceuuid,jdbcType=VARCHAR}
+      and CHANNELNO = #{channelno,jdbcType=DECIMAL}
+  </update>
+
+    <update id="updateByProto" parameterType="com.zkzy.zyportal.system.api.entity.dm.DmCameraB">
+        update DM_CAMERA_B
+        set SUBDEVICEIP = #{subdeviceip,jdbcType=VARCHAR},
+        PROTOCOL = #{protocol,jdbcType=VARCHAR}
+        where DEVICEUUID = #{deviceuuid,jdbcType=VARCHAR}
+        and CHANNELNO = #{channelno,jdbcType=DECIMAL}
+    </update>
+
+    <update id="updateBaseByPrimaryKey" parameterType="com.zkzy.zyportal.system.api.entity.dm.DmCameraB">
+        update DM_CAMERA_B
+        set
+        SUBNAME = #{subname,jdbcType=VARCHAR},
+        REMARK = #{remark,jdbcType=VARCHAR},
+        UNID = #{unid,jdbcType=VARCHAR}
+        where DEVICEUUID = #{deviceuuid,jdbcType=VARCHAR}
+        and CHANNELNO = #{channelno,jdbcType=DECIMAL}
+    </update>
+    <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="map">
+    select DEVICEUUID, CHANNELNO, SUBDEVICEIP, SUBDEVICEUUID, SUBNAME, CREATETIME, REMARK, 
+    UNID,PROTOCOL
+    from DM_CAMERA_B
+    where DEVICEUUID = #{deviceuuid,jdbcType=VARCHAR}
+      and CHANNELNO = #{channelno,jdbcType=DECIMAL}
+  </select>
+    <select id="selectAll" resultMap="BaseResultMap" parameterType="java.lang.String">
+        select DEVICEUUID, CHANNELNO, SUBDEVICEIP, SUBDEVICEUUID, SUBNAME, CREATETIME, REMARK,
+        UNID,PROTOCOL FROM DM_CAMERA_B
+        <if test="_parameter!=null and _parameter!=''">
+            WHERE 1=1
+            ${_parameter}
+        </if>
+        ORDER BY CHANNELNO
+    </select>
+</mapper>

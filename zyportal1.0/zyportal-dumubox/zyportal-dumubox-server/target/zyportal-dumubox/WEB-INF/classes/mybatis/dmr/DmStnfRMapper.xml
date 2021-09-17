@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.zkzy.portal.dumu.server.system.provider.mapper.dmr.DmStnfRMapper">
+    <resultMap id="BaseResultMap" type="com.zkzy.zyportal.system.api.entity.dmr.DmStnfR">
+        <id column="UNID" property="unid" jdbcType="VARCHAR"/>
+        <id column="DEVICEUUID" property="deviceuuid" jdbcType="VARCHAR"/>
+        <id column="PERSONTYPE" property="persontype" jdbcType="DECIMAL"/>
+        <id column="UUID" property="uuid" jdbcType="VARCHAR"/>
+        <result column="BINDTIME" property="bindtime" jdbcType="VARCHAR"/>
+    </resultMap>
+    <delete id="deleteByPrimaryKey" parameterType="map">
+    delete from DM_STNF_R
+    where UNID = #{unid,jdbcType=VARCHAR}
+      and DEVICEUUID = #{deviceuuid,jdbcType=VARCHAR}
+      and PERSONTYPE = #{persontype,jdbcType=DECIMAL}
+      and UUID = #{uuid,jdbcType=VARCHAR}
+  </delete>
+    <delete id="deleteBySt" parameterType="map">
+    delete from DM_STNF_R
+    where UNID = #{unid,jdbcType=VARCHAR}
+    and DEVICEUUID = #{deviceuuid,jdbcType=VARCHAR}
+  </delete>
+
+    <insert id="insert" parameterType="com.zkzy.zyportal.system.api.entity.dmr.DmStnfR">
+    insert into DM_STNF_R (UNID, DEVICEUUID, PERSONTYPE, 
+      UUID, BINDTIME)
+    values (#{unid,jdbcType=VARCHAR}, #{deviceuuid,jdbcType=VARCHAR}, #{persontype,jdbcType=DECIMAL}, 
+      #{uuid,jdbcType=VARCHAR}, #{bindtime,jdbcType=VARCHAR})
+  </insert>
+    <update id="updateByPrimaryKey" parameterType="com.zkzy.zyportal.system.api.entity.dmr.DmStnfR">
+    update DM_STNF_R
+    set BINDTIME = #{bindtime,jdbcType=VARCHAR}
+    where UNID = #{unid,jdbcType=VARCHAR}
+      and DEVICEUUID = #{deviceuuid,jdbcType=VARCHAR}
+      and PERSONTYPE = #{persontype,jdbcType=DECIMAL}
+      and UUID = #{uuid,jdbcType=VARCHAR}
+  </update>
+    <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="map">
+    select UNID, DEVICEUUID, PERSONTYPE, UUID, BINDTIME
+    from DM_STNF_R
+    where UNID = #{unid,jdbcType=VARCHAR}
+      and DEVICEUUID = #{deviceuuid,jdbcType=VARCHAR}
+      and PERSONTYPE = #{persontype,jdbcType=DECIMAL}
+      and UUID = #{uuid,jdbcType=VARCHAR}
+  </select>
+
+    <select id="selectListByParam" resultMap="BaseResultMap" parameterType="map">
+        select UNID, DEVICEUUID, PERSONTYPE, UUID, BINDTIME
+        from DM_STNF_R
+        where UNID != #{unid,jdbcType=VARCHAR}
+        and DEVICEUUID = #{deviceuuid,jdbcType=VARCHAR}
+        and PERSONTYPE = #{persontype,jdbcType=DECIMAL}
+        and UUID = #{uuid,jdbcType=VARCHAR}
+    </select>
+
+    <select id="selectByUUid" resultType="java.lang.Integer" parameterType="map">
+        select COUNT (*)
+        from DM_STNF_R
+        where  UUID = #{uuid,jdbcType=VARCHAR}
+    </select>
+
+    <select id="selectInfoByUUid" resultMap="BaseResultMap" parameterType="map">
+        select UNID, DEVICEUUID, PERSONTYPE, UUID, BINDTIME
+        from DM_STNF_R
+        where  UUID = #{uuid,jdbcType=VARCHAR}
+    </select>
+
+    <select id="selectCountForSt" resultType="java.lang.Integer" parameterType="map">
+    select COUNT(UNID)
+       from DM_STNF_R
+    where UNID = #{unid,jdbcType=VARCHAR}
+      and DEVICEUUID = #{deviceuuid,jdbcType=VARCHAR}
+      and PERSONTYPE = #{persontype,jdbcType=DECIMAL}
+  </select>
+
+    <select id="selectCountForAdmin" resultType="java.lang.Integer" parameterType="map">
+        select COUNT(UNID)
+        from DM_STNF_R
+        where  DEVICEUUID = #{deviceuuid,jdbcType=VARCHAR}
+        and PERSONTYPE = #{persontype,jdbcType=DECIMAL}
+    </select>
+    <select id="selectAll" resultMap="BaseResultMap">
+    select UNID, DEVICEUUID, PERSONTYPE, UUID, BINDTIME
+    from DM_STNF_R
+  </select>
+</mapper>

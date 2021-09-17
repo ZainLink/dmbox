@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="zyportal-common-api" />
+        <module name="zyportal-common-quartz" />
+        <module name="zyportal-common-rabbitmq" />
+        <module name="zyportal-common-redis" />
+        <module name="zyportal-common-service" />
+        <module name="zyportal-common-upload" />
+        <module name="zyportal-common-utils" />
+        <module name="zyportal-common-web" />
+        <module name="zyportal-dumubox-api" />
+        <module name="zyportal-dumubox-server" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="zyportal-common" target="1.8" />
+      <module name="zyportal-common-api" target="1.8" />
+      <module name="zyportal-common-quartz" target="1.8" />
+      <module name="zyportal-common-rabbitmq" target="1.8" />
+      <module name="zyportal-common-redis" target="1.8" />
+      <module name="zyportal-common-service" target="1.8" />
+      <module name="zyportal-common-upload" target="1.8" />
+      <module name="zyportal-common-utils" target="1.8" />
+      <module name="zyportal-common-web" target="1.8" />
+      <module name="zyportal-dumubox" target="1.8" />
+      <module name="zyportal-dumubox-api" target="1.8" />
+      <module name="zyportal-dumubox-server" target="1.8" />
+      <module name="zyportal-parent" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

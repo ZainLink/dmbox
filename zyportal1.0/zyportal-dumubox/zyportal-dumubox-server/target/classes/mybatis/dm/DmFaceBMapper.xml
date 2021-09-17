@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.zkzy.portal.dumu.server.system.provider.mapper.dm.DmFaceBMapper" >
+  <resultMap id="BaseResultMap" type="com.zkzy.zyportal.system.api.entity.dm.DmFaceB" >
+    <id column="UUID" property="uuid" jdbcType="VARCHAR" />
+    <result column="ID" property="id" jdbcType="VARCHAR" />
+    <result column="NAME" property="name" jdbcType="VARCHAR" />
+    <result column="SEX" property="sex" jdbcType="VARCHAR" />
+    <result column="TEL" property="tel" jdbcType="VARCHAR" />
+    <result column="IMGURL" property="imgurl" jdbcType="VARCHAR" />
+    <result column="CREATEDATE" property="createdate" jdbcType="VARCHAR" />
+    <result column="MODIFYDATE" property="modifydate" jdbcType="VARCHAR" />
+    <result column="CREATER" property="creater" jdbcType="VARCHAR" />
+    <result column="MODIFYER" property="modifyer" jdbcType="VARCHAR" />
+    <result column="NATION" property="nation" jdbcType="VARCHAR" />
+    <result column="BIRTH" property="birth" jdbcType="VARCHAR" />
+    <result column="ADDRESS" property="address" jdbcType="VARCHAR" />
+    <result column="ST_LABEL" property="stLabel" jdbcType="VARCHAR" />
+    <result column="BOX_LABEL" property="boxLabel" jdbcType="VARCHAR" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String" >
+    delete from DM_FACE_B
+    where UUID = #{uuid,jdbcType=VARCHAR}
+  </delete>
+  <insert id="insert" parameterType="com.zkzy.zyportal.system.api.entity.dm.DmFaceB" >
+    insert into DM_FACE_B (UUID, ID, NAME, 
+      SEX, TEL,
+      IMGURL, CREATEDATE, MODIFYDATE, 
+      CREATER, MODIFYER, NATION, 
+      BIRTH, ADDRESS, ST_LABEL,BOX_LABEL)
+    values (#{uuid,jdbcType=VARCHAR}, #{id,jdbcType=VARCHAR}, #{name,jdbcType=VARCHAR}, 
+      #{sex,jdbcType=VARCHAR}, #{tel,jdbcType=VARCHAR},
+      #{imgurl,jdbcType=VARCHAR}, #{createdate,jdbcType=VARCHAR}, #{modifydate,jdbcType=VARCHAR}, 
+      #{creater,jdbcType=VARCHAR}, #{modifyer,jdbcType=VARCHAR}, #{nation,jdbcType=VARCHAR}, 
+      #{birth,jdbcType=VARCHAR}, #{address,jdbcType=VARCHAR}, #{stLabel,jdbcType=VARCHAR}, #{boxLabel,jdbcType=VARCHAR})
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="com.zkzy.zyportal.system.api.entity.dm.DmFaceB" >
+    update DM_FACE_B
+    set ID = #{id,jdbcType=VARCHAR},
+      NAME = #{name,jdbcType=VARCHAR},
+      SEX = #{sex,jdbcType=VARCHAR},
+      TEL = #{tel,jdbcType=VARCHAR},
+      IMGURL = #{imgurl,jdbcType=VARCHAR},
+      MODIFYDATE = #{modifydate,jdbcType=VARCHAR},
+      MODIFYER = #{modifyer,jdbcType=VARCHAR},
+      NATION = #{nation,jdbcType=VARCHAR},
+      BIRTH = #{birth,jdbcType=VARCHAR},
+      ADDRESS = #{address,jdbcType=VARCHAR},
+      ST_LABEL = #{stLabel,jdbcType=VARCHAR},
+      BOX_LABEL = #{boxLabel,jdbcType=VARCHAR}
+    where UUID = #{uuid,jdbcType=VARCHAR}
+  </update>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.String" >
+    select UUID, ID, NAME, SEX, TEL,IMGURL, CREATEDATE, MODIFYDATE, CREATER,
+    MODIFYER, NATION, BIRTH, ADDRESS, ST_LABEL, BOX_LABEL
+    from DM_FACE_B
+    where UUID = #{uuid,jdbcType=VARCHAR}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap"   parameterType="java.lang.String">
+    select UUID, ID, NAME, SEX, TEL,IMGURL, CREATEDATE, MODIFYDATE, CREATER,
+    MODIFYER, NATION, BIRTH, ADDRESS, ST_LABEL, BOX_LABEL
+    from DM_FACE_B
+    WHERE 1=1
+    <if test="_parameter!=null and _parameter!=''">
+      ${_parameter}
+    </if>
+    ORDER BY
+    UUID DESC
+  </select>
+</mapper>
