@@ -3,8 +3,6 @@ package com.zkzy.portal.common.utils;
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.time.LocalDateTime;
-import java.time.ZoneOffset;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.GregorianCalendar;
@@ -26,7 +24,6 @@ public class DateUtils {
     public static final String DATE_KEY_STR = "yyMMddHHmmss";
     public static final String DATE_FULL = "yyyyMMddHHmmss";
     public static final String DATE_FULL_TO_MILLISECOND = "yyyyMMddHHmmssSSS";
-    public static String dateToUnixTimestamp;
 
 
     //获取当天
@@ -55,9 +52,9 @@ public class DateUtils {
         Calendar cal = Calendar.getInstance();
         int year = cal.get(Calendar.YEAR);
         int month = cal.get(Calendar.MONTH) + 1;
-        String monthstr = null;
-        if (month < 10) {
-            monthstr = "0" + month;
+        String monthstr=null;
+        if(month<10){
+           monthstr="0"+month;
         }
         return year + "-" + monthstr;
     }
@@ -66,15 +63,16 @@ public class DateUtils {
     public static String getLastMonth() {
         Calendar cal = Calendar.getInstance();
         int year = cal.get(Calendar.YEAR);
-        int month = cal.get(Calendar.MONTH) + 1;
-        String monthstr = null;
-        if (month == 1) {
+        int month = cal.get(Calendar.MONTH)+1;
+        String monthstr=null;
+        if(month==1){
             year--;
-            monthstr = "12";
-        } else {
+            monthstr="12";
+        }
+        else{
             month--;
-            if (month < 10) {
-                monthstr = "0" + month;
+            if(month<10){
+                monthstr="0"+month;
             }
         }
         return year + "-" + monthstr;
@@ -234,23 +232,8 @@ public class DateUtils {
      * @return long 时间戳
      */
     public static long dateToUnixTimestamp() {
-        ZoneOffset zoneOffset = ZoneOffset.ofHours(16);
-        LocalDateTime localDateTime = LocalDateTime.now();
-        return localDateTime.toEpochSecond(zoneOffset);
-    }
-
-    /**
-     * 时间戳有效判断
-     */
-
-    public static boolean sureTimestamp(Long date) {
-        long timestamp =DateUtils.dateToUnixTimestamp();
-        long a = (timestamp - date) / 60;
-        if (a < 5) {
-            return true;
-        } else {
-            return false;
-        }
+        long timestamp = new Date().getTime();
+        return timestamp;
     }
 
     /**
@@ -386,11 +369,10 @@ public class DateUtils {
 
     /**
      * 获取当前年的第一天
-     *
      * @param year
      * @return
      */
-    public static String getYearFirst(int year) {
+    public static String getYearFirst(int year){
         Calendar calendar = Calendar.getInstance();
         calendar.clear();
         calendar.set(Calendar.YEAR, year);
@@ -621,12 +603,5 @@ public class DateUtils {
         }
         dateStr = df.format(cal.getTime());
         return dateStr;
-    }
-
-    public static void main(String[] args) {
-//        Long time= DateUtils.dateToUnixTimestamp();
-//        System.out.println(time);
-        Long time = new Long((long) 1555558678);
-        DateUtils.sureTimestamp(time);
     }
 }

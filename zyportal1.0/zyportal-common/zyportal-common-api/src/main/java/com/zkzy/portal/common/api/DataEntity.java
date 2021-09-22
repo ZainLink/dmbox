@@ -1,6 +1,8 @@
 package com.zkzy.portal.common.api;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.zkzy.portal.common.utils.RandomHelper;
+import org.hibernate.validator.constraints.Length;
 
 import java.util.Date;
 

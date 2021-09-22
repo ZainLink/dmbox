@@ -139,12 +139,6 @@
             <artifactId>unoil</artifactId>
         </dependency>
 
-        <dependency>
-            <groupId>net.coobird</groupId>
-            <artifactId>thumbnailator</artifactId>
-            <version>0.4.8</version>
-        </dependency>
-
         <!--excel操作-->
         <dependency>
             <groupId>org.apache.poi</groupId>
@@ -153,7 +147,14 @@
         <dependency>
             <groupId>org.apache.poi</groupId>
             <artifactId>poi-ooxml</artifactId>
+            <!--<version>4.1.2</version>-->
         </dependency>
+
+        <!--<dependency>-->
+            <!--<groupId>org.apache.poi</groupId>-->
+            <!--<artifactId>poi-ooxml</artifactId>-->
+            <!--<version>4.1.2</version>-->
+        <!--</dependency>-->
         <dependency>
             <groupId>net.sourceforge.jexcelapi</groupId>
             <artifactId>jxl</artifactId>

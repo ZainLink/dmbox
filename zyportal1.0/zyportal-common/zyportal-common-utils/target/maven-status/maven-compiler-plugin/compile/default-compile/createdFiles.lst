@@ -15,7 +15,6 @@ com\zkzy\portal\common\utils\SSLClient.class
 com\zkzy\portal\common\utils\CreateFileUtil.class
 com\zkzy\portal\common\utils\SSLClient$2.class
 com\zkzy\portal\common\utils\MapHelper.class
-com\zkzy\portal\common\utils\Base64Util.class
 com\zkzy\portal\common\utils\RandomString.class
 com\zkzy\portal\common\utils\Test.class
 com\zkzy\portal\common\utils\Reflections.class
@@ -26,15 +25,15 @@ com\zkzy\portal\common\utils\RandomHelper.class
 com\zkzy\portal\common\utils\XMLMessageUtil.class
 com\zkzy\portal\common\utils\UserAgent.class
 com\zkzy\portal\common\utils\FileHelper.class
+com\zkzy\portal\common\utils\SeInfo.class
 com\zkzy\portal\common\utils\ResourceUtil.class
+com\zkzy\portal\common\utils\Time4UgerUtils.class
 com\zkzy\portal\common\utils\MD5Util.class
 com\zkzy\portal\common\model\WeiXinTextMessage.class
 com\zkzy\portal\common\utils\DateUtils.class
-com\zkzy\portal\common\utils\GpsToBaidu.class
 com\zkzy\portal\common\utils\LogBack.class
 com\zkzy\portal\common\utils\AAA.class
 com\zkzy\portal\common\utils\DoubleUtil.class
-com\zkzy\portal\common\utils\DistanceHepler.class
 com\zkzy\portal\common\utils\BaseDto.class
 com\zkzy\portal\common\utils\ExcelPoiUtil.class
 com\zkzy\portal\common\utils\PinyinUtil.class
@@ -46,6 +45,7 @@ com\zkzy\portal\common\utils\Http.class
 com\zkzy\portal\common\utils\ExcelVOAttribute.class
 com\zkzy\portal\common\utils\CommonUtils.class
 com\zkzy\portal\common\utils\Dto.class
+com\zkzy\portal\common\utils\OrderCodeFactory.class
 com\zkzy\portal\common\utils\ZipUtils.class
 com\zkzy\portal\common\utils\ExcelExportUtils.class
 com\zkzy\portal\common\utils\EntityUtils.class
@@ -54,6 +54,7 @@ com\zkzy\portal\common\utils\GeoUtil.class
 com\zkzy\portal\common\utils\GeoJson.class
 com\zkzy\portal\common\utils\MyX509TrustManager.class
 com\zkzy\portal\common\utils\TreeBuildTest.class
+com\zkzy\portal\common\utils\Excel4UgerUtils.class
 com\zkzy\portal\common\utils\Node.class
 com\zkzy\portal\common\utils\TreeBase.class
 com\zkzy\portal\common\utils\HttpRequester.class

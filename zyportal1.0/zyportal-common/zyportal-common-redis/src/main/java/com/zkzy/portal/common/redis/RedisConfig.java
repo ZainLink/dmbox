@@ -6,6 +6,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.data.redis.connection.RedisConnectionFactory;
 import org.springframework.data.redis.connection.jedis.JedisConnectionFactory;
 import org.springframework.data.redis.core.RedisTemplate;
+import org.springframework.data.redis.serializer.JdkSerializationRedisSerializer;
 import org.springframework.data.redis.serializer.StringRedisSerializer;
 import redis.clients.jedis.JedisPoolConfig;
 
@@ -56,7 +57,7 @@ public class RedisConfig {
     public RedisTemplate<String, Object> getRedisTemplate() {
         RedisConnectionFactory factory = this.getRedisConnectionFactory(
                 hostName, password, port, maxActive, maxIdle, minIdle, maxWait,
-                0); // 建立Redis的连接
+                5); // 建立Redis的连接
         RedisTemplate<String, Object> redisTemplate = new RedisTemplate<String, Object>();
         redisTemplate.setConnectionFactory(factory);
         redisTemplate.setKeySerializer(new StringRedisSerializer()); // key的序列化类型

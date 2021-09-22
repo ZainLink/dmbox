@@ -62,7 +62,7 @@ public class JsonMapper extends ObjectMapper {
         this
             .configure(JsonParser.Feature.ALLOW_SINGLE_QUOTES, false)
             .configure(JsonParser.Feature.ALLOW_UNQUOTED_FIELD_NAMES, false)
-            .configure(JsonGenerator.Feature.WRITE_NUMBERS_AS_STRINGS, false)
+            .configure(JsonGenerator.Feature.WRITE_NUMBERS_AS_STRINGS, true)
             .configure(JsonGenerator.Feature.STRICT_DUPLICATE_DETECTION, true)
         ;
         return this;
