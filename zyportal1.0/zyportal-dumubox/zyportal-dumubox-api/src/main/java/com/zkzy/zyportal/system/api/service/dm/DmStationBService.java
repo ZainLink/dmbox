@@ -15,6 +15,9 @@ public interface DmStationBService {
 
     CodeObject addDmStation(DmStationB dmStationB);
 
+
+    CodeObject loadDmStation();
+
     CodeObject delDmStation(String unid);
 
     CodeObject updateDmStation(DmStationB dmStationB);

@@ -77,6 +77,19 @@ public class DmStationBController extends BaseController {
     }
 
 
+    @PostMapping(value = "/loadDmStation", produces = "application/json; charset=UTF-8")
+    @ApiOperation(value = "载入储配站")
+    public Map<String, Object> loadDmStation() {
+        try {
+            return makeMessage(dmStationBService.loadDmStation());
+        } catch (Exception e) {
+            LOGGER.error(e.getMessage());
+            return makeMessage(ReturnCode.UNKNOWN_ERROR);
+        }
+
+    }
+
+
     @PostMapping(value = "/delStation", produces = "application/json; charset=UTF-8")
     @ApiOperation(value = "删除站点")
 //    @ApiImplicitParams(

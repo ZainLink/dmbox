@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.zkzy.portal.dumu.server.system.provider.mapper.dm.WxGasEntBMapper" >
+  <resultMap id="BaseResultMap" type="com.zkzy.zyportal.system.api.entity.dm.WxGasEntB" >
+    <id column="QID" property="qid" jdbcType="VARCHAR" />
+    <result column="AREACODE" property="areacode" jdbcType="VARCHAR" />
+    <result column="QNAME" property="qname" jdbcType="VARCHAR" />
+    <result column="XYDM" property="xydm" jdbcType="VARCHAR" />
+    <result column="QLEADER" property="qleader" jdbcType="VARCHAR" />
+    <result column="QADDRESS" property="qaddress" jdbcType="VARCHAR" />
+    <result column="QTEL" property="qtel" jdbcType="VARCHAR" />
+    <result column="LNAME" property="lname" jdbcType="VARCHAR" />
+    <result column="LTEL" property="ltel" jdbcType="VARCHAR" />
+    <result column="LNG" property="lng" jdbcType="VARCHAR" />
+    <result column="LAT" property="lat" jdbcType="VARCHAR" />
+    <result column="AREANAME" property="areaname" jdbcType="VARCHAR" />
+    <result column="ORDERS" property="orders" jdbcType="DECIMAL" />
+    <result column="BM" property="bm" jdbcType="VARCHAR" />
+    <result column="REMARK" property="remark" jdbcType="VARCHAR" />
+    <result column="CREATER" property="creater" jdbcType="VARCHAR" />
+    <result column="MODIFYER" property="modifyer" jdbcType="VARCHAR" />
+    <result column="CREATEDATE" property="createdate" jdbcType="VARCHAR" />
+    <result column="MODIFYDATE" property="modifydate" jdbcType="VARCHAR" />
+    <result column="QINT" property="qint" jdbcType="BLOB" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String" >
+    delete from WX_GAS_ENT_B
+    where QID = #{qid,jdbcType=VARCHAR}
+  </delete>
+  <insert id="insert" parameterType="com.zkzy.zyportal.system.api.entity.dm.WxGasEntB" >
+    insert into WX_GAS_ENT_B (QID, AREACODE, QNAME, 
+      XYDM, QLEADER, QADDRESS, 
+      QTEL, LNAME, LTEL, 
+      LNG, LAT, AREANAME, 
+      ORDERS, BM, REMARK, 
+      CREATER, MODIFYER, CREATEDATE, 
+      MODIFYDATE, QINT)
+    values (#{qid,jdbcType=VARCHAR}, #{areacode,jdbcType=VARCHAR}, #{qname,jdbcType=VARCHAR}, 
+      #{xydm,jdbcType=VARCHAR}, #{qleader,jdbcType=VARCHAR}, #{qaddress,jdbcType=VARCHAR}, 
+      #{qtel,jdbcType=VARCHAR}, #{lname,jdbcType=VARCHAR}, #{ltel,jdbcType=VARCHAR}, 
+      #{lng,jdbcType=VARCHAR}, #{lat,jdbcType=VARCHAR}, #{areaname,jdbcType=VARCHAR}, 
+      #{orders,jdbcType=DECIMAL}, #{bm,jdbcType=VARCHAR}, #{remark,jdbcType=VARCHAR}, 
+      #{creater,jdbcType=VARCHAR}, #{modifyer,jdbcType=VARCHAR}, #{createdate,jdbcType=VARCHAR}, 
+      #{modifydate,jdbcType=VARCHAR}, #{qint,jdbcType=BLOB})
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="com.zkzy.zyportal.system.api.entity.dm.WxGasEntB" >
+    update WX_GAS_ENT_B
+    set AREACODE = #{areacode,jdbcType=VARCHAR},
+      QNAME = #{qname,jdbcType=VARCHAR},
+      XYDM = #{xydm,jdbcType=VARCHAR},
+      QLEADER = #{qleader,jdbcType=VARCHAR},
+      QADDRESS = #{qaddress,jdbcType=VARCHAR},
+      QTEL = #{qtel,jdbcType=VARCHAR},
+      LNAME = #{lname,jdbcType=VARCHAR},
+      LTEL = #{ltel,jdbcType=VARCHAR},
+      LNG = #{lng,jdbcType=VARCHAR},
+      LAT = #{lat,jdbcType=VARCHAR},
+      AREANAME = #{areaname,jdbcType=VARCHAR},
+      ORDERS = #{orders,jdbcType=DECIMAL},
+      BM = #{bm,jdbcType=VARCHAR},
+      REMARK = #{remark,jdbcType=VARCHAR},
+      CREATER = #{creater,jdbcType=VARCHAR},
+      MODIFYER = #{modifyer,jdbcType=VARCHAR},
+      CREATEDATE = #{createdate,jdbcType=VARCHAR},
+      MODIFYDATE = #{modifydate,jdbcType=VARCHAR},
+      QINT = #{qint,jdbcType=BLOB}
+    where QID = #{qid,jdbcType=VARCHAR}
+  </update>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.String" >
+    select QID, AREACODE, QNAME, XYDM, QLEADER, QADDRESS, QTEL, LNAME, LTEL, LNG, LAT, 
+    AREANAME, ORDERS, BM, REMARK, CREATER, MODIFYER, CREATEDATE, MODIFYDATE, QINT
+    from WX_GAS_ENT_B
+    where QID = #{qid,jdbcType=VARCHAR}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap" >
+    select QID, AREACODE, QNAME, XYDM, QLEADER, QADDRESS, QTEL, LNAME, LTEL, LNG, LAT, 
+    AREANAME, ORDERS, BM, REMARK, CREATER, MODIFYER, CREATEDATE, MODIFYDATE, QINT
+    from WX_GAS_ENT_B
+  </select>
+</mapper>

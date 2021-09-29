@@ -3,8 +3,6 @@ package com.zkzy.portal.common.utils;
 
 import okhttp3.OkHttpClient;
 
-import java.security.KeyManagementException;
-import java.security.NoSuchAlgorithmException;
 import java.security.cert.CertificateException;
 import java.security.cert.X509Certificate;
 import java.util.concurrent.TimeUnit;

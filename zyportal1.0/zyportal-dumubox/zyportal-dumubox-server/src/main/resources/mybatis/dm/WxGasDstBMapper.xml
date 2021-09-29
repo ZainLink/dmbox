@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.zkzy.portal.dumu.server.system.provider.mapper.dm.WxGasDstBMapper" >
+  <resultMap id="BaseResultMap" type="com.zkzy.zyportal.system.api.entity.dm.WxGasDstB" >
+    <id column="CID" property="cid" jdbcType="VARCHAR" />
+    <result column="CNAME" property="cname" jdbcType="VARCHAR" />
+    <result column="CADDRESS" property="caddress" jdbcType="VARCHAR" />
+    <result column="CLEADER" property="cleader" jdbcType="VARCHAR" />
+    <result column="CTEL" property="ctel" jdbcType="VARCHAR" />
+    <result column="CREATER" property="creater" jdbcType="VARCHAR" />
+    <result column="MODIFYER" property="modifyer" jdbcType="VARCHAR" />
+    <result column="CREATEDATE" property="createdate" jdbcType="VARCHAR" />
+    <result column="MODIFYDATE" property="modifydate" jdbcType="VARCHAR" />
+    <result column="LNG" property="lng" jdbcType="VARCHAR" />
+    <result column="LAT" property="lat" jdbcType="VARCHAR" />
+    <result column="AREACODE" property="areacode" jdbcType="VARCHAR" />
+    <result column="AREANAME" property="areaname" jdbcType="VARCHAR" />
+    <result column="CZJZ" property="czjz" jdbcType="VARCHAR" />
+    <result column="CZJZSTR" property="czjzstr" jdbcType="VARCHAR" />
+    <result column="QID" property="qid" jdbcType="VARCHAR" />
+    <result column="QNAME" property="qname" jdbcType="VARCHAR" />
+    <result column="REMARK" property="remark" jdbcType="VARCHAR" />
+    <result column="ORDERS" property="orders" jdbcType="DECIMAL" />
+    <result column="CINT" property="cint" jdbcType="BLOB" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String" >
+    delete from WX_GAS_DST_B
+    where CID = #{cid,jdbcType=VARCHAR}
+  </delete>
+  <insert id="insert" parameterType="com.zkzy.zyportal.system.api.entity.dm.WxGasDstB" >
+    insert into WX_GAS_DST_B (CID, CNAME, CADDRESS, 
+      CLEADER, CTEL, CREATER, 
+      MODIFYER, CREATEDATE, MODIFYDATE, 
+      LNG, LAT, AREACODE, 
+      AREANAME, CZJZ, CZJZSTR, 
+      QID, QNAME, REMARK, 
+      ORDERS, CINT)
+    values (#{cid,jdbcType=VARCHAR}, #{cname,jdbcType=VARCHAR}, #{caddress,jdbcType=VARCHAR}, 
+      #{cleader,jdbcType=VARCHAR}, #{ctel,jdbcType=VARCHAR}, #{creater,jdbcType=VARCHAR}, 
+      #{modifyer,jdbcType=VARCHAR}, #{createdate,jdbcType=VARCHAR}, #{modifydate,jdbcType=VARCHAR}, 
+      #{lng,jdbcType=VARCHAR}, #{lat,jdbcType=VARCHAR}, #{areacode,jdbcType=VARCHAR}, 
+      #{areaname,jdbcType=VARCHAR}, #{czjz,jdbcType=VARCHAR}, #{czjzstr,jdbcType=VARCHAR}, 
+      #{qid,jdbcType=VARCHAR}, #{qname,jdbcType=VARCHAR}, #{remark,jdbcType=VARCHAR}, 
+      #{orders,jdbcType=DECIMAL}, #{cint,jdbcType=BLOB})
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="com.zkzy.zyportal.system.api.entity.dm.WxGasDstB" >
+    update WX_GAS_DST_B
+    set CNAME = #{cname,jdbcType=VARCHAR},
+      CADDRESS = #{caddress,jdbcType=VARCHAR},
+      CLEADER = #{cleader,jdbcType=VARCHAR},
+      CTEL = #{ctel,jdbcType=VARCHAR},
+      CREATER = #{creater,jdbcType=VARCHAR},
+      MODIFYER = #{modifyer,jdbcType=VARCHAR},
+      CREATEDATE = #{createdate,jdbcType=VARCHAR},
+      MODIFYDATE = #{modifydate,jdbcType=VARCHAR},
+      LNG = #{lng,jdbcType=VARCHAR},
+      LAT = #{lat,jdbcType=VARCHAR},
+      AREACODE = #{areacode,jdbcType=VARCHAR},
+      AREANAME = #{areaname,jdbcType=VARCHAR},
+      CZJZ = #{czjz,jdbcType=VARCHAR},
+      CZJZSTR = #{czjzstr,jdbcType=VARCHAR},
+      QID = #{qid,jdbcType=VARCHAR},
+      QNAME = #{qname,jdbcType=VARCHAR},
+      REMARK = #{remark,jdbcType=VARCHAR},
+      ORDERS = #{orders,jdbcType=DECIMAL},
+      CINT = #{cint,jdbcType=BLOB}
+    where CID = #{cid,jdbcType=VARCHAR}
+  </update>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.String" >
+    select CID, CNAME, CADDRESS, CLEADER, CTEL, CREATER, MODIFYER, CREATEDATE, MODIFYDATE, 
+    LNG, LAT, AREACODE, AREANAME, CZJZ, CZJZSTR, QID, QNAME, REMARK, ORDERS, CINT
+    from WX_GAS_DST_B
+    where CID = #{cid,jdbcType=VARCHAR}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap" >
+    select CID, CNAME, CADDRESS, CLEADER, CTEL, CREATER, MODIFYER, CREATEDATE, MODIFYDATE, 
+    LNG, LAT, AREACODE, AREANAME, CZJZ, CZJZSTR, QID, QNAME, REMARK, ORDERS, CINT
+    from WX_GAS_DST_B
+  </select>
+</mapper>

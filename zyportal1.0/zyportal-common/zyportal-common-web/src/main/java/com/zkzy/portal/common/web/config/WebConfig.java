@@ -1,29 +1,19 @@
 package com.zkzy.portal.common.web.config;
 
 import ch.qos.logback.access.servlet.TeeFilter;
-
-
-import com.zkzy.portal.common.web.fliter.CrosXssFilter;
 import com.zkzy.portal.common.web.logFilter.LogFilter;
-import com.zkzy.portal.common.web.logFilter.PagSizeFilter;
 import com.zkzy.portal.common.web.mapper.JsonMapper;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.apache.catalina.filters.RemoteIpFilter;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.boot.context.embedded.EmbeddedServletContainerCustomizer;
-import org.springframework.boot.web.servlet.FilterRegistrationBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.converter.HttpMessageConverter;
 import org.springframework.http.converter.json.MappingJackson2HttpMessageConverter;
 import org.springframework.validation.beanvalidation.LocalValidatorFactoryBean;
 import org.springframework.validation.beanvalidation.MethodValidationPostProcessor;
-import org.springframework.web.cors.CorsConfiguration;
-import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
-import org.springframework.web.filter.CorsFilter;
 import org.springframework.web.servlet.config.annotation.*;
-
-import java.util.List;
 
 /**
  * WEB配置类
@@ -32,6 +22,7 @@ import java.util.List;
  */
 @Configuration
 public class WebConfig extends WebMvcConfigurerAdapter {
+
 
 //    @Override
 //    public void addResourceHandlers(ResourceHandlerRegistry registry) {
@@ -59,40 +50,6 @@ public class WebConfig extends WebMvcConfigurerAdapter {
     public TeeFilter teeFilter() {
         //复制请求响应流，用于打印调试日志
         return new TeeFilter();
-    }
-
-    private CorsConfiguration buildConfig() {
-        CorsConfiguration corsConfiguration = new CorsConfiguration();
-        corsConfiguration.addAllowedOrigin("*"); // 1
-        corsConfiguration.addAllowedHeader("*"); // 2
-        corsConfiguration.addAllowedMethod("*"); // 3
-        corsConfiguration.setAllowCredentials(true);
-        return corsConfiguration;
-    }
-
-    @Bean
-    public FilterRegistrationBean testFilterRegistration() {
-        FilterRegistrationBean registration = new FilterRegistrationBean(new CrosXssFilter());
-        registration.addUrlPatterns("/*");
-        registration.addInitParameter("getSign", "/userSystem/wxScan/getSign");
-        registration.setName("crosFilter");
-        return registration;
-    }
-
-    @Bean
-    public FilterRegistrationBean pageSizeFilterRegistration() {
-        FilterRegistrationBean registration = new FilterRegistrationBean(new PagSizeFilter());
-        registration.addUrlPatterns("/*");
-        registration.setName("pagSizeFilter");
-        return registration;
-    }
-
-
-    @Bean
-    public CorsFilter corsFilter() {
-        UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
-        source.registerCorsConfiguration("/**", buildConfig()); // 4
-        return new CorsFilter(source);
     }
 
     /**
@@ -162,7 +119,7 @@ public class WebConfig extends WebMvcConfigurerAdapter {
 
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
-        registry.addInterceptor(new LogFilter()).addPathPatterns("/**");
+        registry.addInterceptor(new LogFilter()).addPathPatterns("/**").excludePathPatterns("/server/**");
     }
 
 }

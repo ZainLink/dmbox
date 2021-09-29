@@ -1,6 +1,5 @@
 package com.zkzy.portal.common.utils;
 
-import okhttp3.*;
 import com.alibaba.fastjson.JSONObject;
 import okhttp3.HttpUrl;
 import okhttp3.OkHttpClient;

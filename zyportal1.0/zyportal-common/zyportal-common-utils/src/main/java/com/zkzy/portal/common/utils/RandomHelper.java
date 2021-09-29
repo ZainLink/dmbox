@@ -1,8 +1,6 @@
 package com.zkzy.portal.common.utils;
 
 import java.security.SecureRandom;
-import java.text.SimpleDateFormat;
-import java.util.Date;
 import java.util.Random;
 import java.util.UUID;
 
@@ -100,17 +98,4 @@ public final class RandomHelper {
         return from + r.nextInt(to - from);
     }
 
-    public static String getOrderNo() {
-        String orderNo = "";
-        String trandNo = String.valueOf((Math.random() * 9 + 1) * 1000000);
-        String sdf = new SimpleDateFormat("yyyyMMddHHMMSS").format(new Date());
-        orderNo = trandNo.toString().substring(0, 4);
-        orderNo = orderNo + sdf;
-        return orderNo;
-    }
-
-    public static void main(String[] args) {
-      String no=RandomHelper.getOrderNo();
-      System.out.println(no);
-    }
 }

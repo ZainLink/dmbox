@@ -97,6 +97,7 @@ com\zkzy\zyportal\system\api\entity\dm\HeartbeatRequest$Data.class
 com\zkzy\zyportal\system\api\entity\dmr\DmStR.class
 com\zkzy\zyportal\system\api\exception\UserExistException.class
 com\zkzy\zyportal\system\api\viewModel\CacheSystemCodeCur.class
+com\zkzy\zyportal\system\api\entity\dm\WxGasEntB.class
 com\zkzy\zyportal\system\api\constant\CodeObjectEX.class
 com\zkzy\zyportal\system\api\entity\dm\NameLists.class
 com\zkzy\zyportal\system\api\constant\ReturnCode.class
@@ -107,4 +108,5 @@ com\zkzy\zyportal\system\api\viewModel\ZtreeSimpleView.class
 com\zkzy\zyportal\system\api\entity\set\FaceParametersRequestData.class
 com\zkzy\zyportal\system\api\entity\base\SystemUserOrganization.class
 com\zkzy\zyportal\system\api\exception\SocialException.class
+com\zkzy\zyportal\system\api\entity\dm\WxGasDstB.class
 com\zkzy\zyportal\system\api\entity\dm\CaptureInfo.class

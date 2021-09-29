@@ -7,6 +7,7 @@ E:\泄漏报警\02源码\16场站人脸识别\zyportal1.0\zyportal-dumubox\zyportal-dumubox-
 E:\泄漏报警\02源码\16场站人脸识别\zyportal1.0\zyportal-dumubox\zyportal-dumubox-server\src\main\java\com\zkzy\portal\dumu\client\controller\dumu\DmStationBController.java
 E:\泄漏报警\02源码\16场站人脸识别\zyportal1.0\zyportal-dumubox\zyportal-dumubox-server\src\main\java\com\zkzy\portal\dumu\server\system\provider\serviceimpl\dm\DmFaceBServiceImpl.java
 E:\泄漏报警\02源码\16场站人脸识别\zyportal1.0\zyportal-dumubox\zyportal-dumubox-server\src\main\java\com\zkzy\portal\dumu\server\system\provider\serviceimpl\set\BoxSetServiceImpl.java
+E:\泄漏报警\02源码\16场站人脸识别\zyportal1.0\zyportal-dumubox\zyportal-dumubox-server\src\main\java\com\zkzy\portal\dumu\server\system\provider\mapper\dm\WxGasDstBMapper.java
 E:\泄漏报警\02源码\16场站人脸识别\zyportal1.0\zyportal-dumubox\zyportal-dumubox-server\src\main\java\com\zkzy\portal\dumu\server\system\provider\task\FileTask.java
 E:\泄漏报警\02源码\16场站人脸识别\zyportal1.0\zyportal-dumubox\zyportal-dumubox-server\src\main\java\com\zkzy\portal\dumu\server\system\provider\mapper\dm\DmFaceBMapper.java
 E:\泄漏报警\02源码\16场站人脸识别\zyportal1.0\zyportal-dumubox\zyportal-dumubox-server\src\main\java\com\zkzy\portal\dumu\server\system\provider\mapper\base\SystemIpMapper.java
@@ -19,6 +20,7 @@ E:\泄漏报警\02源码\16场站人脸识别\zyportal1.0\zyportal-dumubox\zyportal-dumubox-
 E:\泄漏报警\02源码\16场站人脸识别\zyportal1.0\zyportal-dumubox\zyportal-dumubox-server\src\main\java\com\zkzy\portal\dumu\client\common\annotation\RequestLimitException.java
 E:\泄漏报警\02源码\16场站人脸识别\zyportal1.0\zyportal-dumubox\zyportal-dumubox-server\src\main\java\com\zkzy\portal\dumu\client\security\model\AuthSystemUsers.java
 E:\泄漏报警\02源码\16场站人脸识别\zyportal1.0\zyportal-dumubox\zyportal-dumubox-server\src\main\java\com\zkzy\portal\dumu\client\security\utils\TokenUtil.java
+E:\泄漏报警\02源码\16场站人脸识别\zyportal1.0\zyportal-dumubox\zyportal-dumubox-server\src\main\java\com\zkzy\portal\dumu\server\system\provider\mapper\dm\WxGasEntBMapper.java
 E:\泄漏报警\02源码\16场站人脸识别\zyportal1.0\zyportal-dumubox\zyportal-dumubox-server\src\main\java\com\zkzy\portal\dumu\client\common\annotation\RequestLimit.java
 E:\泄漏报警\02源码\16场站人脸识别\zyportal1.0\zyportal-dumubox\zyportal-dumubox-server\src\main\java\com\zkzy\portal\dumu\client\controller\Person\PersonController.java
 E:\泄漏报警\02源码\16场站人脸识别\zyportal1.0\zyportal-dumubox\zyportal-dumubox-server\src\main\java\com\zkzy\portal\dumu\server\system\provider\serviceimpl\mq\CaptureReceiver.java

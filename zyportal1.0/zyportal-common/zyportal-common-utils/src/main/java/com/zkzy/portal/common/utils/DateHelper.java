@@ -6,6 +6,9 @@ import org.apache.commons.lang3.time.DateUtils;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+import java.time.temporal.ChronoUnit;
 import java.util.*;
 
 /**
@@ -37,6 +40,26 @@ public class DateHelper extends DateUtils {
             "yyyy/MM/dd", "yyyy/MM/dd HH:mm:ss", "yyyy/MM/dd HH:mm", "yyyy/MM",
             "yyyy.MM.dd", "yyyy.MM.dd HH:mm:ss", "yyyy.MM.dd HH:mm", "yyyy.MM"
     };
+
+
+    public static boolean isValidDate(String strDate) {
+        SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        try {
+            // 设置lenient为false. 否则SimpleDateFormat会比较宽松地验证日期，比如2018-02-29会被接受，并转换成2018-03-01
+
+            format.setLenient(false);
+            Date date = format.parse(strDate);
+            if (date != null) {
+                return true;
+            } else {
+                return false;
+            }
+        } catch (Exception e) {
+            // e.printStackTrace();
+            // 如果throw java.text.ParseException或者NullPointerException，就说明格式不对
+            return false;
+        }
+    }
 
     /**
      * 日期格式
@@ -262,6 +285,7 @@ public class DateHelper extends DateUtils {
         dateFormat.setTimeZone(tz);
         return parseDate(dateFormat.format(date));
     }
+
     //获取上一个月
     public static String getLastMonth() {
         Calendar cal = Calendar.getInstance();
@@ -271,7 +295,7 @@ public class DateHelper extends DateUtils {
         return lastMonth;
     }
 
-    public static String getLastYear(){
+    public static String getLastYear() {
         SimpleDateFormat format = new SimpleDateFormat("yyyy-MM");
         Calendar c = Calendar.getInstance();
         //过去一年
@@ -282,8 +306,7 @@ public class DateHelper extends DateUtils {
         return year;
     }
 
-    public static String dateToStr(Date date, String pattern)
-    {
+    public static String dateToStr(Date date, String pattern) {
         if ((date == null) || (date.equals("")))
             return null;
         SimpleDateFormat formatter = new SimpleDateFormat(pattern);
@@ -294,48 +317,48 @@ public class DateHelper extends DateUtils {
         ArrayList<String> result = new ArrayList<String>();
 
         //String maxDate="2018-11";
-        int weeks=52;
-        int listLength=53;
-        String maxDateyear=maxDate.split("-")[0];
-        String maxDateweek=maxDate.split("-")[1];
-        int maxyear= Integer.parseInt(maxDateyear);
-        int maxweek= Integer.parseInt(maxDateweek);
-        if(maxweek<listLength){
+        int weeks = 52;
+        int listLength = 53;
+        String maxDateyear = maxDate.split("-")[0];
+        String maxDateweek = maxDate.split("-")[1];
+        int maxyear = Integer.parseInt(maxDateyear);
+        int maxweek = Integer.parseInt(maxDateweek);
+        if (maxweek < listLength) {
             Calendar cal = Calendar.getInstance();
             Date date;
-            try{
-                date=new SimpleDateFormat("yyyy-MM-dd").parse(maxDateyear+"-01-01");
+            try {
+                date = new SimpleDateFormat("yyyy-MM-dd").parse(maxDateyear + "-01-01");
                 cal.setTime(date);
-            }catch(Exception e){
+            } catch (Exception e) {
                 System.out.print(e);
             }
             int w = cal.get(Calendar.DAY_OF_WEEK) - 1;
-            if(w==0){
-                weeks=53;
+            if (w == 0) {
+                weeks = 53;
             }
-            for(int i=0;i<listLength;i++){
-                if(maxweek+i+1<=listLength){
-                    int num=weeks-listLength+maxweek+i+1;
-                    if(num<10){
-                        result.add((maxyear-1)+"-0"+(weeks-listLength+maxweek+i+1));
-                    }else{
-                        result.add((maxyear-1)+"-"+(weeks-listLength+maxweek+i+1));
+            for (int i = 0; i < listLength; i++) {
+                if (maxweek + i + 1 <= listLength) {
+                    int num = weeks - listLength + maxweek + i + 1;
+                    if (num < 10) {
+                        result.add((maxyear - 1) + "-0" + (weeks - listLength + maxweek + i + 1));
+                    } else {
+                        result.add((maxyear - 1) + "-" + (weeks - listLength + maxweek + i + 1));
                     }
-                }else{
-                    int num=i-(listLength-maxweek)+1;
-                    if(num<10){
-                        result.add(maxyear+"-0"+(i-(listLength-maxweek)+1));
-                    }else{
-                        result.add(maxyear+"-"+(i-(listLength-maxweek)+1));
+                } else {
+                    int num = i - (listLength - maxweek) + 1;
+                    if (num < 10) {
+                        result.add(maxyear + "-0" + (i - (listLength - maxweek) + 1));
+                    } else {
+                        result.add(maxyear + "-" + (i - (listLength - maxweek) + 1));
                     }
                 }
             }
-        }else{
-            for(int i=(maxweek-listLength+1);i<=maxweek;i++){
-                if(i<10){
-                    result.add(maxyear+"-0"+i);
-                }else{
-                    result.add(maxyear+"-"+i);
+        } else {
+            for (int i = (maxweek - listLength + 1); i <= maxweek; i++) {
+                if (i < 10) {
+                    result.add(maxyear + "-0" + i);
+                } else {
+                    result.add(maxyear + "-" + i);
                 }
 
             }
@@ -374,14 +397,27 @@ public class DateHelper extends DateUtils {
         return result;
     }
 
+
+    public static long getBetweenDate(String passDate) {
+        try {
+            Date date = new Date();
+            SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
+            Date dateOne = dateFormat.parse(passDate);
+            long days = Math.abs(((dateOne.getTime() - date.getTime()) / (1000 * 60 * 60 * 24)));
+            return days;
+        } catch (ParseException e) {
+            e.printStackTrace();
+            return 0;
+        }
+    }
+
     public static String dateToStr(Date date) {
         return dateToStr(date, "yyyy/MM/dd");
     }
 
 
     public static String dateToStr(Date date, int type) {
-        switch (type)
-        {
+        switch (type) {
             case 0:
                 return dateToStr(date);
             case 1:
@@ -413,23 +449,24 @@ public class DateHelper extends DateUtils {
             case 14:
                 return dateToStr(date, "yyyy-MM");
         }
-        throw new IllegalArgumentException("未定义的type : " + type+"》》》》 请使用0-12");
+        throw new IllegalArgumentException("未定义的type : " + type + "》》》》 请使用0-12");
     }
 
     /**
      * 获取两个时间的持续时间,单位小时,保留2位
+     *
      * @param startDate
      * @param endDate
      * @return
      */
-    public static String getDurationHour(Date startDate,Date endDate){
-        double duration= (endDate.getTime()-startDate.getTime())/3600000.0;
+    public static String getDurationHour(Date startDate, Date endDate) {
+        double duration = (endDate.getTime() - startDate.getTime()) / 3600000.0;
 //		System.out.println(new DecimalFormat("##0.00").format(duration));
         return DoubleUtil.formatDouble2Str(duration);
     }
 
-    public static Date formatyyyyMMddHHmmss(String time){
-        if(StringUtils.isEmpty(time)){
+    public static Date formatyyyyMMddHHmmss(String time) {
+        if (StringUtils.isEmpty(time)) {
             return null;
         }
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat(DEFAULT_DATETIME_FORMAT);
@@ -441,26 +478,22 @@ public class DateHelper extends DateUtils {
         }
     }
 
-    public static String getYesterday(String formaterStr){
+
+    public static String get31DayTime() {
+        DateTimeFormatter df = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
+        LocalDateTime now = LocalDateTime.now();
+        now = now.minus(31, ChronoUnit.DAYS);
+        return df.format(now);
+    }
+
+    public static String getYesterday(String formaterStr) {
         Calendar calendar = Calendar.getInstance();
-        calendar.add(Calendar.DATE,-1);
+        calendar.add(Calendar.DATE, -1);
         Date time = calendar.getTime();
-        return  new SimpleDateFormat(formaterStr).format(time);
+        return new SimpleDateFormat(formaterStr).format(time);
     }
 
-    /**
-     *@Author: UGER
-     *@Created: 2021/7/19 9:54
-     *@Description: 前后 推天数
-     *@Param: [date, add_days]
-     *@Return: java.util.Date
-     */
-    public static Date getDateAddDays(Date date, int add_days) {
-        Calendar time = Calendar.getInstance();
-        time.setTime(date);
-        time.add(5, add_days);
-        return time.getTime();
+    public static void main(String[] args) {
+        System.out.println(DateHelper.isValidDate("2021-06-01 11:09:23"));
     }
-
-
 }

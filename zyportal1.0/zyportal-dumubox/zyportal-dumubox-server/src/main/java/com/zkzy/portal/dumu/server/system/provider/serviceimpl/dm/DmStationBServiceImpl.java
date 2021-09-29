@@ -8,6 +8,7 @@ import com.zkzy.portal.common.utils.DateUtils;
 import com.zkzy.portal.dumu.server.system.provider.mapper.dm.DmBoxBMapper;
 import com.zkzy.portal.dumu.server.system.provider.mapper.dm.DmNameBMapper;
 import com.zkzy.portal.dumu.server.system.provider.mapper.dm.DmStationBMapper;
+import com.zkzy.portal.dumu.server.system.provider.mapper.dm.WxGasDstBMapper;
 import com.zkzy.portal.dumu.server.system.provider.mapper.dmr.*;
 import com.zkzy.portal.dumu.server.system.provider.mapper.mq.DmStrangerHMapper;
 import com.zkzy.zyportal.system.api.constant.CodeObject;
@@ -73,7 +74,6 @@ public class DmStationBServiceImpl implements DmStationBService {
     public static final String REDIS_PREFIX_IP = "ip-";
 
 
-
     @Autowired
     private DmBoxBMapper dmBoxBMapper;
 
@@ -100,6 +100,9 @@ public class DmStationBServiceImpl implements DmStationBService {
 
     @Autowired
     private DmStrangerHMapper dmStrangerHMapper;
+
+    @Autowired
+    private WxGasDstBMapper wxGasDstBMapper;
 
     @Value("${dumu.stranger}")
     private String stranger;
@@ -152,6 +155,74 @@ public class DmStationBServiceImpl implements DmStationBService {
             dmStfRMapper.insert(dmStfR);
             redisTemplate.opsForValue().set(BASE_NAME + uid, dmStationB.getUname());
             return a > 0 ? ReturnCode.SUCCESS : ReturnCode.FAILED;//新增成功
+        } catch (Exception e) {
+            LOGGER.error(e.getMessage());
+            TransactionAspectSupport.currentTransactionStatus().setRollbackOnly();
+            return ReturnCode.UNKNOWN_ERROR;//未知错误
+        }
+    }
+
+
+    public void addDmStation2(DmStationB dmStationB) {
+        try {
+            String time = getDateTime();
+            dmStationB.setCreatedate(time);
+            dmStationB.setModifydate(time);
+//            this.createUser(dmStationB);
+            int a = dmStationBMapper.insert(dmStationB);
+            DmStfR dmStfR = new DmStfR();
+            String lgs = uuid();
+            dmStfR.setUnid(dmStationB.getUnid());
+            dmStfR.setPersontype(new BigDecimal(2));
+            dmStfR.setName("白名单");
+            dmStfR.setLgs(lgs);
+            dmStfR.setNum(new BigDecimal(0));
+            dmStfRMapper.insert(dmStfR);
+            redisTemplate.opsForValue().set(BASE_NAME + dmStationB.getUnid(), dmStationB.getUname());
+        } catch (Exception e) {
+            LOGGER.error(e.getMessage());
+        }
+    }
+
+    @Override
+    @Transactional(rollbackFor = Exception.class)
+    public CodeObject loadDmStation() {
+        try {
+            List<WxGasDstB> list = wxGasDstBMapper.selectAll();
+            list.forEach(wxGasDstB -> {
+                DmStationB dmStationB = dmStationBMapper.selectByPrimaryKey(wxGasDstB.getCid());
+                if (dmStationB == null) {
+                    dmStationB = new DmStationB();
+                    dmStationB.setUnid(wxGasDstB.getCid());
+                    dmStationB.setCreater("系统");
+                    dmStationB.setModifyer("系统");
+                    dmStationB.setUname(wxGasDstB.getCname());
+                    dmStationB.setLname(wxGasDstB.getCleader());
+                    dmStationB.setLtel(wxGasDstB.getCtel());
+                    dmStationB.setAddress(wxGasDstB.getCaddress());
+                    dmStationB.setAreacode(wxGasDstB.getAreacode());
+                    dmStationB.setAreaname(wxGasDstB.getAreaname());
+                    dmStationB.setLat(wxGasDstB.getLat());
+                    dmStationB.setLng(wxGasDstB.getLng());
+                    this.addDmStation2(dmStationB);
+                } else {
+                    dmStationB = new DmStationB();
+                    dmStationB.setUnid(wxGasDstB.getCid());
+                    dmStationB.setModifyer("系统");
+                    dmStationB.setUname(wxGasDstB.getCname());
+                    dmStationB.setLname(wxGasDstB.getCleader());
+                    dmStationB.setLtel(wxGasDstB.getCtel());
+                    dmStationB.setAddress(wxGasDstB.getCaddress());
+                    dmStationB.setAreacode(wxGasDstB.getAreacode());
+                    dmStationB.setAreaname(wxGasDstB.getAreaname());
+                    dmStationB.setLat(wxGasDstB.getLat());
+                    dmStationB.setLng(wxGasDstB.getLng());
+                    this.updateDmStation(dmStationB);
+                }
+
+            });
+
+            return ReturnCode.SUCCESS;
         } catch (Exception e) {
             LOGGER.error(e.getMessage());
             TransactionAspectSupport.currentTransactionStatus().setRollbackOnly();
