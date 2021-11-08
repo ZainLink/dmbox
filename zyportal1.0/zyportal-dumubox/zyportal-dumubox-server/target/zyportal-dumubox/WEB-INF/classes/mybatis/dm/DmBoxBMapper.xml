@@ -42,6 +42,8 @@
             WHERE 1=1
             ${_parameter}
         </if>
-        ORDER BY DEVICEUUID DESC
+        ORDER BY
+        CREATETIME DESC,
+        DEVICEUUID DESC
     </select>
 </mapper>

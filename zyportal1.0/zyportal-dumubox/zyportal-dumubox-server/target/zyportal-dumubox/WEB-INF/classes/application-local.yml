@@ -111,3 +111,12 @@ dumu:
 #日志输出配置
 logback:
   log_home: d:/logs/
+
+
+wx-server: http://192.168.1.240:18083/
+
+warnpush:
+    led: ${wx-server}/device/led/sendTextWithNoAuth
+    ledopen: 0
+    gb: ${wx-server}/device/broadcast/sendTextWithNoAuth
+    gbopen: 0

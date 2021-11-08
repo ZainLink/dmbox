@@ -26,6 +26,7 @@ import org.apache.commons.lang3.StringEscapeUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.core.annotation.Order;
 import org.springframework.data.redis.core.RedisTemplate;
@@ -70,6 +71,17 @@ public class RedisServiceImpl implements RedisService, CommandLineRunner {
     private DmBoxBMapper dmBoxBMapper;
 
     public static final String REDIS_PREFIX_IP = "ip-";
+
+
+    public static final String REDIS_LED_OPEN= "LEDOPEN";
+
+    public static final String REDIS_GB_OPEN= "GBOPEN";
+
+    @Value("${warnpush.ledopen}")
+    private String ledopen;
+
+    @Value("${warnpush.gbopen}")
+    private String gbopen;
 
 
     public static final String ST_ID = "st";
@@ -180,6 +192,21 @@ public class RedisServiceImpl implements RedisService, CommandLineRunner {
 //        } finally {
 //            LOGGER.info("操作组织表,数据缓存进redis结束");
 //        }
+        try{
+            if(!redisTemplate.hasKey(REDIS_LED_OPEN)){
+                redisTemplate.opsForValue().set(REDIS_LED_OPEN ,ledopen);
+                LOGGER.info("LED已设为默认配置");
+            }
+
+            if(!redisTemplate.hasKey(REDIS_GB_OPEN)){
+                redisTemplate.opsForValue().set(REDIS_GB_OPEN ,gbopen);
+                LOGGER.info("广播已设为默认配置");
+            }
+        }catch (Exception e){
+            LOGGER.error(e.getMessage());
+        }finally {
+            LOGGER.info("推送状态缓存成功");
+        }
         try {
             //盒子写入缓存
             List<DmBoxB> list = dmBoxBMapper.selectAll("");

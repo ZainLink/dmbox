@@ -12,10 +12,13 @@ import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiImplicitParams;
 import io.swagger.annotations.ApiOperation;
+import org.apache.commons.collections.map.HashedMap;
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
@@ -36,6 +39,22 @@ public class DmStationBController extends BaseController {
 
     @Autowired
     private DmStationBService dmStationBService;
+
+
+    public static final String REDIS_LED_OPEN = "LEDOPEN";
+
+    public static final String REDIS_GB_OPEN = "GBOPEN";
+
+
+    @Autowired
+    private RedisTemplate<String, String> redisTemplate;
+
+    @Value("${warnpush.ledopen}")
+    private String ledopen;
+
+    @Value("${warnpush.gbopen}")
+    private String gbopen;
+
 
     @PostMapping(value = "/createStation", produces = "application/json; charset=UTF-8")
     @ApiOperation(value = "新建站点")
@@ -82,6 +101,60 @@ public class DmStationBController extends BaseController {
     public Map<String, Object> loadDmStation() {
         try {
             return makeMessage(dmStationBService.loadDmStation());
+        } catch (Exception e) {
+            LOGGER.error(e.getMessage());
+            return makeMessage(ReturnCode.UNKNOWN_ERROR);
+        }
+
+    }
+
+
+    @PostMapping(value = "/pushText", produces = "application/json; charset=UTF-8")
+    @ApiOperation(value = "是否推送led和广播")
+    public Map<String, Object> pushText(
+            @RequestParam(name = "led", required = true, defaultValue = "0") String led,
+            @RequestParam(name = "gb", required = true, defaultValue = "0") String gb
+    ) {
+        try {
+
+            redisTemplate.opsForValue().set(REDIS_LED_OPEN, led);
+
+            redisTemplate.opsForValue().set(REDIS_GB_OPEN, gb);
+
+            return makeMessage(ReturnCode.SUCCESS);
+        } catch (Exception e) {
+            LOGGER.error(e.getMessage());
+            return makeMessage(ReturnCode.UNKNOWN_ERROR);
+        }
+
+    }
+
+
+    @PostMapping(value = "/getPushType", produces = "application/json; charset=UTF-8")
+    @ApiOperation(value = "查看推送状态")
+    public Map<String, Object> getPushType(
+    ) {
+        try {
+
+            String ledtype = "";
+            String gbtype = "";
+
+            if (redisTemplate.hasKey(REDIS_LED_OPEN)) {
+                ledtype = redisTemplate.opsForValue().get(REDIS_LED_OPEN);
+            } else {
+                ledtype = ledopen;
+            }
+
+            if (redisTemplate.hasKey(REDIS_GB_OPEN)) {
+                gbtype = redisTemplate.opsForValue().get(REDIS_GB_OPEN);
+            } else {
+                gbtype = gbopen;
+            }
+
+            Map<String, Object> map = new HashedMap();
+            map.put("led", ledtype);
+            map.put("gb", gbtype);
+            return makeMessage(ReturnCode.SUCCESS, map);
         } catch (Exception e) {
             LOGGER.error(e.getMessage());
             return makeMessage(ReturnCode.UNKNOWN_ERROR);

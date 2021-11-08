@@ -1,5 +1,7 @@
 com\zkzy\portal\dumu\server\system\provider\mapper\dmr\DmStnRMapper.class
 com\zkzy\portal\dumu\server\system\provider\mapper\dmr\DmStfNMapper.class
+com\zkzy\portal\dumu\server\system\provider\serviceimpl\Listener\KeyExpiredListener.class
+com\zkzy\portal\dumu\server\system\provider\mapper\base\WxBroadcastBMapper.class
 com\zkzy\portal\dumu\server\system\provider\serviceimpl\dm\DmCameraBServiceImpl.class
 com\zkzy\portal\dumu\client\controller\dumu\DmStationBController.class
 com\zkzy\portal\dumu\client\common\constant\ReturnCode.class
@@ -11,6 +13,7 @@ com\zkzy\portal\dumu\server\system\provider\mapper\dm\WxGasDstBMapper.class
 com\zkzy\portal\dumu\client\controller\dumu\DmFaceBController$1.class
 com\zkzy\portal\dumu\server\system\provider\mapper\mq\DmStrangerHMapper.class
 com\zkzy\portal\dumu\server\system\provider\task\FileTask.class
+com\zkzy\portal\dumu\server\system\provider\mapper\base\WxLedBMapper.class
 com\zkzy\portal\dumu\server\system\provider\serviceimpl\dmr\DmStRServiceImpl$2.class
 com\zkzy\portal\dumu\server\system\provider\serviceimpl\mq\CaptureReceiver.class
 com\zkzy\portal\dumu\server\system\provider\mapper\dmr\DmStfRMapper.class
@@ -41,8 +44,10 @@ com\zkzy\portal\dumu\client\common\annotation\RequestLimitException.class
 com\zkzy\portal\dumu\server\system\provider\mapper\dm\DmNameBMapper.class
 com\zkzy\portal\dumu\server\system\provider\serviceimpl\dm\DmFaceBServiceImpl.class
 com\zkzy\portal\dumu\server\system\provider\serviceimpl\dmr\DmStRServiceImpl$1.class
+com\zkzy\portal\dumu\server\system\provider\config\RedisConfiguration.class
 com\zkzy\portal\dumu\client\controller\dmr\DmStfNController.class
 com\zkzy\portal\dumu\server\system\provider\interceptor\MyHandshakeInterceptor.class
+com\zkzy\portal\dumu\server\system\provider\serviceimpl\base\RedisServiceImpl.class
 com\zkzy\portal\dumu\client\common\constant\Message.class
 com\zkzy\portal\dumu\client\controller\set\BoxSetController.class
 com\zkzy\portal\dumu\server\system\provider\config\DruidStatViewServlet.class

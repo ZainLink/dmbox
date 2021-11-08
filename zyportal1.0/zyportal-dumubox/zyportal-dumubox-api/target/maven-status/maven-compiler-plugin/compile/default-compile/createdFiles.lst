@@ -23,6 +23,7 @@ com\zkzy\zyportal\system\api\entity\set\CaptureModeParam.class
 com\zkzy\zyportal\system\api\entity\dm\HeartbeatRequest$Data$DeviceInfo.class
 com\zkzy\zyportal\system\api\service\dm\DmCameraBService.class
 com\zkzy\zyportal\system\api\service\dmr\DmStfRService.class
+com\zkzy\zyportal\system\api\entity\base\GbData.class
 com\zkzy\zyportal\system\api\entity\dm\FaceInfo.class
 com\zkzy\zyportal\system\api\entity\dm\PersonInfo$PersonExtension.class
 com\zkzy\zyportal\system\api\service\base\SystemCodeService.class
@@ -49,6 +50,7 @@ com\zkzy\zyportal\system\api\service\dm\DmStationBService.class
 com\zkzy\zyportal\system\api\entity\base\SysMenu.class
 com\zkzy\zyportal\system\api\entity\dm\DmCameraB.class
 com\zkzy\zyportal\system\api\entity\dm\DmStList.class
+com\zkzy\zyportal\system\api\entity\base\GbReturn.class
 com\zkzy\zyportal\system\api\entity\base\SystemRole.class
 com\zkzy\zyportal\system\api\service\base\RedisService.class
 com\zkzy\zyportal\system\api\service\register\RegisterService.class
@@ -82,6 +84,7 @@ com\zkzy\zyportal\system\api\service\dm\DmBoxBService.class
 com\zkzy\zyportal\system\api\entity\dmr\DmStnR.class
 com\zkzy\zyportal\system\api\entity\dmr\DmStfR.class
 com\zkzy\zyportal\system\api\entity\set\FaceCompareManage.class
+com\zkzy\zyportal\system\api\entity\base\WxBroadcastB.class
 com\zkzy\zyportal\system\api\entity\dm\RegisterResponse$Data.class
 com\zkzy\zyportal\system\api\entity\dm\NameRedis.class
 com\zkzy\zyportal\system\api\viewModel\Json.class
@@ -96,7 +99,9 @@ com\zkzy\zyportal\system\api\entity\dm\PersonListRequest.class
 com\zkzy\zyportal\system\api\entity\dm\HeartbeatRequest$Data.class
 com\zkzy\zyportal\system\api\entity\dmr\DmStR.class
 com\zkzy\zyportal\system\api\exception\UserExistException.class
+com\zkzy\zyportal\system\api\entity\base\WxLedB.class
 com\zkzy\zyportal\system\api\viewModel\CacheSystemCodeCur.class
+com\zkzy\zyportal\system\api\entity\base\LedData.class
 com\zkzy\zyportal\system\api\entity\dm\WxGasEntB.class
 com\zkzy\zyportal\system\api\constant\CodeObjectEX.class
 com\zkzy\zyportal\system\api\entity\dm\NameLists.class
@@ -106,6 +111,7 @@ com\zkzy\zyportal\system\api\entity\dm\RegisterResponse.class
 com\zkzy\zyportal\system\api\entity\dmr\DmStnfR.class
 com\zkzy\zyportal\system\api\viewModel\ZtreeSimpleView.class
 com\zkzy\zyportal\system\api\entity\set\FaceParametersRequestData.class
+com\zkzy\zyportal\system\api\entity\base\LedReturn.class
 com\zkzy\zyportal\system\api\entity\base\SystemUserOrganization.class
 com\zkzy\zyportal\system\api\exception\SocialException.class
 com\zkzy\zyportal\system\api\entity\dm\WxGasDstB.class
