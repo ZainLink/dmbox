@@ -35,14 +35,14 @@ public class FileTask {
             if (tempList[i].isDirectory()) {
                 String filename = tempList[i].getName();
                 long a = DateHelper.getBetweenDate(filename);
-                if (a > 31) {
+                if (a > 10) {
                     FileTask.deleteFile(tempList[i]);
                 }
             }
         }
         try {
             //处理数据库
-            String time = DateHelper.get31DayTime();
+            String time = DateHelper.get10DayTime();
             String param = " AND IMGSTATE='0' AND RECEIVETIME<='" + time + "' ";
             List<DmStrangerH> list = dmStrangerHMapper.selectAll(param);
             for (DmStrangerH h : list) {

@@ -68,7 +68,7 @@ spring:
         max-request-size: 50Mb # 最大支持请求大小
 
   rabbitmq:
-    host: 192.168.1.230
+    host: 192.168.6.120
     port: 5672
     username: admin
     password: 123456

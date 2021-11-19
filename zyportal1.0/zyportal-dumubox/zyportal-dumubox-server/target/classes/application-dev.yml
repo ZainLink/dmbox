@@ -2,9 +2,9 @@ spring:
   # DataSource Config
   datasource:
     write:
-      url: jdbc:oracle:thin:@192.168.1.231:1521:PlAtFoRm
-      username: platform
-      password: platform
+      url: jdbc:oracle:thin:@192.172.11.3:1521:PlAtFoRm
+      username: wxplatform
+      password: wxplatform
       driver-class-name: oracle.jdbc.driver.OracleDriver
       max-active: 20
       initial-size: 1
@@ -25,9 +25,9 @@ spring:
       # 合并多个DruidDataSource的监控数据
       #spring.datasource.useGlobalDataSourceStat=true
     read:
-      url: jdbc:oracle:thin:@192.168.1.231:1521:PlAtFoRm
-      username: platform
-      password: platform
+      url: jdbc:oracle:thin:@192.172.11.3:1521:PlAtFoRm
+      username: wxplatform
+      password: wxplatform
       driver-class-name: oracle.jdbc.driver.OracleDriver
       max-active: 20
       initial-size: 1
@@ -49,8 +49,8 @@ spring:
       #spring.datasource.useGlobalDataSourceStat=true
   redis:
     database: 2
-    host: 127.0.0.1
-    password: 123456 # Login password of the redis server.
+    host: 192.172.11.3
+    password: zhiyuan$001 # Login password of the redis server.
     port: 6379
     timeout: 0
     pool:
@@ -63,19 +63,19 @@ spring:
       multipart:
         enabled: true # 默认支持文件上传
         file-size-threshold: 4KB #支持文件写入磁盘
-        location:  D:/apache-tomcat-7.0.65-myeclipse2014_3/webapps/data/tmp # 上传文件的临时目录
+        location:  E:/dm/data/tmp # 上传文件的临时目录
         max-file-size: 50Mb # 最大支持文件大小
         max-request-size: 50Mb # 最大支持请求大小
 
   rabbitmq:
-    host: 192.168.6.120
+    host: 192.172.11.3
     port: 5672
     username: admin
-    password: 123456
+    password: zhiyuan$001
     virtualHost: /
 
 server:
-  port: 8085
+  port: 18085
   tomcat:
       remote-ip-header: x-forwarded-for
       protocol-header: x-forwarded-proto
@@ -92,28 +92,27 @@ security:
 
 fileUpload:
   zyportalclient:
-    url: D:/apache-tomcat-7.0.65-myeclipse2014_3/webapps/data/files
+    url: E:/dm/data/files
 
 upload:
     #Disk upload
-    work-folder-name: D:/apache-tomcat-7.0.65-myeclipse2014_3/webapps/data/files #文件存储路径
+    work-folder-name: E:/dm/data/files #文件存储路径
     access-url: http://127.0.0.1:8090 #文件访问地址，可使用反向代理
 
 dumu:
-   face: D:/apache-tomcat-7.0.65-myeclipse2014_3/webapps/dumu/face #人脸库图片
-   black:  D:/apache-tomcat-7.0.65-myeclipse2014_3/webapps/dumu/black #黑名单
-   white:   D:/apache-tomcat-7.0.65-myeclipse2014_3/webapps/dumu/white #白名单
-   vip: D:/apache-tomcat-7.0.65-myeclipse2014_3/webapps/dumu/vip #vip名单
-   other: D:/apache-tomcat-7.0.65-myeclipse2014_3/webapps/dumu/other #vip名单
-   stranger: D:/apache-tomcat-7.0.65-myeclipse2014_3/webapps/dumu/stranger #陌生人名单
+   face: E:/dm/data/dumu/face #人脸库图片
+   black:  E:/dm/data/dumu/black #黑名单
+   white:   E:/dm/data/dumu/white #白名单
+   vip: E:/dm/data/dumu/vip #vip名单
+   other: E:/dm/data/dumu/other #vip名单
+   stranger: E:/dm/data/dumu/stranger #陌生人名单
 
 
 #日志输出配置
 logback:
-  log_home: d:/logs/
+  log_home: E:/logs/
 
-
-wx-server: http://192.168.6.142:18083
+wx-server: http://192.172.11.1:18083
 
 warnpush:
     led: ${wx-server}/device/led/sendTextWithNoAuth

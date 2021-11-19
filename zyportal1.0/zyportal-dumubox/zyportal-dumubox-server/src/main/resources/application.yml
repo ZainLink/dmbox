@@ -2,7 +2,7 @@ spring:
   application:
     name: DumuBox
   profiles:
-    active: prod
+    active: dev
 
 mybatis:
   config-location: classpath:mybatis-config.xml

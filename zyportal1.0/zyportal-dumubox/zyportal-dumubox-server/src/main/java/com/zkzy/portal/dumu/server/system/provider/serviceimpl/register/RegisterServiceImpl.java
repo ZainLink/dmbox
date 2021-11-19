@@ -7,6 +7,7 @@ import com.zkzy.portal.common.utils.DateUtils;
 import com.zkzy.portal.dumu.client.controller.register.RegisterController;
 import com.zkzy.portal.dumu.server.system.provider.mapper.dm.DmBoxBMapper;
 import com.zkzy.portal.dumu.server.system.provider.mapper.dm.DmCameraBMapper;
+import com.zkzy.portal.dumu.server.system.provider.websocket.WebSocketServer;
 import com.zkzy.zyportal.config.gas.Queues;
 import com.zkzy.zyportal.system.api.entity.dm.*;
 import com.zkzy.zyportal.system.api.service.register.RegisterService;
@@ -294,6 +295,7 @@ public class RegisterServiceImpl implements RegisterService {
     }
 
     public void putCaptureMessage(CaptureInfoRequest captureInfoRequest) {
+        Map<String, Object> map = new HashedMap();
         try {
             String time = DateHelper.getDate();
             String times = DateHelper.getDateTime();
@@ -326,7 +328,6 @@ public class RegisterServiceImpl implements RegisterService {
             String log = null;
             switch (t) {
                 case 0://陌生人
-                    Map<String, Object> map = new HashedMap();
                     furl = time + File.separator + str + "FacePicture" + File.separator + uid + ".jpg";
                     burl = time + File.separator + str + "BackgroundPicture" + File.separator + uid + ".jpg";
                     log = "北京时间:" + CaptureTime + "---" + uname + "的" + subname + "摄像头抓拍到" + "陌生人" + faceid + ",发送给服务器的时间为:" + SendTime + ",服务端接收时间为:" + times;
@@ -350,7 +351,6 @@ public class RegisterServiceImpl implements RegisterService {
                     LOGGER.info("抓拍其他名单人成功");
                     break;
             }
-
         } catch (Exception e) {
             LOGGER.error(e.getMessage());
         }

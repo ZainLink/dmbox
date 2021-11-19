@@ -49,7 +49,7 @@ spring:
       #spring.datasource.useGlobalDataSourceStat=true
   redis:
     database: 2
-    host: 192.168.1.240
+    host: 192.168.6.120
     password: 123456 # Login password of the redis server.
     port: 6379
     timeout: 0
@@ -68,7 +68,7 @@ spring:
         max-request-size: 50Mb # 最大支持请求大小
 
   rabbitmq:
-    host: 192.168.1.230
+    host: 192.168.6.120
     port: 5672
     username: admin
     password: 123456
