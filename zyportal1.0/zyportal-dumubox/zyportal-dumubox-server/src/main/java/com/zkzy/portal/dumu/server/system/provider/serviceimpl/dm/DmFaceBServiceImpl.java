@@ -6,11 +6,15 @@ import com.zkzy.portal.common.utils.Base64Util;
 import com.zkzy.portal.dumu.server.system.provider.mapper.dm.DmFaceBMapper;
 import com.zkzy.portal.dumu.server.system.provider.mapper.dmr.DmStfNMapper;
 import com.zkzy.portal.dumu.server.system.provider.mapper.dmr.DmStnfRMapper;
+import com.zkzy.portal.dumu.server.system.provider.mapper.mq.DmKqrecordBMapper;
+import com.zkzy.portal.dumu.server.system.provider.mapper.mq.DmKqrecordHMapper;
 import com.zkzy.zyportal.system.api.constant.CodeObject;
 import com.zkzy.zyportal.system.api.constant.ReturnCode;
 import com.zkzy.zyportal.system.api.entity.dm.DmFaceB;
 import com.zkzy.zyportal.system.api.entity.dmr.DmStfN;
 import com.zkzy.zyportal.system.api.entity.dmr.DmStnfR;
+import com.zkzy.zyportal.system.api.entity.mq.DmKqrecordB;
+import com.zkzy.zyportal.system.api.entity.mq.DmKqrecordH;
 import com.zkzy.zyportal.system.api.service.Manage.NameListManageService;
 import com.zkzy.zyportal.system.api.service.Person.PersonSetService;
 import com.zkzy.zyportal.system.api.service.dm.DmFaceBService;
@@ -54,6 +58,12 @@ public class DmFaceBServiceImpl implements DmFaceBService {
 
     @Autowired
     private DmStfNMapper dmStfNMapper;
+
+    @Autowired
+    private DmKqrecordBMapper dmKqrecordBMapper;
+
+    @Autowired
+    private DmKqrecordHMapper dmKqrecordHMapper;
 
 
     @Value("${dumu.face}")
@@ -167,6 +177,43 @@ public class DmFaceBServiceImpl implements DmFaceBService {
                 a.setStLabelstr(this.getStr(a.getStLabel()));
                 a.setBoxLabelstr(this.getStr(a.getBoxLabel()));
                 a.setImgurl(Base64Util.imageToBase64Str(path));
+            }
+            PageInfo pageInfo = new PageInfo(list);
+            return pageInfo;
+        } catch (Exception e) {
+            LOGGER.error(e.getMessage());
+            return null;
+        }
+    }
+
+    @Override
+    public PageInfo selectKqList(int currentPage, int pageSize, String param) {
+        try {
+            PageHelper.startPage(currentPage, pageSize);
+            List<DmKqrecordB> list = dmKqrecordBMapper.selectAll(param);
+            String path = null;
+            for (DmKqrecordB a : list) {
+                path = facePath + "/" + a.getUuid() + ".jpg";
+                a.setStLabelstr(this.getStr(a.getStLabel()));
+                a.setBoxLabelstr(this.getStr(a.getBoxLabel()));
+                a.setImgurl(Base64Util.imageToBase64Str(path));
+            }
+            PageInfo pageInfo = new PageInfo(list);
+            return pageInfo;
+        } catch (Exception e) {
+            LOGGER.error(e.getMessage());
+            return null;
+        }
+    }
+
+    @Override
+    public PageInfo selectKqHList(int currentPage, int pageSize, String param) {
+        try {
+            PageHelper.startPage(currentPage, pageSize);
+            List<DmKqrecordH> list = dmKqrecordHMapper.selectAll(param);
+            for (DmKqrecordH a : list) {
+                a.setStLabelstr(this.getStr(a.getStLabel()));
+                a.setBoxLabelstr(this.getStr(a.getBoxLabel()));
             }
             PageInfo pageInfo = new PageInfo(list);
             return pageInfo;

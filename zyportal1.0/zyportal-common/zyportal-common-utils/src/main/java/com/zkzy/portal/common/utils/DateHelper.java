@@ -486,6 +486,13 @@ public class DateHelper extends DateUtils {
         return df.format(now);
     }
 
+    public static String get10DayTime() {
+        DateTimeFormatter df = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
+        LocalDateTime now = LocalDateTime.now();
+        now = now.minus(10, ChronoUnit.DAYS);
+        return df.format(now);
+    }
+
     public static String getYesterday(String formaterStr) {
         Calendar calendar = Calendar.getInstance();
         calendar.add(Calendar.DATE, -1);

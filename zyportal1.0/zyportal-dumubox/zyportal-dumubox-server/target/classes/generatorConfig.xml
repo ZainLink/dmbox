@@ -142,8 +142,8 @@
         </javaClientGenerator>
 
 
-        <table tableName="WX_LED_B"/>
-        <table tableName="WX_BROADCAST_B"/>
+        <table tableName="DM_KQRECORD_B"/>
+        <table tableName="DM_KQRECORD_H"/>
         <!--&lt;!&ndash; 选择一个table来生成相关文件，可以有一个或多个table，必须要有table元素-->
         <!--选择的table会生成一下文件：-->
         <!--1，SQL map文件-->

@@ -35,10 +35,10 @@
             <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>com.zkzy</groupId>
-            <artifactId>zyportal-common-redis</artifactId>
-            <version>${project.version}</version>
-        </dependency>
+        <groupId>com.zkzy</groupId>
+        <artifactId>zyportal-common-redis</artifactId>
+        <version>${project.version}</version>
+    </dependency>
 
         <dependency>
             <groupId>com.zkzy</groupId>

@@ -24,6 +24,7 @@ E:\泄漏报警\02源码\16场站人脸识别\zyportal1.0\zyportal-dumubox\zyportal-dumubox-
 E:\泄漏报警\02源码\16场站人脸识别\zyportal1.0\zyportal-dumubox\zyportal-dumubox-api\src\main\java\com\zkzy\zyportal\system\api\entity\dm\CaptureInfoResponse.java
 E:\泄漏报警\02源码\16场站人脸识别\zyportal1.0\zyportal-dumubox\zyportal-dumubox-api\src\main\java\com\zkzy\zyportal\system\api\constant\CodeObject.java
 E:\泄漏报警\02源码\16场站人脸识别\zyportal1.0\zyportal-dumubox\zyportal-dumubox-api\src\main\java\com\zkzy\zyportal\system\api\entity\dm\SSDeviceInfo.java
+E:\泄漏报警\02源码\16场站人脸识别\zyportal1.0\zyportal-dumubox\zyportal-dumubox-api\src\main\java\com\zkzy\zyportal\system\api\entity\mq\DmKqrecordH.java
 E:\泄漏报警\02源码\16场站人脸识别\zyportal1.0\zyportal-dumubox\zyportal-dumubox-api\src\main\java\com\zkzy\zyportal\system\api\entity\base\SocialGroup.java
 E:\泄漏报警\02源码\16场站人脸识别\zyportal1.0\zyportal-dumubox\zyportal-dumubox-api\src\main\java\com\zkzy\zyportal\system\api\entity\dm\DmStationB.java
 E:\泄漏报警\02源码\16场站人脸识别\zyportal1.0\zyportal-dumubox\zyportal-dumubox-api\src\main\java\com\zkzy\zyportal\system\api\entity\dmr\DmStfR.java
@@ -49,6 +50,7 @@ E:\泄漏报警\02源码\16场站人脸识别\zyportal1.0\zyportal-dumubox\zyportal-dumubox-
 E:\泄漏报警\02源码\16场站人脸识别\zyportal1.0\zyportal-dumubox\zyportal-dumubox-api\src\main\java\com\zkzy\zyportal\system\api\entity\dm\NameListManageResponse.java
 E:\泄漏报警\02源码\16场站人脸识别\zyportal1.0\zyportal-dumubox\zyportal-dumubox-api\src\main\java\com\zkzy\zyportal\system\api\constant\Message.java
 E:\泄漏报警\02源码\16场站人脸识别\zyportal1.0\zyportal-dumubox\zyportal-dumubox-api\src\main\java\com\zkzy\zyportal\system\api\service\base\SystemMenuService.java
+E:\泄漏报警\02源码\16场站人脸识别\zyportal1.0\zyportal-dumubox\zyportal-dumubox-api\src\main\java\com\zkzy\zyportal\system\api\entity\mq\KqModel.java
 E:\泄漏报警\02源码\16场站人脸识别\zyportal1.0\zyportal-dumubox\zyportal-dumubox-api\src\main\java\com\zkzy\zyportal\system\api\service\Manage\NameListManageService.java
 E:\泄漏报警\02源码\16场站人脸识别\zyportal1.0\zyportal-dumubox\zyportal-dumubox-api\src\main\java\com\zkzy\zyportal\system\api\entity\base\ImDevelopAccount.java
 E:\泄漏报警\02源码\16场站人脸识别\zyportal1.0\zyportal-dumubox\zyportal-dumubox-api\src\main\java\com\zkzy\zyportal\system\api\entity\set\CaptureModeParam.java
@@ -72,6 +74,7 @@ E:\泄漏报警\02源码\16场站人脸识别\zyportal1.0\zyportal-dumubox\zyportal-dumubox-
 E:\泄漏报警\02源码\16场站人脸识别\zyportal1.0\zyportal-dumubox\zyportal-dumubox-api\src\main\java\com\zkzy\zyportal\system\api\entity\dm\PersonId.java
 E:\泄漏报警\02源码\16场站人脸识别\zyportal1.0\zyportal-dumubox\zyportal-dumubox-api\src\main\java\com\zkzy\zyportal\system\api\entity\dm\DmBoxB.java
 E:\泄漏报警\02源码\16场站人脸识别\zyportal1.0\zyportal-dumubox\zyportal-dumubox-api\src\main\java\com\zkzy\zyportal\system\api\entity\set\FaceCompareManage.java
+E:\泄漏报警\02源码\16场站人脸识别\zyportal1.0\zyportal-dumubox\zyportal-dumubox-api\src\main\java\com\zkzy\zyportal\system\api\entity\mq\DmKqrecordB.java
 E:\泄漏报警\02源码\16场站人脸识别\zyportal1.0\zyportal-dumubox\zyportal-dumubox-api\src\main\java\com\zkzy\zyportal\system\api\entity\set\FaceParametersRequest.java
 E:\泄漏报警\02源码\16场站人脸识别\zyportal1.0\zyportal-dumubox\zyportal-dumubox-api\src\main\java\com\zkzy\zyportal\system\api\entity\base\WxLedB.java
 E:\泄漏报警\02源码\16场站人脸识别\zyportal1.0\zyportal-dumubox\zyportal-dumubox-api\src\main\java\com\zkzy\zyportal\system\api\exception\UserNotExistException.java

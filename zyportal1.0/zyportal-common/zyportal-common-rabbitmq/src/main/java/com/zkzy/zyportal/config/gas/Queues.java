@@ -16,11 +16,14 @@ public class Queues {
 
     public static final String imgwarn = "imgwarn"; // 图片生成
 
+    public static final String white = "white"; // 白名单考勤
+
     public static final String socketwarn = "socketwarn"; // webcocket
 
     public static final String warnExChange = "zkzy.warn"; // 预警和socket
 
 
+    public static final String whiteExChange = "zkzy.white"; // 白名单
     /**
      * 新建队列 topic.messages
      *
@@ -62,6 +65,12 @@ public class Queues {
     }
 
 
+    //白名单交换器
+    @Bean
+    FanoutExchange fanoutWhiteExchange() {
+        return new FanoutExchange(whiteExChange);
+    }
+
     //将对列绑定到Fanout交换器
     @Bean
     Binding bindingExchangeA(Queue socketwarn, FanoutExchange fanoutExchange) {
@@ -86,6 +95,13 @@ public class Queues {
     Binding bindingExchangeD(Queue capture, FanoutExchange fanoutExchange) {
         return BindingBuilder.bind(capture).to(fanoutExchange);
     }
+
+    //将对列绑定到Fanout交换器
+    @Bean
+    Binding bindingExchangeE(Queue white, FanoutExchange fanoutWhiteExchange) {
+        return BindingBuilder.bind(white).to(fanoutWhiteExchange);
+    }
+
 
 
     /**
@@ -114,6 +130,12 @@ public class Queues {
     @Bean
     public Queue imgwarn() {
         return new Queue(imgwarn);
+    }
+
+    //创建队列
+    @Bean
+    public Queue white() {
+        return new Queue(white);
     }
 
 }

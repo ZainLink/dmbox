@@ -49,7 +49,7 @@ spring:
       #spring.datasource.useGlobalDataSourceStat=true
   redis:
     database: 2
-    host: 192.168.6.120
+    host: 192.168.1.240
     password: 123456 # Login password of the redis server.
     port: 6379
     timeout: 0

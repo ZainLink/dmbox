@@ -12,7 +12,7 @@ public class HTTPParametersRequestData implements Serializable {
 
     private String CaptureAddress;
 
-    private Integer CaptureType = 2;
+    private Integer CaptureType = 0;
 
     private CaptureContent CaptureContent = new CaptureContent();
 

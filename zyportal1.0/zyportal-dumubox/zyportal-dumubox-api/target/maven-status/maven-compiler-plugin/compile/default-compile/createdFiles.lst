@@ -3,6 +3,7 @@ com\zkzy\zyportal\system\api\entity\dm\PersonId.class
 com\zkzy\zyportal\system\api\exception\SmsTooMuchException.class
 com\zkzy\zyportal\system\api\viewModel\CacheSystemCodeChild.class
 com\zkzy\zyportal\system\api\service\base\ISystemUserService.class
+com\zkzy\zyportal\system\api\entity\mq\KqModel.class
 com\zkzy\zyportal\system\api\entity\set\CompareName.class
 com\zkzy\zyportal\system\api\service\Manage\NameListManageService.class
 com\zkzy\zyportal\system\api\entity\base\SystemParameter.class
@@ -86,6 +87,7 @@ com\zkzy\zyportal\system\api\entity\dmr\DmStfR.class
 com\zkzy\zyportal\system\api\entity\set\FaceCompareManage.class
 com\zkzy\zyportal\system\api\entity\base\WxBroadcastB.class
 com\zkzy\zyportal\system\api\entity\dm\RegisterResponse$Data.class
+com\zkzy\zyportal\system\api\entity\mq\DmKqrecordH.class
 com\zkzy\zyportal\system\api\entity\dm\NameRedis.class
 com\zkzy\zyportal\system\api\viewModel\Json.class
 com\zkzy\zyportal\system\api\entity\base\SystemIp.class
@@ -103,6 +105,7 @@ com\zkzy\zyportal\system\api\entity\base\WxLedB.class
 com\zkzy\zyportal\system\api\viewModel\CacheSystemCodeCur.class
 com\zkzy\zyportal\system\api\entity\base\LedData.class
 com\zkzy\zyportal\system\api\entity\dm\WxGasEntB.class
+com\zkzy\zyportal\system\api\entity\mq\DmKqrecordB.class
 com\zkzy\zyportal\system\api\constant\CodeObjectEX.class
 com\zkzy\zyportal\system\api\entity\dm\NameLists.class
 com\zkzy\zyportal\system\api\constant\ReturnCode.class

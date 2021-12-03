@@ -18,4 +18,8 @@ public interface DmFaceBService {
 
     PageInfo selectFaceList(int currentPage, int pageSize, String param);
 
+    PageInfo selectKqList(int currentPage, int pageSize, String param);
+
+
+    PageInfo selectKqHList(int currentPage, int pageSize, String param);
 }

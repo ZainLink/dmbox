@@ -623,6 +623,26 @@ public class DateUtils {
         return dateStr;
     }
 
+
+    public static boolean compareTime(String time1, String time2) {
+        try {
+            SimpleDateFormat format1 = new SimpleDateFormat("yyyy-MM-dd");
+            SimpleDateFormat format2 = new SimpleDateFormat("yyyy-MM-dd");
+            Date oldDate1 = format1.parse(time1);
+            Date oldDate2 = format2.parse(time2);
+            int a = oldDate1.compareTo(oldDate2);
+            if (a >= 0) {
+                return true;
+            } else {
+                return false;
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+            return false;
+        }
+
+    }
+
     public static void main(String[] args) {
 //        Long time= DateUtils.dateToUnixTimestamp();
 //        System.out.println(time);

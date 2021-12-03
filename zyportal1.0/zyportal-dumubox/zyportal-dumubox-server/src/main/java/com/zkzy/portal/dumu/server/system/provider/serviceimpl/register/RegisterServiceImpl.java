@@ -347,6 +347,13 @@ public class RegisterServiceImpl implements RegisterService {
                     map.put("bbase", captureInfoRequest.getData().getCaptureInfo().getBackgroundPicture());//base 64 图片
                     this.rabbitTemplate.convertAndSend(Queues.warnExChange, "", map);
                     break;
+                case 2://白名单
+                    String kqid =captureInfoRequest.getData().getCompareInfo().getPersonInfo().getPersonId();
+                    map.put("kqtime", times);//考勤的时间 精确到时分秒
+                    map.put("kqday", time);//考情的日子
+                    map.put("uuid",kqid);
+                    this.rabbitTemplate.convertAndSend(Queues.whiteExChange, "", map);
+                    break;
                 default:
                     LOGGER.info("抓拍其他名单人成功");
                     break;

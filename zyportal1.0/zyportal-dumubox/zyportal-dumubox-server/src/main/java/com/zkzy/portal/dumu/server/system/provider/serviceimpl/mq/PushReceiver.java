@@ -132,7 +132,7 @@ public class PushReceiver {
                     led.getData().forEach(datas -> {
                         if (datas.isSuccess()) {
                             LOGGER.info(subname + "led已推送");
-                            redisTemplate.opsForValue().set(dmled + unid, subname, 60, TimeUnit.SECONDS);
+                            redisTemplate.opsForValue().set(dmled + unid, subname, 180, TimeUnit.SECONDS);
                         }
                     });
 
@@ -148,14 +148,18 @@ public class PushReceiver {
             if (gblist.size() > 0 && !redisTemplate.hasKey(dmgb + unid)) {
                 for (int i = 0; i < gblist.size(); i++) {
                     if (i == 0) {
-                        gb += gblist.get(i).getId();
+                        if("1".equals(gblist.get(i).getStatus())){
+                            gb += gblist.get(i).getId();
+                        }
                     } else {
+                        if("1".equals(gblist.get(i).getStatus())){
                         gb += "," + gblist.get(i).getId();
+                        }
                     }
                 }
                 Map<String, Object> gbmap = new HashedMap();
                 gbmap.put("broadcastIds", gb);
-                String content = "警告/n" + subname + "/n检测到有陌生人进入";
+                String content = "警告" + subname + "检测到有陌生人进入";
                 gbmap.put("content", content);
                 String result = DmHttpUtil.httpPostFormRequest(gburl, gbmap);
                 String str = "";
@@ -167,12 +171,11 @@ public class PushReceiver {
                     gbs.getData().forEach(datas -> {
                         if (datas.isSuccess()) {
                             LOGGER.info(subname + "广播已推送");
-                            redisTemplate.opsForValue().set(dmgb + unid, subname, 60, TimeUnit.SECONDS);
+                            redisTemplate.opsForValue().set(dmgb + unid, subname, 180, TimeUnit.SECONDS);
                         }
                     });
                 } else {
                     LOGGER.info(subname + "广播推送失败");
-                    redisTemplate.opsForValue().set(dmgb + unid, subname, 60, TimeUnit.SECONDS);
                 }
 
             } else {

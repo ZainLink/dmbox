@@ -13,6 +13,7 @@ com\zkzy\portal\dumu\server\system\provider\mapper\dm\WxGasDstBMapper.class
 com\zkzy\portal\dumu\client\controller\dumu\DmFaceBController$1.class
 com\zkzy\portal\dumu\server\system\provider\mapper\mq\DmStrangerHMapper.class
 com\zkzy\portal\dumu\server\system\provider\task\FileTask.class
+com\zkzy\portal\dumu\server\system\provider\mapper\mq\DmKqrecordBMapper.class
 com\zkzy\portal\dumu\server\system\provider\mapper\base\WxLedBMapper.class
 com\zkzy\portal\dumu\server\system\provider\serviceimpl\dmr\DmStRServiceImpl$2.class
 com\zkzy\portal\dumu\server\system\provider\serviceimpl\mq\CaptureReceiver.class
@@ -28,6 +29,8 @@ com\zkzy\portal\dumu\client\common\controller\BaseController.class
 com\zkzy\portal\dumu\server\system\provider\serviceimpl\dm\DmStationBServiceImpl.class
 com\zkzy\portal\dumu\server\system\provider\serviceimpl\mq\ImgReceiver.class
 com\zkzy\portal\dumu\server\system\provider\config\WebSocketConfig.class
+com\zkzy\portal\dumu\server\system\provider\serviceimpl\mq\KqReceiver.class
+com\zkzy\portal\dumu\server\system\provider\mapper\mq\DmKqrecordHMapper.class
 com\zkzy\portal\dumu\server\system\provider\mapper\dmr\DmStRMapper.class
 com\zkzy\portal\dumu\DumuboxApplication.class
 com\zkzy\portal\dumu\client\common\config\SwaggerConfig.class

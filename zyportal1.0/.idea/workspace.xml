@@ -36,61 +36,112 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="PushReceiver.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-server/src/main/java/com/zkzy/portal/dumu/server/system/provider/serviceimpl/mq/PushReceiver.java">
+      <file leaf-file-name="application-dev.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-server/src/main/resources/application-dev.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="124" column="62" lean-forward="false" selection-start-line="124" selection-start-column="62" selection-end-line="124" selection-end-column="62" />
+            <state relative-caret-position="475">
+              <caret line="73" column="25" lean-forward="false" selection-start-line="73" selection-start-column="14" selection-end-line="73" selection-end-column="25" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DmHttpUtil.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-api/src/main/java/com/zkzy/zyportal/system/api/util/DmHttpUtil.java">
+      <file leaf-file-name="RegisterServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-server/src/main/java/com/zkzy/portal/dumu/server/system/provider/serviceimpl/register/RegisterServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="754">
-              <caret line="211" column="61" lean-forward="false" selection-start-line="211" selection-start-column="54" selection-end-line="211" selection-end-column="61" />
+            <state relative-caret-position="203">
+              <caret line="353" column="33" lean-forward="false" selection-start-line="353" selection-start-column="29" selection-end-line="353" selection-end-column="33" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-server/pom.xml">
+      <file leaf-file-name="application.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-server/src/main/resources/application.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="76">
+              <caret line="4" column="15" lean-forward="false" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="15" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="generatorConfig.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-server/src/main/resources/generatorConfig.xml">
+      <file leaf-file-name="KqModel.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-api/src/main/java/com/zkzy/zyportal/system/api/entity/mq/KqModel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="343">
-              <caret line="144" column="37" lean-forward="true" selection-start-line="144" selection-start-column="37" selection-end-line="144" selection-end-column="37" />
+            <state relative-caret-position="133">
+              <caret line="7" column="20" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="20" />
+              <folding>
+                <element signature="e#288#289#0" expanded="true" />
+                <element signature="e#317#318#0" expanded="true" />
+                <element signature="e#361#362#0" expanded="true" />
+                <element signature="e#397#398#0" expanded="true" />
+                <element signature="e#429#430#0" expanded="true" />
+                <element signature="e#457#458#0" expanded="true" />
+                <element signature="e#499#500#0" expanded="true" />
+                <element signature="e#533#534#0" expanded="true" />
+                <element signature="e#564#565#0" expanded="true" />
+                <element signature="e#591#592#0" expanded="true" />
+                <element signature="e#631#632#0" expanded="true" />
+                <element signature="e#663#664#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="KqReceiver.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-server/src/main/java/com/zkzy/portal/dumu/server/system/provider/serviceimpl/mq/KqReceiver.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="458">
+              <caret line="64" column="57" lean-forward="false" selection-start-line="64" selection-start-column="57" selection-end-line="64" selection-end-column="57" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DmKqrecordHMapper.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-server/src/main/java/com/zkzy/portal/dumu/server/system/provider/mapper/mq/DmKqrecordHMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="171">
+              <caret line="13" column="34" lean-forward="false" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="34" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application-prod.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-server/src/main/resources/application-prod.yml">
+      <file leaf-file-name="DmFaceBController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-server/src/main/java/com/zkzy/portal/dumu/client/controller/dumu/DmFaceBController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="752">
-              <caret line="120" column="13" lean-forward="false" selection-start-line="120" selection-start-column="13" selection-end-line="120" selection-end-column="13" />
+            <state relative-caret-position="323">
+              <caret line="279" column="31" lean-forward="false" selection-start-line="279" selection-start-column="31" selection-end-line="279" selection-end-column="31" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="logback-spring.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-server/src/main/resources/logback-spring.xml">
+      <file leaf-file-name="DmKqrecordHMapper.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-server/src/main/resources/mybatis/mq/DmKqrecordHMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="28" column="24" lean-forward="false" selection-start-line="28" selection-start-column="24" selection-end-line="28" selection-end-column="24" />
+            <state relative-caret-position="266">
+              <caret line="14" column="34" lean-forward="false" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="34" />
+              <folding>
+                <marker date="1638513137803" expanded="true" signature="543:654" ph="delete from " />
+                <marker date="1638513137803" expanded="true" signature="759:881" ph="SELECT * fro... DM_KQRECORD_H" />
+                <marker date="1638513137803" expanded="true" signature="765:881" ph="delete from " />
+                <marker date="1638513137803" expanded="true" signature="992:1098" ph="insert into DM_KQRECORD_H... " />
+                <marker date="1638513137803" expanded="true" signature="1208:1804" ph="SELECT A .UU... DM_FACE_B" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CaptureReceiver.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-server/src/main/java/com/zkzy/portal/dumu/server/system/provider/serviceimpl/mq/CaptureReceiver.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="239">
+              <caret line="34" column="48" lean-forward="true" selection-start-line="34" selection-start-column="48" selection-end-line="34" selection-end-column="48" />
               <folding />
             </state>
           </provider>
@@ -107,20 +158,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>参数</find>
-      <find>ERR</find>
-      <find>object</find>
-      <find>异常</find>
-      <find>未知</find>
-      <find>CONSOLE_LOG_PATTERN</find>
-      <find>ChannelNo</find>
-      <find>dmStRMapper</find>
-      <find>selectByUUid</find>
-      <find>addFace</find>
-      <find>delFace</find>
-      <find>DM_STNF_R</find>
-      <find>getCameraList</find>
-      <find>getWhiteList</find>
       <find>dmStfNMapper</find>
       <find>add</find>
       <find>updateProtocol</find>
@@ -132,11 +169,25 @@
       <find>username</find>
       <find>ISystemUserService</find>
       <find>createUser</find>
-      <find>selectAll</find>
       <find>boxInfoList</find>
       <find>selectBindBoxListForSt</find>
       <find>updateCamera</find>
+      <find>RegisterServiceImpl</find>
+      <find>抓拍异常</find>
+      <find>putCaptureMessage</find>
+      <find>unbind</find>
+      <find>faceInfoList</find>
+      <find>delFace</find>
+      <find>dmStnfRMapper</find>
+      <find>== 0</find>
+      <find>getWhiteList</find>
+      <find>selectAll</find>
       <find>REDIS_PREFIX_DUMU</find>
+      <find>CaptureType</find>
+      <find>getHTTPParametersRequest</find>
+      <find>warnExChange</find>
+      <find>imgwarn</find>
+      <find>warn</find>
     </findStrings>
     <dirStrings>
       <dir>E:\泄漏报警\02源码\16场站人脸识别\zyportal1.0</dir>
@@ -150,35 +201,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-server/src/main/java/com/zkzy/portal/dumu/server/system/provider/mapper/base/SystemParameterMapper.java" />
-        <option value="$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-server/src/main/java/com/zkzy/portal/dumu/server/system/provider/mapper/base/SystemRoleMapper.java" />
-        <option value="$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-server/src/main/java/com/zkzy/portal/dumu/server/system/provider/mapper/base/SystemUserMapper.java" />
-        <option value="$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-server/src/main/java/com/zkzy/portal/dumu/server/system/provider/mapper/base/SystemUserOrganizationMapper.java" />
-        <option value="$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-server/src/main/java/com/zkzy/portal/dumu/server/system/provider/mapper/base/SystemUserRoleMapper.java" />
-        <option value="$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-server/src/main/java/com/zkzy/portal/dumu/client/security/UserDetailsServiceImpl.java" />
-        <option value="$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-server/src/main/java/com/zkzy/portal/dumu/server/system/provider/interceptor/MyHandshakeInterceptor.java" />
-        <option value="$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-api/src/main/java/com/zkzy/zyportal/system/api/entity/dm/DmStationB.java" />
-        <option value="$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-server/src/main/java/com/zkzy/portal/dumu/server/system/provider/websocket/WebSocketServer.java" />
-        <option value="$PROJECT_DIR$/zyportal-common/zyportal-common-web/src/main/java/com/zkzy/portal/common/web/security/AbstractTokenUtil.java" />
-        <option value="$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-server/src/main/java/com/zkzy/portal/dumu/server/system/provider/serviceimpl/register/RegisterServiceImpl.java" />
-        <option value="$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-server/src/main/java/com/zkzy/portal/dumu/server/system/provider/task/FileTask.java" />
-        <option value="$PROJECT_DIR$/zyportal-common/zyportal-common-utils/src/main/java/com/zkzy/portal/common/utils/Base64Util.java" />
-        <option value="$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-server/src/main/java/com/zkzy/portal/dumu/server/system/provider/serviceimpl/mq/ImgReceiver.java" />
-        <option value="$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-api/src/main/java/com/zkzy/zyportal/system/api/service/dm/DmStationBService.java" />
-        <option value="$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-server/src/main/java/com/zkzy/portal/dumu/server/system/provider/mapper/WxGasEntBMapper.java" />
-        <option value="$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-server/src/main/java/com/zkzy/portal/dumu/server/system/provider/mapper/dm/WxGasEntBMapper.java" />
-        <option value="$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-server/src/main/java/com/zkzy/portal/dumu/server/system/api/entity/WxGasEntB.java" />
-        <option value="$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-api/src/main/java/com/zkzy/zyportal/system/api/entity/dm/WxGasEntB.java" />
-        <option value="$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-server/src/main/java/com/zkzy/portal/dumu/server/system/provider/mapper/WxGasDstBMapper.java" />
-        <option value="$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-server/src/main/java/com/zkzy/portal/dumu/server/system/provider/mapper/dm/WxGasDstBMapper.java" />
-        <option value="$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-server/src/main/java/com/zkzy/portal/dumu/server/system/api/entity/WxGasDstB.java" />
-        <option value="$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-api/src/main/java/com/zkzy/zyportal/system/api/entity/dm/WxGasDstB.java" />
-        <option value="$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-server/src/main/java/com/zkzy/portal/dumu/server/system/provider/serviceimpl/dm/DmStationBServiceImpl.java" />
-        <option value="$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-server/src/main/resources/mybatis/dm/DmStationBMapper.xml" />
-        <option value="$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-server/src/main/resources/mybatis/dm/DmBoxBMapper.xml" />
-        <option value="$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-server/src/main/java/com/zkzy/portal/dumu/server/system/provider/config/RedisConfiguration.java" />
-        <option value="$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-server/src/main/resources/generatorConfig.xml" />
-        <option value="$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-server/src/main/java/com/zkzy/portal/dumu/server/system/api/entity/WxBroadcastB.java" />
         <option value="$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-server/src/main/java/com/zkzy/portal/dumu/server/system/api/entity/WxLedB.java" />
         <option value="$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-api/src/main/java/com/zkzy/zyportal/system/api/entity/base/WxLedB.java" />
         <option value="$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-server/src/main/java/com/zkzy/portal/dumu/server/system/provider/mapper/WxBroadcastBMapper.java" />
@@ -187,20 +209,49 @@
         <option value="$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-server/src/main/resources/mybatis/base/WxLedBMapper.xml" />
         <option value="$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-server/src/main/resources/mybatis/base/WxBroadcastBMapper.xml" />
         <option value="$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-server/src/main/java/com/zkzy/portal/dumu/server/system/provider/mapper/base/WxBroadcastBMapper.java" />
-        <option value="$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-server/src/main/java/com/zkzy/portal/dumu/server/system/provider/serviceimpl/Listener/KeyExpiredListener.java" />
-        <option value="$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-server/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-server/src/main/resources/application-dev.yml" />
         <option value="$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-server/src/main/java/com/zkzy/portal/dumu/server/system/provider/serviceimpl/base/RedisServiceImpl.java" />
         <option value="$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-server/src/main/resources/application-local.yml" />
-        <option value="$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-server/src/main/resources/application-prod.yml" />
         <option value="$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-server/src/main/java/com/zkzy/portal/dumu/client/controller/dumu/DmStationBController.java" />
         <option value="$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-api/src/main/java/com/zkzy/zyportal/system/api/entity/base/LedData.java" />
         <option value="$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-api/src/main/java/com/zkzy/zyportal/system/api/entity/base/LedReturn.java" />
         <option value="$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-api/src/main/java/com/zkzy/zyportal/system/api/entity/base/GbData.java" />
         <option value="$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-api/src/main/java/com/zkzy/zyportal/system/api/entity/base/GbReturn.java" />
-        <option value="$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-server/src/main/java/com/zkzy/portal/dumu/server/system/provider/serviceimpl/mq/PushReceiver.java" />
-        <option value="$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-server/src/main/resources/logback-spring.xml" />
         <option value="$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-api/src/main/java/com/zkzy/zyportal/system/api/util/DmHttpUtil.java" />
+        <option value="$PROJECT_DIR$/zyportal-common/zyportal-common-utils/src/main/java/com/zkzy/portal/common/utils/DateHelper.java" />
+        <option value="$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-server/src/main/java/com/zkzy/portal/dumu/server/system/provider/task/FileTask.java" />
+        <option value="$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-server/src/main/java/com/zkzy/portal/dumu/DumuboxApplication.java" />
+        <option value="$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-server/src/main/resources/application-dev.yml" />
+        <option value="$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-server/src/main/resources/application-prod.yml" />
+        <option value="$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-server/src/main/java/com/zkzy/portal/dumu/server/system/provider/serviceimpl/mq/PushReceiver.java" />
+        <option value="$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-server/src/main/java/com/zkzy/portal/dumu/server/system/provider/serviceimpl/Listener/KeyExpiredListener.java" />
+        <option value="$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-server/pom.xml" />
+        <option value="$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-server/src/main/resources/logback-spring.xml" />
+        <option value="$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-server/src/main/java/com/zkzy/portal/dumu/client/controller/register/RegisterController.java" />
+        <option value="$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-api/src/main/java/com/zkzy/zyportal/system/api/entity/set/HTTPParametersRequestData.java" />
+        <option value="$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-server/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-server/src/main/resources/generatorConfig.xml" />
+        <option value="$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-server/src/main/java/com/zkzy/portal/dumu/server/system/provider/mapper/DmKqrecordBMapper.java" />
+        <option value="$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-server/src/main/java/com/zkzy/portal/dumu/server/system/provider/mapper/DmKqrecordHMapper.java" />
+        <option value="$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-server/src/main/java/com/zkzy/portal/dumu/server/system/provider/mapper/dm/DmKqrecordHMapper.java" />
+        <option value="$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-server/src/main/java/com/zkzy/portal/dumu/server/system/api/entity/DmKqrecordB.java" />
+        <option value="$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-server/src/main/java/com/zkzy/portal/dumu/server/system/api/entity/DmKqrecordH.java" />
+        <option value="$PROJECT_DIR$/zyportal-common/zyportal-common-rabbitmq/src/main/java/com/zkzy/zyportal/config/gas/Queues.java" />
+        <option value="$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-server/src/main/resources/mybatis/dm/DmFaceBMapper.xml" />
+        <option value="$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-server/src/main/resources/mybatis/mq/DmKqrecordBMapper.xml" />
+        <option value="$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-server/src/main/java/com/zkzy/portal/dumu/server/system/provider/mapper/mq/DmKqrecordBMapper.java" />
+        <option value="$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-api/src/main/java/com/zkzy/zyportal/system/api/entity/dm/DmFaceB.java" />
+        <option value="$PROJECT_DIR$/zyportal-common/zyportal-common-utils/src/main/java/com/zkzy/portal/common/utils/DateUtils.java" />
+        <option value="$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-api/src/main/java/com/zkzy/zyportal/system/api/service/dm/DmFaceBService.java" />
+        <option value="$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-api/src/main/java/com/zkzy/zyportal/system/api/entity/mq/DmKqrecordB.java" />
+        <option value="$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-api/src/main/java/com/zkzy/zyportal/system/api/entity/mq/DmKqrecordH.java" />
+        <option value="$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-server/src/main/java/com/zkzy/portal/dumu/server/system/provider/serviceimpl/dm/DmFaceBServiceImpl.java" />
+        <option value="$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-server/src/main/java/com/zkzy/portal/dumu/server/system/provider/serviceimpl/register/RegisterServiceImpl.java" />
+        <option value="$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-api/src/main/java/com/zkzy/zyportal/system/api/entity/mq/KqModel.java" />
+        <option value="$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-server/src/main/resources/mybatis/mq/DmKqrecordHMapper.xml" />
+        <option value="$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-server/src/main/java/com/zkzy/portal/dumu/server/system/provider/mapper/mq/DmKqrecordHMapper.java" />
+        <option value="$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-server/src/main/java/com/zkzy/portal/dumu/server/system/provider/serviceimpl/mq/KqReceiver.java" />
+        <option value="$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-server/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-server/src/main/java/com/zkzy/portal/dumu/client/controller/dumu/DmFaceBController.java" />
       </list>
     </option>
   </component>
@@ -377,8 +428,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -405,105 +455,10 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="zyportal-parent" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="zyportal1.0" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="zyportal-dumubox" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="zyportal-dumubox-server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="zyportal-parent" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="zyportal1.0" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="zyportal-dumubox" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="zyportal-dumubox-server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="target" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="zyportal-parent" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="zyportal1.0" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="zyportal-dumubox" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="zyportal-dumubox-server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="zyportal-parent" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="zyportal1.0" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="zyportal-dumubox" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="zyportal-dumubox-server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -512,12 +467,13 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
     <property name="js.eslint.eslintPackage" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../11zyportal6/zyportal6.1" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../17无锡市平台/06市平台/02后台-管理端/zyportal6.1" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://E:/泄漏报警/02源码/16场站人脸识别/zyportal1.0/zyportal-dumubox/zyportal-dumubox-api/src/main/java/com/zkzy/zyportal/system/api/entity/base/GbReturn.java" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\泄漏报警\02源码\16场站人脸识别\zyportal1.0\zyportal-dumubox\zyportal-dumubox-server\src\main\resources\mybatis\mq" />
       <recent name="E:\泄漏报警\02源码\16场站人脸识别\zyportal1.0\zyportal-dumubox\zyportal-dumubox-server\src\main\resources\mybatis\base" />
       <recent name="E:\泄漏报警\02源码\16场站人脸识别\zyportal1.0\zyportal-dumubox\zyportal-dumubox-server\src\main\resources\mybatis\dm" />
     </key>
@@ -1291,12 +1247,26 @@
       <workItem from="1635748077749" duration="1874000" />
       <workItem from="1635756540641" duration="3197000" />
       <workItem from="1635997313298" duration="32818000" />
-      <workItem from="1636331222320" duration="3877000" />
+      <workItem from="1636331222320" duration="17361000" />
+      <workItem from="1636593961217" duration="1473000" />
+      <workItem from="1636604541171" duration="3262000" />
+      <workItem from="1636955342887" duration="657000" />
+      <workItem from="1636960841056" duration="2601000" />
+      <workItem from="1637036992226" duration="4454000" />
+      <workItem from="1637296992808" duration="1739000" />
+      <workItem from="1637543112259" duration="599000" />
+      <workItem from="1637734784710" duration="3253000" />
+      <workItem from="1637801586943" duration="2314000" />
+      <workItem from="1638177362665" duration="6420000" />
+      <workItem from="1638320975575" duration="1147000" />
+      <workItem from="1638322752914" duration="623000" />
+      <workItem from="1638425068186" duration="2854000" />
+      <workItem from="1638432316486" duration="21238000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="244453000" />
+    <option name="totallyTimeSpent" value="310571000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1308,8 +1278,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="1" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1322,7 +1292,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40086675" sideWeight="0.49786553" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33152762" sideWeight="0.49786553" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32827735" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1333,7 +1303,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32502708" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28784648" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3347548" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -1354,7 +1324,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="47" />
+      <option name="time" value="67" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1363,430 +1333,540 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-api/src/main/java/com/zkzy/zyportal/system/api/entity/set/HTTPParametersRequest.java">
+    <entry file="file://$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-server/src/main/java/com/zkzy/portal/dumu/server/system/provider/mapper/dmr/DmStfRMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" column="25" lean-forward="false" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
+        <state relative-caret-position="247">
+          <caret line="19" column="11" lean-forward="false" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-server/src/main/java/com/zkzy/portal/dumu/client/controller/set/BoxSetController.java">
+    <entry file="file://$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-server/src/main/java/com/zkzy/portal/dumu/server/system/provider/serviceimpl/Manage/NameListManageServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="828">
-          <caret line="131" column="54" lean-forward="false" selection-start-line="131" selection-start-column="54" selection-end-line="131" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-server/src/main/java/com/zkzy/portal/dumu/client/controller/dumu/DmCameraBController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="779">
-          <caret line="58" column="60" lean-forward="false" selection-start-line="58" selection-start-column="60" selection-end-line="58" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-server/src/main/resources/mybatis/dm/DmStationBMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1664">
-          <caret line="119" column="27" lean-forward="false" selection-start-line="119" selection-start-column="27" selection-end-line="119" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-server/src/main/resources/mybatis/dm/WxGasDstBMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="676">
-          <caret line="75" column="0" lean-forward="false" selection-start-line="75" selection-start-column="0" selection-end-line="77" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-server/src/main/java/com/zkzy/portal/dumu/server/system/provider/serviceimpl/dm/DmStationBServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="192" column="81" lean-forward="false" selection-start-line="192" selection-start-column="81" selection-end-line="192" selection-end-column="81" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-server/src/main/java/com/zkzy/portal/dumu/server/system/provider/serviceimpl/dm/DmBoxBServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="96" column="21" lean-forward="false" selection-start-line="96" selection-start-column="21" selection-end-line="96" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-redis/1.8.0.RELEASE/spring-data-redis-1.8.0.RELEASE-sources.jar!/org/springframework/data/redis/listener/KeyExpirationEventMessageListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="41" column="11" lean-forward="false" selection-start-line="41" selection-start-column="11" selection-end-line="41" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-server/src/main/java/com/zkzy/portal/dumu/server/system/provider/serviceimpl/dmr/DmStfNServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="90" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-server/src/main/java/com/zkzy/portal/dumu/server/system/provider/config/RedisConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+        <state relative-caret-position="1444">
+          <caret line="103" column="25" lean-forward="false" selection-start-line="103" selection-start-column="25" selection-end-line="103" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="false" />
+            <element signature="e#6270#8732#0" expanded="false" />
+            <element signature="e#8731#8732#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-api/src/main/java/com/zkzy/zyportal/system/api/entity/base/WxLedB.java">
+    <entry file="file://$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-api/src/main/java/com/zkzy/zyportal/system/api/entity/dm/CaptureInfoResponse.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="4" column="43" lean-forward="false" selection-start-line="4" selection-start-column="43" selection-end-line="4" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-api/src/main/java/com/zkzy/zyportal/system/api/entity/base/WxBroadcastB.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="4" column="49" lean-forward="false" selection-start-line="4" selection-start-column="49" selection-end-line="4" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-server/src/main/resources/mybatis/base/SystemCodeMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1604">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-server/src/main/resources/mybatis/dm/DmBoxBMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="40" column="55" lean-forward="true" selection-start-line="40" selection-start-column="55" selection-end-line="40" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-server/src/main/java/com/zkzy/portal/dumu/server/system/provider/serviceimpl/mq/ImgReceiver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="33" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-server/src/main/resources/mybatis/base/WxBroadcastBMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="87" lean-forward="true" selection-start-line="2" selection-start-column="87" selection-end-line="2" selection-end-column="87" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-server/src/main/java/com/zkzy/portal/dumu/server/system/provider/serviceimpl/mq/SocketReceiver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="18" column="29" lean-forward="true" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-server/src/main/java/com/zkzy/portal/dumu/server/system/provider/mapper/base/WxLedBMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-server/src/main/resources/mybatis/base/WxLedBMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="638">
-          <caret line="82" column="0" lean-forward="false" selection-start-line="82" selection-start-column="0" selection-end-line="85" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-server/src/main/java/com/zkzy/portal/dumu/server/system/provider/mapper/base/WxBroadcastBMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="13" column="27" lean-forward="false" selection-start-line="13" selection-start-column="15" selection-end-line="13" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-api/src/main/java/com/zkzy/zyportal/system/api/service/register/RegisterService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="11" column="12" lean-forward="false" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-server/src/main/java/com/zkzy/portal/dumu/client/common/controller/BaseController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="170" column="34" lean-forward="false" selection-start-line="170" selection-start-column="34" selection-end-line="170" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zyportal-common/zyportal-common-web/src/main/java/com/zkzy/portal/common/web/security/AbstractTokenUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="469">
-          <caret line="146" column="67" lean-forward="false" selection-start-line="146" selection-start-column="5" selection-end-line="146" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/Java/jdk1.8.0/src.zip!/java/net/HttpURLConnection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="479" column="0" lean-forward="false" selection-start-line="479" selection-start-column="0" selection-end-line="479" selection-end-column="0" />
+        <state relative-caret-position="87">
+          <caret line="17" column="23" lean-forward="true" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-server/src/main/java/com/zkzy/portal/dumu/server/system/provider/serviceimpl/set/BoxSetServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-api/src/main/java/com/zkzy/zyportal/system/api/entity/dm/DeviceInfo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="362">
-          <caret line="198" column="9" lean-forward="true" selection-start-line="198" selection-start-column="9" selection-end-line="198" selection-end-column="78" />
+        <state relative-caret-position="133">
+          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-server/src/main/java/com/zkzy/portal/dumu/server/system/provider/serviceimpl/Listener/KeyExpiredListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="379">
-          <caret line="39" column="1" lean-forward="true" selection-start-line="39" selection-start-column="1" selection-end-line="39" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-server/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-server/src/main/java/com/zkzy/portal/dumu/client/controller/dumu/DmStationBController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="684">
-          <caret line="147" column="16" lean-forward="false" selection-start-line="147" selection-start-column="16" selection-end-line="147" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-server/src/main/java/com/zkzy/portal/dumu/server/system/provider/serviceimpl/base/RedisServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-654">
-          <caret line="60" column="0" lean-forward="false" selection-start-line="60" selection-start-column="0" selection-end-line="61" selection-end-column="56" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-server/src/main/java/com/zkzy/portal/dumu/server/system/provider/serviceimpl/register/RegisterServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2052">
-          <caret line="181" column="59" lean-forward="true" selection-start-line="181" selection-start-column="17" selection-end-line="181" selection-end-column="62" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-api/src/main/java/com/zkzy/zyportal/system/api/entity/dm/CaptureInfo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-153">
+        <state relative-caret-position="133">
           <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-api/src/main/java/com/zkzy/zyportal/system/api/entity/dm/CaptureInfoRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="49" column="3" lean-forward="true" selection-start-line="49" selection-start-column="3" selection-end-line="49" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-server/src/main/java/com/zkzy/portal/dumu/client/controller/register/RegisterController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="53" column="7" lean-forward="true" selection-start-line="53" selection-start-column="7" selection-end-line="53" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-api/src/main/java/com/zkzy/zyportal/system/api/entity/dm/NameLists.java">
+    <entry file="file://$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-api/src/main/java/com/zkzy/zyportal/system/api/entity/dm/FaceInfo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
           <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-api/src/main/java/com/zkzy/zyportal/system/api/entity/dm/NameListManage.java">
+    <entry file="file://$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-api/src/main/java/com/zkzy/zyportal/system/api/entity/dm/CompareInfo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
           <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-api/src/main/java/com/zkzy/zyportal/system/api/entity/dm/PersonListRequest.java">
+    <entry file="file://$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-api/src/main/java/com/zkzy/zyportal/system/api/entity/dm/CaptureInfoRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="57" column="24" lean-forward="false" selection-start-line="57" selection-start-column="24" selection-end-line="57" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-api/src/main/java/com/zkzy/zyportal/system/api/entity/dm/RegisterRequest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="361">
-          <caret line="21" column="13" lean-forward="false" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-api/src/main/java/com/zkzy/zyportal/system/api/entity/dm/DmBoxB.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-454">
-          <caret line="16" column="26" lean-forward="false" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-api/src/main/java/com/zkzy/zyportal/system/api/entity/dm/NameListManageResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="34" column="24" lean-forward="false" selection-start-line="34" selection-start-column="24" selection-end-line="34" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-api/src/main/java/com/zkzy/zyportal/system/api/entity/base/LedData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="18" column="28" lean-forward="false" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
+          <caret line="23" column="18" lean-forward="false" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
           <folding>
-            <element signature="e#341#342#0" expanded="false" />
-            <element signature="e#379#380#0" expanded="false" />
-            <element signature="e#409#410#0" expanded="false" />
-            <element signature="e#443#444#0" expanded="false" />
-            <element signature="e#473#474#0" expanded="false" />
-            <element signature="e#520#521#0" expanded="false" />
-            <element signature="e#558#559#0" expanded="false" />
-            <element signature="e#590#591#0" expanded="false" />
-            <element signature="e#618#619#0" expanded="false" />
-            <element signature="e#660#661#0" expanded="false" />
-            <element signature="e#694#695#0" expanded="false" />
-            <element signature="e#725#726#0" expanded="false" />
-            <element signature="e#752#753#0" expanded="false" />
-            <element signature="e#792#793#0" expanded="false" />
-            <element signature="e#824#825#0" expanded="false" />
+            <element signature="e#442#443#0" expanded="false" />
+            <element signature="e#469#470#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-api/src/main/java/com/zkzy/zyportal/system/api/entity/base/LedReturn.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="25" column="36" lean-forward="false" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#374#375#0" expanded="false" />
-            <element signature="e#401#402#0" expanded="false" />
-            <element signature="e#448#449#0" expanded="false" />
-            <element signature="e#480#481#0" expanded="false" />
-            <element signature="e#511#512#0" expanded="false" />
-            <element signature="e#538#539#0" expanded="false" />
-            <element signature="e#578#579#0" expanded="false" />
-            <element signature="e#610#611#0" expanded="false" />
-            <element signature="e#641#642#0" expanded="false" />
-            <element signature="e#668#669#0" expanded="false" />
-            <element signature="e#708#709#0" expanded="false" />
-            <element signature="e#740#741#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-api/src/main/java/com/zkzy/zyportal/system/api/entity/base/GbData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="19" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="19" />
-          <folding>
-            <element signature="e#320#321#0" expanded="false" />
-            <element signature="e#346#347#0" expanded="false" />
-            <element signature="e#384#385#0" expanded="false" />
-            <element signature="e#414#415#0" expanded="false" />
-            <element signature="e#448#449#0" expanded="false" />
-            <element signature="e#478#479#0" expanded="false" />
-            <element signature="e#525#526#0" expanded="false" />
-            <element signature="e#563#564#0" expanded="false" />
-            <element signature="e#601#602#0" expanded="false" />
-            <element signature="e#635#636#0" expanded="false" />
-            <element signature="e#689#690#0" expanded="false" />
-            <element signature="e#735#736#0" expanded="false" />
-            <element signature="e#766#767#0" expanded="false" />
-            <element signature="e#793#794#0" expanded="false" />
-            <element signature="e#833#834#0" expanded="false" />
-            <element signature="e#865#866#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-api/src/main/java/com/zkzy/zyportal/system/api/entity/base/GbReturn.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="25" column="36" lean-forward="false" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-server/src/main/resources/application-dev.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="752">
-          <caret line="121" column="13" lean-forward="false" selection-start-line="121" selection-start-column="13" selection-end-line="121" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-server/src/main/resources/application-local.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="780">
-          <caret line="121" column="13" lean-forward="false" selection-start-line="121" selection-start-column="13" selection-end-line="121" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-server/src/main/java/com/zkzy/portal/dumu/server/system/provider/serviceimpl/mq/PushReceiver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="124" column="62" lean-forward="false" selection-start-line="124" selection-start-column="62" selection-end-line="124" selection-end-column="62" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/Java/jdk1.8.0/src.zip!/java/io/InputStreamReader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="93" column="11" lean-forward="false" selection-start-line="93" selection-start-column="11" selection-end-line="93" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-server/src/main/resources/application-prod.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="752">
-          <caret line="120" column="13" lean-forward="false" selection-start-line="120" selection-start-column="13" selection-end-line="120" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-server/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-server/src/main/resources/generatorConfig.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="343">
-          <caret line="144" column="37" lean-forward="true" selection-start-line="144" selection-start-column="37" selection-end-line="144" selection-end-column="37" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-server/src/main/resources/logback-spring.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="361">
-          <caret line="28" column="24" lean-forward="false" selection-start-line="28" selection-start-column="24" selection-end-line="28" selection-end-column="24" />
+          <caret line="28" column="26" lean-forward="false" selection-start-line="28" selection-start-column="26" selection-end-line="28" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-api/src/main/java/com/zkzy/zyportal/system/api/util/DmHttpUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="754">
+        <state relative-caret-position="-728">
           <caret line="211" column="61" lean-forward="false" selection-start-line="211" selection-start-column="54" selection-end-line="211" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-server/src/main/java/com/zkzy/portal/dumu/server/system/provider/serviceimpl/dmr/DmStfNServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3019">
+          <caret line="126" column="42" lean-forward="false" selection-start-line="126" selection-start-column="42" selection-end-line="126" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-server/src/main/java/com/zkzy/portal/dumu/client/controller/Person/PersonController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#5211#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/commons-lang/commons-lang/2.5/commons-lang-2.5-sources.jar!/org/apache/commons/lang/StringEscapeUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="524" column="25" lean-forward="false" selection-start-line="524" selection-start-column="25" selection-end-line="524" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-api/src/main/java/com/zkzy/zyportal/system/api/entity/dm/RegisterResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-399">
+          <caret line="20" column="13" lean-forward="false" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-api/src/main/java/com/zkzy/zyportal/system/api/entity/dm/HeartbeatRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-16">
+          <caret line="13" column="23" lean-forward="false" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
+          <folding>
+            <element signature="e#769#770#0" expanded="false" />
+            <element signature="e#799#800#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-api/src/main/java/com/zkzy/zyportal/system/api/entity/dm/HeartbeatResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-server/src/main/java/com/zkzy/portal/dumu/server/system/provider/task/FileTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-19">
+          <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-server/src/main/java/com/zkzy/portal/dumu/server/system/provider/serviceimpl/set/BoxSetServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="216" column="18" lean-forward="false" selection-start-line="216" selection-start-column="18" selection-end-line="216" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-server/src/main/resources/application-local.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="26" lean-forward="false" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-server/src/main/resources/generatorConfig.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="893">
+          <caret line="146" column="70" lean-forward="true" selection-start-line="146" selection-start-column="70" selection-end-line="146" selection-end-column="70" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-server/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="37" lean-forward="false" selection-start-line="2" selection-start-column="37" selection-end-line="2" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-api/src/main/java/com/zkzy/zyportal/system/api/entity/set/HTTPParametersRequestData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="14" column="35" lean-forward="false" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-api/src/main/java/com/zkzy/zyportal/system/api/entity/set/HTTPParametersRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="51" lean-forward="false" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-server/src/main/java/com/zkzy/portal/dumu/client/controller/set/BoxSetController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="366">
+          <caret line="270" column="94" lean-forward="true" selection-start-line="270" selection-start-column="94" selection-end-line="270" selection-end-column="94" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/amqp/spring-amqp/1.7.0.RELEASE/spring-amqp-1.7.0.RELEASE-sources.jar!/org/springframework/amqp/core/Queue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="29" column="13" lean-forward="false" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/amqp/spring-amqp/1.7.0.RELEASE/spring-amqp-1.7.0.RELEASE-sources.jar!/org/springframework/amqp/core/FanoutExchange.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="28" column="13" lean-forward="false" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zyportal-common/zyportal-common-rabbitmq/src/main/java/com/zkzy/zyportal/config/QueuesConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-server/src/main/resources/mybatis/dm/DmFaceBMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="543">
+          <caret line="58" column="85" lean-forward="false" selection-start-line="58" selection-start-column="52" selection-end-line="58" selection-end-column="85" />
+          <folding>
+            <marker date="1638507513681" expanded="true" signature="1481:1544" ph="delete from " />
+            <marker date="1638507513681" expanded="true" signature="1649:2278" ph="insert into DM_FACE_B... " />
+            <marker date="1638507513681" expanded="true" signature="2395:2966" ph="update DM_FA... " />
+            <marker date="1638507513681" expanded="true" signature="3079:3270" ph="select UUID,... DM_FACE_B" />
+            <marker date="1638507513681" expanded="true" signature="3378:3709" ph="select UUID,... DM_FACE_B" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-server/src/main/java/com/zkzy/portal/dumu/server/system/provider/mapper/mq/DmKqrecordBMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="9" column="17" lean-forward="false" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-api/src/main/java/com/zkzy/zyportal/system/api/entity/dm/DmFaceB.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zyportal-common/zyportal-common-utils/src/main/java/com/zkzy/portal/common/utils/DateUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="828">
+          <caret line="643" column="5" lean-forward="false" selection-start-line="643" selection-start-column="5" selection-end-line="643" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-server/src/main/resources/mybatis/mq/DmKqrecordBMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="25" column="86" lean-forward="false" selection-start-line="25" selection-start-column="52" selection-end-line="25" selection-end-column="86" />
+          <folding>
+            <marker date="1638507878493" expanded="true" signature="560:627" ph="delete from " />
+            <marker date="1638507878493" expanded="true" signature="736:842" ph="insert into DM_KQRECORD_B... " />
+            <marker date="1638507878493" expanded="true" signature="963:1069" ph="update DM_KQ... " />
+            <marker date="1638507878493" expanded="true" signature="1182:1266" ph="select UUID,... DM_KQRECORD_B" />
+            <marker date="1638507878493" expanded="true" signature="1375:1952" ph="SELECT A.UUI... DM_FACE_B" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-api/src/main/java/com/zkzy/zyportal/system/api/entity/mq/DmKqrecordB.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2040#2041#0" expanded="true" />
+            <element signature="e#2069#2070#0" expanded="true" />
+            <element signature="e#2113#2114#0" expanded="true" />
+            <element signature="e#2149#2150#0" expanded="true" />
+            <element signature="e#2186#2187#0" expanded="true" />
+            <element signature="e#2219#2220#0" expanded="true" />
+            <element signature="e#2271#2272#0" expanded="true" />
+            <element signature="e#2315#2316#0" expanded="true" />
+            <element signature="e#2352#2353#0" expanded="true" />
+            <element signature="e#2385#2386#0" expanded="true" />
+            <element signature="e#2437#2438#0" expanded="true" />
+            <element signature="e#2481#2482#0" expanded="true" />
+            <element signature="e#2515#2516#0" expanded="true" />
+            <element signature="e#2545#2546#0" expanded="true" />
+            <element signature="e#2591#2592#0" expanded="true" />
+            <element signature="e#2629#2630#0" expanded="true" />
+            <element signature="e#2664#2665#0" expanded="true" />
+            <element signature="e#2695#2696#0" expanded="true" />
+            <element signature="e#2743#2744#0" expanded="true" />
+            <element signature="e#2783#2784#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-api/src/main/java/com/zkzy/zyportal/system/api/entity/mq/DmKqrecordH.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1360">
+          <caret line="89" column="0" lean-forward="false" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
+          <folding>
+            <element signature="e#976#977#0" expanded="true" />
+            <element signature="e#1001#1002#0" expanded="true" />
+            <element signature="e#1037#1038#0" expanded="true" />
+            <element signature="e#1065#1066#0" expanded="true" />
+            <element signature="e#1096#1097#0" expanded="true" />
+            <element signature="e#1123#1124#0" expanded="true" />
+            <element signature="e#1163#1164#0" expanded="true" />
+            <element signature="e#1195#1196#0" expanded="true" />
+            <element signature="e#1225#1226#0" expanded="true" />
+            <element signature="e#1251#1252#0" expanded="true" />
+            <element signature="e#1289#1290#0" expanded="true" />
+            <element signature="e#1319#1320#0" expanded="true" />
+            <element signature="e#1349#1350#0" expanded="true" />
+            <element signature="e#1375#1376#0" expanded="true" />
+            <element signature="e#1413#1414#0" expanded="true" />
+            <element signature="e#1443#1444#0" expanded="true" />
+            <element signature="e#1480#1481#0" expanded="true" />
+            <element signature="e#1513#1514#0" expanded="true" />
+            <element signature="e#1565#1566#0" expanded="true" />
+            <element signature="e#1609#1610#0" expanded="true" />
+            <element signature="e#1646#1647#0" expanded="true" />
+            <element signature="e#1679#1680#0" expanded="true" />
+            <element signature="e#1731#1732#0" expanded="true" />
+            <element signature="e#1775#1776#0" expanded="true" />
+            <element signature="e#1809#1810#0" expanded="true" />
+            <element signature="e#1839#1840#0" expanded="true" />
+            <element signature="e#1885#1886#0" expanded="true" />
+            <element signature="e#1923#1924#0" expanded="true" />
+            <element signature="e#1958#1959#0" expanded="true" />
+            <element signature="e#1989#1990#0" expanded="true" />
+            <element signature="e#2037#2038#0" expanded="true" />
+            <element signature="e#2077#2078#0" expanded="true" />
+            <element signature="e#2110#2111#0" expanded="true" />
+            <element signature="e#2139#2140#0" expanded="true" />
+            <element signature="e#2183#2184#0" expanded="true" />
+            <element signature="e#2219#2220#0" expanded="true" />
+            <element signature="e#2251#2252#0" expanded="true" />
+            <element signature="e#2279#2280#0" expanded="true" />
+            <element signature="e#2321#2322#0" expanded="true" />
+            <element signature="e#2355#2356#0" expanded="true" />
+            <element signature="e#2389#2390#0" expanded="true" />
+            <element signature="e#2419#2420#0" expanded="true" />
+            <element signature="e#2465#2466#0" expanded="true" />
+            <element signature="e#2503#2504#0" expanded="true" />
+            <element signature="e#2537#2538#0" expanded="true" />
+            <element signature="e#2567#2568#0" expanded="true" />
+            <element signature="e#2613#2614#0" expanded="true" />
+            <element signature="e#2651#2652#0" expanded="true" />
+            <element signature="e#2686#2687#0" expanded="true" />
+            <element signature="e#2717#2718#0" expanded="true" />
+            <element signature="e#2765#2766#0" expanded="true" />
+            <element signature="e#2805#2806#0" expanded="true" />
+            <element signature="e#2842#2843#0" expanded="true" />
+            <element signature="e#2875#2876#0" expanded="true" />
+            <element signature="e#2927#2928#0" expanded="true" />
+            <element signature="e#2971#2972#0" expanded="true" />
+            <element signature="e#3009#3010#0" expanded="true" />
+            <element signature="e#3043#3044#0" expanded="true" />
+            <element signature="e#3097#3098#0" expanded="true" />
+            <element signature="e#3143#3144#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-api/src/main/java/com/zkzy/zyportal/system/api/service/dm/DmFaceBService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="23" column="26" lean-forward="false" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-server/src/main/java/com/zkzy/portal/dumu/client/controller/register/RegisterController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="120" column="39" lean-forward="false" selection-start-line="120" selection-start-column="39" selection-end-line="120" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-server/src/main/java/com/zkzy/portal/dumu/server/system/provider/serviceimpl/dm/DmFaceBServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="410">
+          <caret line="209" column="33" lean-forward="false" selection-start-line="209" selection-start-column="20" selection-end-line="209" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-server/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="627">
+          <caret line="33" column="57" lean-forward="true" selection-start-line="33" selection-start-column="57" selection-end-line="33" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-server/src/main/resources/application-prod.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1197">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zyportal-common/zyportal-common-utils/src/main/java/com/zkzy/portal/common/utils/DateHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="70" column="32" lean-forward="false" selection-start-line="70" selection-start-column="32" selection-end-line="70" selection-end-column="32" />
+          <folding>
+            <element signature="e#3781#3782#0" expanded="false" />
+            <element signature="e#3851#3852#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zyportal-common/zyportal-common-rabbitmq/src/main/java/com/zkzy/zyportal/config/gas/Queues.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1197">
+          <caret line="18" column="31" lean-forward="false" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-server/src/main/java/com/zkzy/portal/dumu/server/system/provider/serviceimpl/mq/CaptureReceiver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="34" column="48" lean-forward="true" selection-start-line="34" selection-start-column="48" selection-end-line="34" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-api/src/main/java/com/zkzy/zyportal/system/api/entity/mq/KqModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="20" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="20" />
+          <folding>
+            <element signature="e#288#289#0" expanded="true" />
+            <element signature="e#317#318#0" expanded="true" />
+            <element signature="e#361#362#0" expanded="true" />
+            <element signature="e#397#398#0" expanded="true" />
+            <element signature="e#429#430#0" expanded="true" />
+            <element signature="e#457#458#0" expanded="true" />
+            <element signature="e#499#500#0" expanded="true" />
+            <element signature="e#533#534#0" expanded="true" />
+            <element signature="e#564#565#0" expanded="true" />
+            <element signature="e#591#592#0" expanded="true" />
+            <element signature="e#631#632#0" expanded="true" />
+            <element signature="e#663#664#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-server/src/main/resources/mybatis/mq/DmKqrecordHMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="34" lean-forward="false" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="34" />
+          <folding>
+            <marker date="1638513137803" expanded="true" signature="543:654" ph="delete from " />
+            <marker date="1638513137803" expanded="true" signature="759:881" ph="SELECT * fro... DM_KQRECORD_H" />
+            <marker date="1638513137803" expanded="true" signature="765:881" ph="delete from " />
+            <marker date="1638513137803" expanded="true" signature="992:1098" ph="insert into DM_KQRECORD_H... " />
+            <marker date="1638513137803" expanded="true" signature="1208:1804" ph="SELECT A .UU... DM_FACE_B" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-server/src/main/java/com/zkzy/portal/dumu/server/system/provider/serviceimpl/register/RegisterServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="353" column="33" lean-forward="false" selection-start-line="353" selection-start-column="29" selection-end-line="353" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-server/src/main/java/com/zkzy/portal/dumu/server/system/provider/serviceimpl/mq/KqReceiver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="458">
+          <caret line="64" column="57" lean-forward="false" selection-start-line="64" selection-start-column="57" selection-end-line="64" selection-end-column="57" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-server/src/main/resources/application-dev.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="73" column="25" lean-forward="false" selection-start-line="73" selection-start-column="14" selection-end-line="73" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-server/src/main/java/com/zkzy/portal/dumu/server/system/provider/mapper/mq/DmKqrecordHMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="13" column="34" lean-forward="false" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-server/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="15" lean-forward="false" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zyportal-dumubox/zyportal-dumubox-server/src/main/java/com/zkzy/portal/dumu/client/controller/dumu/DmFaceBController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="279" column="31" lean-forward="false" selection-start-line="279" selection-start-column="31" selection-end-line="279" selection-end-column="31" />
           <folding />
         </state>
       </provider>

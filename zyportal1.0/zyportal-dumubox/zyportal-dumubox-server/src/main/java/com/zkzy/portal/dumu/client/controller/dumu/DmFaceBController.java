@@ -2,6 +2,7 @@ package com.zkzy.portal.dumu.client.controller.dumu;
 
 import com.alibaba.fastjson.JSON;
 import com.github.pagehelper.PageInfo;
+import com.zkzy.portal.common.utils.DateHelper;
 import com.zkzy.portal.dumu.client.common.controller.BaseController;
 import com.zkzy.portal.dumu.client.security.model.AuthUser;
 import com.zkzy.zyportal.system.api.constant.ReturnCode;
@@ -47,12 +48,6 @@ public class DmFaceBController extends BaseController {
 
     @PostMapping(value = "/addFace", produces = "application/json; charset=UTF-8")
     @ApiOperation(value = "新增人脸")
-    @ApiImplicitParams(
-            {
-                    @ApiImplicitParam(name = "Authorization", required = true, paramType = "header",
-                            dataType = "string", value = "authorization header", defaultValue = "Bearer ")
-            }
-    )
     public Map<String, Object> addFace(
             @RequestParam(name = "name", required = true) String name,
             @RequestParam(name = "sex", required = true) String sex,
@@ -89,12 +84,6 @@ public class DmFaceBController extends BaseController {
 
     @PostMapping(value = "/addFaceList", produces = "application/json; charset=UTF-8")
     @ApiOperation(value = "新增人脸(批量)")
-    @ApiImplicitParams(
-            {
-                    @ApiImplicitParam(name = "Authorization", required = true, paramType = "header",
-                            dataType = "string", value = "authorization header", defaultValue = "Bearer ")
-            }
-    )
     public Map<String, Object> addFaceList(
             @RequestBody String param
     ) {
@@ -139,12 +128,6 @@ public class DmFaceBController extends BaseController {
 
     @PostMapping(value = "/delFace", produces = "application/json; charset=UTF-8")
     @ApiOperation(value = "删除人脸")
-    @ApiImplicitParams(
-            {
-                    @ApiImplicitParam(name = "Authorization", required = true, paramType = "header",
-                            dataType = "string", value = "authorization header", defaultValue = "Bearer ")
-            }
-    )
     public Map<String, Object> delFace(
             @RequestParam(name = "uuid", required = true) String uuid
     ) {
@@ -158,12 +141,6 @@ public class DmFaceBController extends BaseController {
 
     @PostMapping(value = "/updateFace", produces = "application/json; charset=UTF-8")
     @ApiOperation(value = "更新人脸")
-    @ApiImplicitParams(
-            {
-                    @ApiImplicitParam(name = "Authorization", required = true, paramType = "header",
-                            dataType = "string", value = "authorization header", defaultValue = "Bearer ")
-            }
-    )
     public Map<String, Object> updateFace(
             @RequestParam(name = "uuid", required = true) String uuid,
             @RequestParam(name = "name", required = true) String name,
@@ -201,12 +178,6 @@ public class DmFaceBController extends BaseController {
 
     @GetMapping(value = "/faceInfoList", produces = "application/json; charset=UTF-8")
     @ApiOperation(value = "人脸信息列表查询")
-    @ApiImplicitParams(
-            {
-                    @ApiImplicitParam(name = "Authorization", required = true, paramType = "header",
-                            dataType = "string", value = "authorization header", defaultValue = "Bearer ")
-            }
-    )
     public Map<String, Object> faceInfoList(
             @RequestParam(name = "id", required = false, defaultValue = "") String id,
             @RequestParam(name = "name", required = false, defaultValue = "") String name,
@@ -249,6 +220,124 @@ public class DmFaceBController extends BaseController {
                 param += " AND ST_LABEL LIKE '%" + stLabel + "%' ";
             }
             PageInfo pageInfo = dmFaceBService.selectFaceList(Integer.valueOf(pageNumber), Integer.valueOf(pageSize), param);
+            return makeMessage(ReturnCode.SUCCESS, pageInfo);
+        } catch (Exception e) {
+            LOGGER.error(e.getMessage());
+            return makeMessage(ReturnCode.FAILED);
+        }
+    }
+
+
+    @GetMapping(value = "/selectKqList", produces = "application/json; charset=UTF-8")
+    @ApiOperation(value = "场站考勤列表查询")
+    public Map<String, Object> selectKqList(
+            @RequestParam(name = "id", required = false, defaultValue = "") String id,
+            @RequestParam(name = "name", required = false, defaultValue = "") String name,
+            @RequestParam(name = "sex", required = false, defaultValue = "") String sex,
+            @RequestParam(name = "tel", required = false, defaultValue = "") String tel,
+            @RequestParam(name = "nation", required = false, defaultValue = "") String nation,
+            @RequestParam(name = "address", required = false, defaultValue = "") String address,
+            @RequestParam(name = "stLabel", required = false, defaultValue = "") String stLabel,
+            @RequestParam(name = "pageNumber", required = true, defaultValue = "1") String pageNumber,
+            @RequestParam(name = "pageSize", required = true, defaultValue = "10") String pageSize,
+            @RequestParam(name = "kqtype", required = false, defaultValue = "") String kqtype
+    ) {
+        try {
+            String param = "";
+
+
+            if (StringUtils.isNotEmpty(id)) {
+                param += " AND A.ID LIKE '%" + id + "%' ";
+            }
+
+            if (StringUtils.isNotEmpty(name)) {
+                param += " AND A.NAME LIKE '%" + name + "%' ";
+            }
+
+            if (StringUtils.isNotEmpty(sex)) {
+                param += " AND A.SEX = '" + sex + "' ";
+            }
+
+            if (StringUtils.isNotEmpty(tel)) {
+                param += " AND A.TEL LIKE '%" + tel + "%' ";
+            }
+            if (StringUtils.isNotEmpty(nation)) {
+                param += " AND A.NATION LIKE '%" + nation + "%' ";
+            }
+
+            if (StringUtils.isNotEmpty(address)) {
+                param += " AND A.ADDRESS LIKE '%" + address + "%' ";
+            }
+
+            if (StringUtils.isNotEmpty(stLabel)) {
+                param += " AND A.ST_LABEL LIKE '%" + stLabel + "%' ";
+            }
+
+            String time = DateHelper.getDate() + " 00:00:00"; //当前时间
+            if (StringUtils.isNotEmpty(kqtype) && "1".equals(kqtype)) {
+                param += " AND B.KQTIME IS NOT NULL AND B.KQTIME >= '" + time + "' ";
+            } else if (StringUtils.isNotEmpty(kqtype) && "0".equals(kqtype)) {
+                param += " AND ( B.KQTIME IS NULL OR B.KQTIME < '" + time + "') ";
+            }
+
+            PageInfo pageInfo = dmFaceBService.selectKqList(Integer.valueOf(pageNumber), Integer.valueOf(pageSize), param);
+            return makeMessage(ReturnCode.SUCCESS, pageInfo);
+        } catch (Exception e) {
+            LOGGER.error(e.getMessage());
+            return makeMessage(ReturnCode.FAILED);
+        }
+    }
+
+
+    @GetMapping(value = "/selectKqHList", produces = "application/json; charset=UTF-8")
+    @ApiOperation(value = "场站考勤历史列表查询")
+    public Map<String, Object> selectKqHList(
+            @RequestParam(name = "id", required = false, defaultValue = "") String id,
+            @RequestParam(name = "name", required = false, defaultValue = "") String name,
+            @RequestParam(name = "sex", required = false, defaultValue = "") String sex,
+            @RequestParam(name = "tel", required = false, defaultValue = "") String tel,
+            @RequestParam(name = "nation", required = false, defaultValue = "") String nation,
+            @RequestParam(name = "address", required = false, defaultValue = "") String address,
+            @RequestParam(name = "stLabel", required = false, defaultValue = "") String stLabel,
+            @RequestParam(name = "pageNumber", required = true, defaultValue = "1") String pageNumber,
+            @RequestParam(name = "pageSize", required = true, defaultValue = "10") String pageSize,
+            @RequestParam(name = "uuid", required = false, defaultValue = "") String uuid
+    ) {
+        try {
+            String param = "";
+            if (StringUtils.isNotEmpty(uuid)) {
+                param += " AND A.UUID = '" + uuid + "' ";
+            }
+
+            if (StringUtils.isNotEmpty(id)) {
+                param += " AND A.ID LIKE '%" + id + "%' ";
+            }
+
+            if (StringUtils.isNotEmpty(name)) {
+                param += " AND A.NAME LIKE '%" + name + "%' ";
+            }
+
+            if (StringUtils.isNotEmpty(sex)) {
+                param += " AND A.SEX = '" + sex + "' ";
+            }
+
+            if (StringUtils.isNotEmpty(tel)) {
+                param += " AND A.TEL LIKE '%" + tel + "%' ";
+            }
+            if (StringUtils.isNotEmpty(nation)) {
+                param += " AND A.NATION LIKE '%" + nation + "%' ";
+            }
+
+            if (StringUtils.isNotEmpty(address)) {
+                param += " AND A.ADDRESS LIKE '%" + address + "%' ";
+            }
+
+            if (StringUtils.isNotEmpty(stLabel)) {
+                param += " AND A.ST_LABEL LIKE '%" + stLabel + "%' ";
+            }
+
+
+            PageInfo pageInfo = dmFaceBService.selectKqHList(Integer.valueOf(pageNumber), Integer.valueOf(pageSize), param);
             return makeMessage(ReturnCode.SUCCESS, pageInfo);
         } catch (Exception e) {
             LOGGER.error(e.getMessage());
