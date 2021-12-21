@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="zyportal-common-redis" />
+        <module name="zyportal-common-utils" />
+        <module name="zyportal-hikbox-api" />
+        <module name="zyportal-hikbox-server" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="zyportal-common" target="1.8" />
+      <module name="zyportal-common-redis" target="1.8" />
+      <module name="zyportal-common-utils" target="1.8" />
+      <module name="zyportal-hikbox" target="1.8" />
+      <module name="zyportal-hikbox-api" target="1.8" />
+      <module name="zyportal-hikbox-server" target="1.8" />
+      <module name="zyportal-parent" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

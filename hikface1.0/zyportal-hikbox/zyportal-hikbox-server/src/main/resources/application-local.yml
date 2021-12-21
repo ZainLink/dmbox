@@ -1,0 +1,56 @@
+spring:
+  # DataSource Config
+  redis:
+    database: 2
+    host: 127.0.0.1
+    password: 123456 # Login password of the redis server.
+    port: 6379
+    timeout: 0
+    pool:
+      max-active: 8 #最大连接数
+      max-idle: 8 #最大空闲连接数
+      max-wait: -1 #最大等待时间
+      min-idle: 0 #初始化连接数
+
+  http:
+      multipart:
+        enabled: true # 默认支持文件上传
+        file-size-threshold: 4KB #支持文件写入磁盘
+        location:  D:/apache-tomcat-7.0.65-myeclipse2014_3/webapps/data/tmp # 上传文件的临时目录
+        max-file-size: 50Mb # 最大支持文件大小
+        max-request-size: 50Mb # 最大支持请求大小
+
+
+server:
+  port: 18085
+  tomcat:
+      remote-ip-header: x-forwarded-for
+      protocol-header: x-forwarded-proto
+      port-header: X-Forwarded-Port
+      accesslog:
+        debug: true #请求响应数据调试
+  use-forward-headers: true
+
+
+security:
+  jwt:
+    secret: k09BQnaF
+    expiration: 604800 #1小时过期时间
+
+fileUpload:
+  zyportalclient:
+    url: D:/apache-tomcat-7.0.65-myeclipse2014_3/webapps/data/files
+
+upload:
+    #Disk upload
+    work-folder-name: D:/apache-tomcat-7.0.65-myeclipse2014_3/webapps/data/files #文件存储路径
+    access-url: http://127.0.0.1:8090 #文件访问地址，可使用反向代理
+
+
+
+#日志输出配置
+logback:
+  log_home: d:/logs/
+
+
+wx-server: http://192.168.1.240:18083/

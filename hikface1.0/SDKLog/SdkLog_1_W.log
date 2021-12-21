@@ -1,0 +1,425 @@
+[2021-12-20 17:21:50.776][DBG] CCoreGlobalCtrlBase::LoadDSo, HPR_LoadDSo Succ, Path[C:/Users/Thinkpad-W530/Desktop/CH-HCNetSDKV6.1.6.45_build20210302_win64/sdk/zlib1.dll], hHandleRet[1801650176]
+[2021-12-20 17:21:50.776][INF] The COM:HCCoreBase ver is 6.1.4.15, 2020_03_05. Async:1.
+[2021-12-20 17:21:50.776][INF] The COM:Core ver is 6.1.6.45, 2021_03_02. Async:1.
+[2021-12-20 17:21:50.776][INF] This HCNetSDK ver is 6.1.6.45 Ver 2021_03_02.
+[2021-12-20 17:21:50.988][INF] Login dev 192.168.6.188:8000.
+[2021-12-20 17:21:50.988][INF] dwTotalNum[2048]
+[2021-12-20 17:21:50.990][INF] Private connect 192.168.6.188:8000 sock=2668 this=0x3ab905c4 cmd=0x10000 port=49655
+[2021-12-20 17:21:50.990][INF] LogonDev1 in[192.168.6.188:8000]
+[2021-12-20 17:21:50.992][DBG] CCoreGlobalCtrlBase::LoadDSo, HPR_LoadDSo Succ, Path[C:/Users/Thinkpad-W530/Desktop/CH-HCNetSDKV6.1.6.45_build20210302_win64/sdk/libeay32.dll], hHandleRet[112394240]
+[2021-12-20 17:21:50.992][DBG] Load libeay32.dll SUCC, Real Path[C:\Users\Thinkpad-W530\Desktop\CH-HCNetSDKV6.1.6.45_build20210302_win64\sdk\libeay32.dll]
+[2021-12-20 17:21:50.994][DBG] CCoreGlobalCtrlBase::LoadDSo, HPR_LoadDSo Succ, Path[C:/Users/Thinkpad-W530/Desktop/CH-HCNetSDKV6.1.6.45_build20210302_win64/sdk/ssleay32.dll], hHandleRet[906821632]
+[2021-12-20 17:21:50.994][DBG] Load ssleay32.dll SUCC, Real Path[C:\Users\Thinkpad-W530\Desktop\CH-HCNetSDKV6.1.6.45_build20210302_win64\sdk\ssleay32.dll]
+[2021-12-20 17:21:50.994][INF] SSLTRANSAPI::IsAllAPILoaded, OpenSSL_version Unload
+[2021-12-20 17:21:50.994][INF] OpenSSL, Not All Function Loaded!
+[2021-12-20 17:21:50.994][INF] SSLTRANSAPI::PrintVersion, SSLeay_version info [OpenSSL 1.0.2t  10 Sep 2019]
+[2021-12-20 17:21:50.994][INF] CSSLTrans::SSLCtxInit, dwSSLVersion[0], m_fnClientMethodV23
+[2021-12-20 17:21:52.386][DBG] CComBase::Load, Load szDllPath[C:/Users/Thinkpad-W530/Desktop/CH-HCNetSDKV6.1.6.45_build20210302_win64/sdk/HCNetSDKCom/HCVoiceTalk.dll] SUCC
+[2021-12-20 17:21:52.386][INF] AbilityAnalyze---Init-- start
+[2021-12-20 17:21:52.401][INF] The COM:VoiceTalk ver is 6.1.6.45, 2021_03_02.
+[2021-12-20 17:21:52.404][DBG] CComBase::Load, Load szDllPath[C:/Users/Thinkpad-W530/Desktop/CH-HCNetSDKV6.1.6.45_build20210302_win64/sdk/HCNetSDKCom/HCGeneralCfgMgr.dll] SUCC
+[2021-12-20 17:21:52.404][INF] The COM:HCGeneralCfgMgr ver is 6.1.6.45, 2021_03_02.
+[2021-12-20 17:21:52.406][DBG] CComBase::Load, Load szDllPath[C:/Users/Thinkpad-W530/Desktop/CH-HCNetSDKV6.1.6.45_build20210302_win64/sdk/HCNetSDKCom/HCPlayBack.dll] SUCC
+[2021-12-20 17:21:52.406][INF] The COM:HCPlayback ver is 6.1.6.45, 2021_03_02.
+[2021-12-20 17:21:52.408][DBG] CComBase::Load, Load szDllPath[C:/Users/Thinkpad-W530/Desktop/CH-HCNetSDKV6.1.6.45_build20210302_win64/sdk/HCNetSDKCom/HCIndustry.dll] SUCC
+[2021-12-20 17:21:52.408][INF] The COM:HCIndustry ver is 6.1.6.45, 2021_03_02.
+[2021-12-20 17:21:52.410][DBG] CComBase::Load, Load szDllPath[C:/Users/Thinkpad-W530/Desktop/CH-HCNetSDKV6.1.6.45_build20210302_win64/sdk/HCNetSDKCom/HCDisplay.dll] SUCC
+[2021-12-20 17:21:52.410][INF] The COM:HCDisplay ver is 6.1.6.45, 2021_03_02.
+[2021-12-20 17:21:52.412][DBG] CComBase::Load, Load szDllPath[C:/Users/Thinkpad-W530/Desktop/CH-HCNetSDKV6.1.6.45_build20210302_win64/sdk/HCNetSDKCom/HCPreview.dll] SUCC
+[2021-12-20 17:21:52.412][INF] The COM:Preview ver is 6.1.6.45, 2021_03_02.
+[2021-12-20 17:21:52.414][DBG] CComBase::Load, Load szDllPath[C:/Users/Thinkpad-W530/Desktop/CH-HCNetSDKV6.1.6.45_build20210302_win64/sdk/HCNetSDKCom/HCAlarm.dll] SUCC
+[2021-12-20 17:21:52.414][INF] The COM:HCAlarm ver is 6.1.6.45, 2021_03_02.
+[2021-12-20 17:21:52.426][INF] Private connect 192.168.6.188:8000 sock=2700 this=0x3ab905c4 cmd=0x117002 port=51604
+[2021-12-20 17:21:52.428][DBG] SimpleSTDCommandToDvr with out cmd[POST /ISAPI/Intelligent/FDLib], input size[295], max segment length[8388608]
+[2021-12-20 17:21:52.497][INF] Private connect 192.168.6.188:8000 sock=2748 this=0x3ab905c4 cmd=0x111021 port=51605
+[2021-12-20 17:21:58.770][INF] Private connect 192.168.6.188:8000 sock=3008 this=0x3ab90d30 cmd=0x11631d port=61618
+[2021-12-20 17:21:58.771][INF] StartSendThread threadHandle[3016]
+[2021-12-20 17:21:58.771][DBG] return upload succ, handle=0
+[2021-12-20 17:21:58.771][INF] Upload send thread start!
+[2021-12-20 17:21:58.777][INF] [0]UploadFileAppendInfo:DataAllLen[15440], XML[118], picture length[15322]
+[2021-12-20 17:21:58.778][INF] [0] Uploading...
+[2021-12-20 17:21:58.778][INF] [CUploadSession::UploadSendFileAppendData] nFileReadLeft [15440] nDataBufLen[36864]
+[2021-12-20 17:21:58.778][INF] [CUploadSession::UploadSendFileAppendData] SendBuf.uiDataLen [15448]
+[2021-12-20 17:21:58.779][ERR] [0] Upload failed!
+[2021-12-20 17:22:00.780][DBG] Upload close, handle=0
+[2021-12-20 17:22:00.780][DBG] [0]upload sessin stop
+[2021-12-20 17:22:00.780][DBG] [0] Close upload link: 3ab90d30!
+[2021-12-20 17:22:00.780][DBG] [0] Upload recv error[9]!
+[2021-12-20 17:22:00.780][INF] [CLongLinkCtrlPrivate::RecvThreadFunc] RecvThreadFunc EXIT, this=0x3bf7884c
+[2021-12-20 17:22:00.789][INF] Upload send thread exit!
+[2021-12-20 17:22:00.789][DBG] Upload close, handle=0
+[2021-12-20 17:22:00.829][INF] Alarm[0] IP[192.168.6.188] data_len[1020] alarm_len[1020] status[127]
+[2021-12-20 17:22:08.048][INF] Private connect 192.168.6.188:8000 sock=3016 this=0x3ab90d30 cmd=0x11631d port=53388
+[2021-12-20 17:22:08.049][INF] StartSendThread threadHandle[3116]
+[2021-12-20 17:22:08.049][DBG] return upload succ, handle=1
+[2021-12-20 17:22:08.049][INF] Upload send thread start!
+[2021-12-20 17:22:08.051][INF] [1]UploadFileAppendInfo:DataAllLen[15440], XML[118], picture length[15322]
+[2021-12-20 17:22:08.052][INF] [1] Uploading...
+[2021-12-20 17:22:08.052][INF] [CUploadSession::UploadSendFileAppendData] nFileReadLeft [15440] nDataBufLen[36864]
+[2021-12-20 17:22:08.052][INF] [CUploadSession::UploadSendFileAppendData] SendBuf.uiDataLen [15448]
+[2021-12-20 17:22:08.053][ERR] [1] Upload failed!
+[2021-12-20 17:22:10.052][DBG] Upload close, handle=1
+[2021-12-20 17:22:10.052][DBG] [1]upload sessin stop
+[2021-12-20 17:22:10.052][DBG] [1] Close upload link: 3ab90d30!
+[2021-12-20 17:22:10.052][DBG] [1] Upload recv error[9]!
+[2021-12-20 17:22:10.052][INF] [CLongLinkCtrlPrivate::RecvThreadFunc] RecvThreadFunc EXIT, this=0x3bf7884c
+[2021-12-20 17:22:10.055][INF] Upload send thread exit!
+[2021-12-20 17:22:10.055][DBG] Upload close, handle=1
+[2021-12-20 17:22:15.443][INF] Private connect 192.168.6.188:8000 sock=3160 this=0x3ab90d30 cmd=0x11631d port=51440
+[2021-12-20 17:22:15.444][INF] StartSendThread threadHandle[3000]
+[2021-12-20 17:22:15.444][DBG] return upload succ, handle=0
+[2021-12-20 17:22:15.445][INF] Upload send thread start!
+[2021-12-20 17:22:15.446][INF] [0]UploadFileAppendInfo:DataAllLen[15440], XML[118], picture length[15322]
+[2021-12-20 17:22:15.447][INF] [0] Uploading...
+[2021-12-20 17:22:15.447][INF] [CUploadSession::UploadSendFileAppendData] nFileReadLeft [15440] nDataBufLen[36864]
+[2021-12-20 17:22:15.447][INF] [CUploadSession::UploadSendFileAppendData] SendBuf.uiDataLen [15448]
+[2021-12-20 17:22:15.449][ERR] [0] Upload failed!
+[2021-12-20 17:22:20.840][DBG] [0] CUploadSession::SendBatchPicHeartbeat 8
+[2021-12-20 17:22:26.210][DBG] [0] CUploadSession::SendBatchPicHeartbeat 8
+[2021-12-20 17:22:26.897][DBG] Upload close, handle=0
+[2021-12-20 17:22:26.897][DBG] [0]upload sessin stop
+[2021-12-20 17:22:26.897][DBG] [0] Close upload link: 3ab90d30!
+[2021-12-20 17:22:26.897][DBG] [0] Upload recv error[9]!
+[2021-12-20 17:22:26.897][INF] [CLongLinkCtrlPrivate::RecvThreadFunc] RecvThreadFunc EXIT, this=0x3bf7884c
+[2021-12-20 17:22:26.904][INF] Upload send thread exit!
+[2021-12-20 17:22:26.904][DBG] Upload close, handle=0
+[2021-12-20 17:23:03.606][INF] Private connect 192.168.6.188:8000 sock=2996 this=0x3ab90d30 cmd=0x11631d port=57949
+[2021-12-20 17:23:03.607][INF] StartSendThread threadHandle[1872]
+[2021-12-20 17:23:03.607][DBG] return upload succ, handle=1
+[2021-12-20 17:23:03.607][INF] Upload send thread start!
+[2021-12-20 17:23:03.609][INF] [1]UploadFileAppendInfo:DataAllLen[343251], XML[118], picture length[343133]
+[2021-12-20 17:23:03.611][INF] [1] Uploading...
+[2021-12-20 17:23:03.611][INF] [CUploadSession::UploadSendFileAppendData] nFileReadLeft [343251] nDataBufLen[36864]
+[2021-12-20 17:23:03.611][INF] [CUploadSession::UploadSendFileAppendData] SendBuf.uiDataLen [36864]
+[2021-12-20 17:23:03.713][INF] [CUploadSession::UploadSendFileAppendData] SendBuf.uiDataLen [36864]
+[2021-12-20 17:23:03.815][INF] [CUploadSession::UploadSendFileAppendData] SendBuf.uiDataLen [36864]
+[2021-12-20 17:23:03.917][INF] [CUploadSession::UploadSendFileAppendData] SendBuf.uiDataLen [36864]
+[2021-12-20 17:23:04.020][INF] [CUploadSession::UploadSendFileAppendData] SendBuf.uiDataLen [36864]
+[2021-12-20 17:23:04.122][INF] [CUploadSession::UploadSendFileAppendData] SendBuf.uiDataLen [36864]
+[2021-12-20 17:23:04.225][INF] [CUploadSession::UploadSendFileAppendData] SendBuf.uiDataLen [36864]
+[2021-12-20 17:23:04.327][INF] [CUploadSession::UploadSendFileAppendData] SendBuf.uiDataLen [36864]
+[2021-12-20 17:23:04.429][INF] [CUploadSession::UploadSendFileAppendData] SendBuf.uiDataLen [36864]
+[2021-12-20 17:23:04.530][INF] [CUploadSession::UploadSendFileAppendData] SendBuf.uiDataLen [11555]
+[2021-12-20 17:23:04.531][ERR] [1] Upload failed!
+[2021-12-20 17:23:09.952][DBG] [1] CUploadSession::SendBatchPicHeartbeat 8
+[2021-12-20 17:23:10.963][DBG] Upload close, handle=1
+[2021-12-20 17:23:10.963][DBG] [1]upload sessin stop
+[2021-12-20 17:23:10.963][DBG] [1] Close upload link: 3ab90d30!
+[2021-12-20 17:23:10.963][ERR] [DoRealRecvEx] select return 1, socket=-1, sys_err=0
+[2021-12-20 17:23:10.963][INF] [CLongLinkCtrlPrivate::RecvThreadFunc] RecvThreadFunc EXIT, this=0x3bf7884c
+[2021-12-20 17:23:10.972][INF] Upload send thread exit!
+[2021-12-20 17:23:10.972][DBG] Upload close, handle=1
+[2021-12-20 17:24:00.863][INF] Private connect 192.168.6.188:8000 sock=3204 this=0x3ab90d30 cmd=0x11631d port=64977
+[2021-12-20 17:24:00.864][INF] StartSendThread threadHandle[3212]
+[2021-12-20 17:24:00.864][DBG] return upload succ, handle=0
+[2021-12-20 17:24:00.864][INF] Upload send thread start!
+[2021-12-20 17:24:00.867][INF] [0]UploadFileAppendInfo:DataAllLen[343251], XML[118], picture length[343133]
+[2021-12-20 17:24:00.868][INF] [0] Uploading...
+[2021-12-20 17:24:00.868][INF] [CUploadSession::UploadSendFileAppendData] nFileReadLeft [343251] nDataBufLen[36864]
+[2021-12-20 17:24:00.868][INF] [CUploadSession::UploadSendFileAppendData] SendBuf.uiDataLen [36864]
+[2021-12-20 17:24:00.970][INF] [CUploadSession::UploadSendFileAppendData] SendBuf.uiDataLen [36864]
+[2021-12-20 17:24:01.072][INF] [CUploadSession::UploadSendFileAppendData] SendBuf.uiDataLen [36864]
+[2021-12-20 17:24:01.174][INF] [CUploadSession::UploadSendFileAppendData] SendBuf.uiDataLen [36864]
+[2021-12-20 17:24:01.276][INF] [CUploadSession::UploadSendFileAppendData] SendBuf.uiDataLen [36864]
+[2021-12-20 17:24:01.379][INF] [CUploadSession::UploadSendFileAppendData] SendBuf.uiDataLen [36864]
+[2021-12-20 17:24:01.481][INF] [CUploadSession::UploadSendFileAppendData] SendBuf.uiDataLen [36864]
+[2021-12-20 17:24:01.583][INF] [CUploadSession::UploadSendFileAppendData] SendBuf.uiDataLen [36864]
+[2021-12-20 17:24:01.685][INF] [CUploadSession::UploadSendFileAppendData] SendBuf.uiDataLen [36864]
+[2021-12-20 17:24:01.787][INF] [CUploadSession::UploadSendFileAppendData] SendBuf.uiDataLen [11555]
+[2021-12-20 17:24:02.088][INF] [0] get upload result...
+[2021-12-20 17:24:03.869][DBG] Upload close, handle=0
+[2021-12-20 17:24:03.869][DBG] [0]upload sessin stop
+[2021-12-20 17:24:03.869][DBG] [0] Close upload link: 3ab90d30!
+[2021-12-20 17:24:03.869][DBG] [0] Upload recv error[9]!
+[2021-12-20 17:24:03.869][INF] [CLongLinkCtrlPrivate::RecvThreadFunc] RecvThreadFunc EXIT, this=0x3bf7884c
+[2021-12-20 17:24:03.872][INF] Upload send thread exit!
+[2021-12-20 17:25:45.447][INF] Alarm[0] IP[192.168.6.188] data_len[1020] alarm_len[1020] status[127]
+[2021-12-20 17:27:59.085][INF] Alarm[0] IP[192.168.6.188] data_len[1020] alarm_len[1020] status[127]
+[2021-12-20 17:28:32.614][INF] Alarm[0] IP[192.168.6.188] data_len[1020] alarm_len[1020] status[127]
+[2021-12-20 17:28:42.285][INF] Alarm[0] IP[192.168.6.188] data_len[1020] alarm_len[1020] status[127]
+[2021-12-20 17:30:27.704][INF] Alarm[0] IP[192.168.6.188] data_len[1019] alarm_len[1019] status[127]
+[2021-12-20 17:30:41.264][INF] Alarm[0] IP[192.168.6.188] data_len[1020] alarm_len[1020] status[127]
+[2021-12-20 17:30:57.577][DBG] Alarm chan [0] recv timeout[2]!
+[2021-12-20 17:31:02.578][DBG] Alarm chan [0] recv timeout[3]!
+[2021-12-21 08:19:08.058][DBG] Alarm chan [0] recv timeout[4]!
+[2021-12-21 08:19:13.059][DBG] Alarm chan [0] recv timeout[5]!
+[2021-12-21 08:19:18.063][DBG] Alarm chan [0] recv timeout[6]!
+[2021-12-21 08:19:23.064][INF] [0] CArmingSession::TimeoutCallBack Create ReConnectThread SUCC
+[2021-12-21 08:19:23.064][DBG] Alarm chan [0] reconnect thread start!
+[2021-12-21 08:19:23.064][DBG] Alarm chan [0] LinkToDVR!
+[2021-12-21 08:19:23.076][INF] Private connect 192.168.6.188:8000 sock=3420 this=0x3ab905c4 cmd=0x111021 port=51616
+[2021-12-21 08:19:23.088][INF] Private connect 192.168.6.188:8000 sock=3420 this=0x3ab90d30 cmd=0x10000 port=51617
+[2021-12-21 08:19:23.088][INF] LogonDev1 in[192.168.6.188:8000]
+[2021-12-21 08:19:23.149][INF] Private connect 192.168.6.188:8000 sock=3420 this=0x3ab905c4 cmd=0x111021 port=51618
+[2021-12-21 08:19:23.149][INF] [SendCommandWithRecv relogin] newLinkId=3ab905c4, cmd=0x111021
+[2021-12-21 08:19:23.151][DBG] Alarm chan [0] ReConnect Success!
+[2021-12-21 08:19:23.151][DBG] Alarm chan [0] reconnect thread Exit!
+[2021-12-21 08:31:14.207][INF] Alarm[0] IP[192.168.6.188] data_len[1020] alarm_len[1020] status[127]
+[2021-12-21 08:31:30.016][INF] Alarm[0] IP[192.168.6.188] data_len[1019] alarm_len[1019] status[127]
+[2021-12-21 08:31:33.047][INF] Alarm[0] IP[192.168.6.188] data_len[1020] alarm_len[1020] status[127]
+[2021-12-21 08:31:45.036][INF] Alarm[0] IP[192.168.6.188] data_len[1020] alarm_len[1020] status[127]
+[2021-12-21 08:32:25.896][INF] Alarm[0] IP[192.168.6.188] data_len[1020] alarm_len[1020] status[127]
+[2021-12-21 08:33:58.125][INF] Alarm[0] IP[192.168.6.188] data_len[1020] alarm_len[1020] status[127]
+[2021-12-21 08:34:03.154][DBG] Alarm chan [0] recv timeout[2]!
+[2021-12-21 08:34:03.261][INF] Alarm[0] IP[192.168.6.188] data_len[1020] alarm_len[1020] status[127]
+[2021-12-21 08:35:24.335][INF] Alarm[0] IP[192.168.6.188] data_len[1020] alarm_len[1020] status[127]
+[2021-12-21 08:36:29.215][INF] Alarm[0] IP[192.168.6.188] data_len[1020] alarm_len[1020] status[127]
+[2021-12-21 08:36:55.644][INF] Alarm[0] IP[192.168.6.188] data_len[1020] alarm_len[1020] status[127]
+[2021-12-21 08:37:03.014][INF] Alarm[0] IP[192.168.6.188] data_len[1020] alarm_len[1020] status[127]
+[2021-12-21 08:37:33.714][INF] Alarm[0] IP[192.168.6.188] data_len[1020] alarm_len[1020] status[127]
+[2021-12-21 08:37:47.344][INF] Alarm[0] IP[192.168.6.188] data_len[1020] alarm_len[1020] status[127]
+[2021-12-21 08:38:18.454][INF] Alarm[0] IP[192.168.6.188] data_len[1020] alarm_len[1020] status[127]
+[2021-12-21 08:38:36.583][INF] Alarm[0] IP[192.168.6.188] data_len[1020] alarm_len[1020] status[127]
+[2021-12-21 08:38:47.614][INF] Alarm[0] IP[192.168.6.188] data_len[1020] alarm_len[1020] status[127]
+[2021-12-21 08:39:47.303][INF] Alarm[0] IP[192.168.6.188] data_len[1020] alarm_len[1020] status[127]
+[2021-12-21 08:40:31.043][INF] Alarm[0] IP[192.168.6.188] data_len[1020] alarm_len[1020] status[127]
+[2021-12-21 08:40:36.482][INF] Alarm[0] IP[192.168.6.188] data_len[1020] alarm_len[1020] status[127]
+[2021-12-21 08:40:49.943][INF] Alarm[0] IP[192.168.6.188] data_len[1020] alarm_len[1020] status[127]
+[2021-12-21 08:40:58.522][INF] Alarm[0] IP[192.168.6.188] data_len[1020] alarm_len[1020] status[127]
+[2021-12-21 08:41:13.008][INF] Alarm[0] IP[192.168.6.188] data_len[1020] alarm_len[1020] status[127]
+[2021-12-21 08:41:13.933][INF] Alarm[0] IP[192.168.6.188] data_len[1020] alarm_len[1020] status[127]
+[2021-12-21 08:41:51.583][INF] Alarm[0] IP[192.168.6.188] data_len[1020] alarm_len[1020] status[127]
+[2021-12-21 08:42:46.572][INF] Alarm[0] IP[192.168.6.188] data_len[1020] alarm_len[1020] status[127]
+[2021-12-21 08:43:27.582][INF] Alarm[0] IP[192.168.6.188] data_len[1020] alarm_len[1020] status[127]
+[2021-12-21 08:43:27.751][INF] Alarm[0] IP[192.168.6.188] data_len[1019] alarm_len[1019] status[127]
+[2021-12-21 08:43:48.380][INF] Alarm[0] IP[192.168.6.188] data_len[1020] alarm_len[1020] status[127]
+[2021-12-21 08:43:53.281][INF] Alarm[0] IP[192.168.6.188] data_len[1020] alarm_len[1020] status[127]
+[2021-12-21 08:45:53.228][DBG] Alarm chan [0] recv timeout[2]!
+[2021-12-21 08:45:58.061][ERR] Private connect 192.168.6.188:8000 sock=3528 this=0x3ab90d30 cmd=0x10200 sys_err=10060, timeout= 5000
+[2021-12-21 08:45:58.061][DBG] [0]CUser::SendHeartWithExceptCB network error[7], times[1]
+[2021-12-21 08:45:58.061][ERR] [0]Exception changes 1
+[2021-12-21 08:45:58.061][DBG]  CUser::ProcessException[0]
+[2021-12-21 08:45:58.229][DBG] Alarm chan [0] recv timeout[3]!
+[2021-12-21 08:46:03.230][DBG] Alarm chan [0] recv timeout[4]!
+[2021-12-21 08:46:08.230][DBG] Alarm chan [0] recv timeout[5]!
+[2021-12-21 08:46:13.230][DBG] Alarm chan [0] recv timeout[6]!
+[2021-12-21 08:46:18.231][INF] [0] CArmingSession::TimeoutCallBack Create ReConnectThread SUCC
+[2021-12-21 08:46:18.231][DBG] Alarm chan [0] reconnect thread start!
+[2021-12-21 08:46:18.231][DBG] Alarm chan [0] LinkToDVR!
+[2021-12-21 08:46:20.231][ERR] Private connect 192.168.6.188:8000 sock=3384 this=0x3ab905c4 cmd=0x111021 sys_err=10060, timeout= 2000
+[2021-12-21 08:46:20.231][ERR] [0] CArmingSession::LinkToDVR, CreateLink Failed, Cmd[1118241], Reconnect ID[-1]
+[2021-12-21 08:46:20.231][ERR] ReConnect Alarm chan [0] LinkToDVR failed![err:7]
+[2021-12-21 08:46:30.232][DBG] Alarm chan [0] LinkToDVR!
+[2021-12-21 08:46:32.232][ERR] Private connect 192.168.6.188:8000 sock=3196 this=0x3ab905c4 cmd=0x111021 sys_err=10060, timeout= 2000
+[2021-12-21 08:46:32.232][ERR] [0] CArmingSession::LinkToDVR, CreateLink Failed, Cmd[1118241], Reconnect ID[-1]
+[2021-12-21 08:46:32.232][ERR] ReConnect Alarm chan [0] LinkToDVR failed![err:7]
+[2021-12-21 08:46:42.232][DBG] Alarm chan [0] LinkToDVR!
+[2021-12-21 08:46:44.233][ERR] Private connect 192.168.6.188:8000 sock=3512 this=0x3ab905c4 cmd=0x111021 sys_err=10060, timeout= 2000
+[2021-12-21 08:46:44.233][ERR] [0] CArmingSession::LinkToDVR, CreateLink Failed, Cmd[1118241], Reconnect ID[-1]
+[2021-12-21 08:46:44.233][ERR] ReConnect Alarm chan [0] LinkToDVR failed![err:7]
+[2021-12-21 08:46:54.234][DBG] Alarm chan [0] LinkToDVR!
+[2021-12-21 08:46:56.235][ERR] Private connect 192.168.6.188:8000 sock=3532 this=0x3ab905c4 cmd=0x111021 sys_err=10060, timeout= 2000
+[2021-12-21 08:46:56.235][ERR] [0] CArmingSession::LinkToDVR, CreateLink Failed, Cmd[1118241], Reconnect ID[-1]
+[2021-12-21 08:46:56.235][ERR] ReConnect Alarm chan [0] LinkToDVR failed![err:7]
+[2021-12-21 08:47:06.235][DBG] Alarm chan [0] LinkToDVR!
+[2021-12-21 08:47:08.236][ERR] Private connect 192.168.6.188:8000 sock=3520 this=0x3ab905c4 cmd=0x111021 sys_err=10060, timeout= 2000
+[2021-12-21 08:47:08.236][ERR] [0] CArmingSession::LinkToDVR, CreateLink Failed, Cmd[1118241], Reconnect ID[-1]
+[2021-12-21 08:47:08.236][ERR] ReConnect Alarm chan [0] LinkToDVR failed![err:7]
+[2021-12-21 08:47:18.236][DBG] Alarm chan [0] LinkToDVR!
+[2021-12-21 08:47:20.236][ERR] Private connect 192.168.6.188:8000 sock=3532 this=0x3ab905c4 cmd=0x111021 sys_err=10060, timeout= 2000
+[2021-12-21 08:47:20.236][ERR] [0] CArmingSession::LinkToDVR, CreateLink Failed, Cmd[1118241], Reconnect ID[-1]
+[2021-12-21 08:47:20.236][ERR] ReConnect Alarm chan [0] LinkToDVR failed![err:7]
+[2021-12-21 08:47:30.236][DBG] Alarm chan [0] LinkToDVR!
+[2021-12-21 08:47:32.237][ERR] Private connect 192.168.6.188:8000 sock=3384 this=0x3ab905c4 cmd=0x111021 sys_err=10060, timeout= 2000
+[2021-12-21 08:47:32.237][ERR] [0] CArmingSession::LinkToDVR, CreateLink Failed, Cmd[1118241], Reconnect ID[-1]
+[2021-12-21 08:47:32.237][ERR] ReConnect Alarm chan [0] LinkToDVR failed![err:7]
+[2021-12-21 08:47:42.238][DBG] Alarm chan [0] LinkToDVR!
+[2021-12-21 08:47:44.238][ERR] Private connect 192.168.6.188:8000 sock=3520 this=0x3ab905c4 cmd=0x111021 sys_err=10060, timeout= 2000
+[2021-12-21 08:47:44.238][ERR] [0] CArmingSession::LinkToDVR, CreateLink Failed, Cmd[1118241], Reconnect ID[-1]
+[2021-12-21 08:47:44.238][ERR] ReConnect Alarm chan [0] LinkToDVR failed![err:7]
+[2021-12-21 08:47:54.238][DBG] Alarm chan [0] LinkToDVR!
+[2021-12-21 08:47:56.238][ERR] Private connect 192.168.6.188:8000 sock=3184 this=0x3ab90d30 cmd=0x111021 sys_err=10060, timeout= 2000
+[2021-12-21 08:47:56.238][ERR] [0] CArmingSession::LinkToDVR, CreateLink Failed, Cmd[1118241], Reconnect ID[-1]
+[2021-12-21 08:47:56.238][ERR] ReConnect Alarm chan [0] LinkToDVR failed![err:7]
+[2021-12-21 08:47:58.073][ERR] Private connect 192.168.6.188:8000 sock=3528 this=0x3ab905c4 cmd=0x10200 sys_err=10060, timeout= 5000
+[2021-12-21 08:47:58.073][DBG] [0]CUser::SendHeartWithExceptCB network error[7], times[1]
+[2021-12-21 08:47:58.073][ERR] [0]Exception changes 1
+[2021-12-21 08:47:58.073][DBG]  CUser::ProcessException[0]
+[2021-12-21 08:48:06.239][DBG] Alarm chan [0] LinkToDVR!
+[2021-12-21 08:48:08.240][ERR] Private connect 192.168.6.188:8000 sock=3532 this=0x3ab905c4 cmd=0x111021 sys_err=10060, timeout= 2000
+[2021-12-21 08:48:08.240][ERR] [0] CArmingSession::LinkToDVR, CreateLink Failed, Cmd[1118241], Reconnect ID[-1]
+[2021-12-21 08:48:08.240][ERR] ReConnect Alarm chan [0] LinkToDVR failed![err:7]
+[2021-12-21 08:48:18.240][DBG] Alarm chan [0] LinkToDVR!
+[2021-12-21 08:48:20.241][ERR] Private connect 192.168.6.188:8000 sock=3512 this=0x3ab905c4 cmd=0x111021 sys_err=10060, timeout= 2000
+[2021-12-21 08:48:20.241][ERR] [0] CArmingSession::LinkToDVR, CreateLink Failed, Cmd[1118241], Reconnect ID[-1]
+[2021-12-21 08:48:20.241][ERR] ReConnect Alarm chan [0] LinkToDVR failed![err:7]
+[2021-12-21 08:48:30.241][DBG] Alarm chan [0] LinkToDVR!
+[2021-12-21 08:48:32.242][ERR] Private connect 192.168.6.188:8000 sock=3512 this=0x3ab905c4 cmd=0x111021 sys_err=10060, timeout= 2000
+[2021-12-21 08:48:32.242][ERR] [0] CArmingSession::LinkToDVR, CreateLink Failed, Cmd[1118241], Reconnect ID[-1]
+[2021-12-21 08:48:32.242][ERR] ReConnect Alarm chan [0] LinkToDVR failed![err:7]
+[2021-12-21 08:48:42.243][DBG] Alarm chan [0] LinkToDVR!
+[2021-12-21 08:48:44.243][ERR] Private connect 192.168.6.188:8000 sock=3512 this=0x3ab905c4 cmd=0x111021 sys_err=10060, timeout= 2000
+[2021-12-21 08:48:44.243][ERR] [0] CArmingSession::LinkToDVR, CreateLink Failed, Cmd[1118241], Reconnect ID[-1]
+[2021-12-21 08:48:44.243][ERR] ReConnect Alarm chan [0] LinkToDVR failed![err:7]
+[2021-12-21 08:48:54.243][DBG] Alarm chan [0] LinkToDVR!
+[2021-12-21 08:48:56.244][ERR] Private connect 192.168.6.188:8000 sock=3512 this=0x3ab905c4 cmd=0x111021 sys_err=10060, timeout= 2000
+[2021-12-21 08:48:56.244][ERR] [0] CArmingSession::LinkToDVR, CreateLink Failed, Cmd[1118241], Reconnect ID[-1]
+[2021-12-21 08:48:56.244][ERR] ReConnect Alarm chan [0] LinkToDVR failed![err:7]
+[2021-12-21 08:49:06.244][DBG] Alarm chan [0] LinkToDVR!
+[2021-12-21 08:49:08.244][ERR] Private connect 192.168.6.188:8000 sock=3520 this=0x3ab905c4 cmd=0x111021 sys_err=10060, timeout= 2000
+[2021-12-21 08:49:08.244][ERR] [0] CArmingSession::LinkToDVR, CreateLink Failed, Cmd[1118241], Reconnect ID[-1]
+[2021-12-21 08:49:08.244][ERR] ReConnect Alarm chan [0] LinkToDVR failed![err:7]
+[2021-12-21 08:49:18.245][DBG] Alarm chan [0] LinkToDVR!
+[2021-12-21 08:49:20.245][ERR] Private connect 192.168.6.188:8000 sock=3512 this=0x3ab905c4 cmd=0x111021 sys_err=10060, timeout= 2000
+[2021-12-21 08:49:20.245][ERR] [0] CArmingSession::LinkToDVR, CreateLink Failed, Cmd[1118241], Reconnect ID[-1]
+[2021-12-21 08:49:20.245][ERR] ReConnect Alarm chan [0] LinkToDVR failed![err:7]
+[2021-12-21 08:49:30.246][DBG] Alarm chan [0] LinkToDVR!
+[2021-12-21 08:49:32.247][ERR] Private connect 192.168.6.188:8000 sock=3524 this=0x3ab905c4 cmd=0x111021 sys_err=10060, timeout= 2000
+[2021-12-21 08:49:32.247][ERR] [0] CArmingSession::LinkToDVR, CreateLink Failed, Cmd[1118241], Reconnect ID[-1]
+[2021-12-21 08:49:32.247][ERR] ReConnect Alarm chan [0] LinkToDVR failed![err:7]
+[2021-12-21 08:49:42.247][DBG] Alarm chan [0] LinkToDVR!
+[2021-12-21 08:49:44.248][ERR] Private connect 192.168.6.188:8000 sock=3512 this=0x3ab905c4 cmd=0x111021 sys_err=10060, timeout= 2000
+[2021-12-21 08:49:44.248][ERR] [0] CArmingSession::LinkToDVR, CreateLink Failed, Cmd[1118241], Reconnect ID[-1]
+[2021-12-21 08:49:44.248][ERR] ReConnect Alarm chan [0] LinkToDVR failed![err:7]
+[2021-12-21 08:49:54.248][DBG] Alarm chan [0] LinkToDVR!
+[2021-12-21 08:49:56.249][ERR] Private connect 192.168.6.188:8000 sock=3196 this=0x3ab90d30 cmd=0x111021 sys_err=10060, timeout= 2000
+[2021-12-21 08:49:56.249][ERR] [0] CArmingSession::LinkToDVR, CreateLink Failed, Cmd[1118241], Reconnect ID[-1]
+[2021-12-21 08:49:56.249][ERR] ReConnect Alarm chan [0] LinkToDVR failed![err:7]
+[2021-12-21 08:49:58.084][ERR] Private connect 192.168.6.188:8000 sock=3508 this=0x3ab905c4 cmd=0x10200 sys_err=10060, timeout= 5000
+[2021-12-21 08:49:58.084][DBG] [0]CUser::SendHeartWithExceptCB network error[7], times[1]
+[2021-12-21 08:49:58.084][ERR] [0]Exception changes 1
+[2021-12-21 08:49:58.084][DBG]  CUser::ProcessException[0]
+[2021-12-21 08:50:06.250][DBG] Alarm chan [0] LinkToDVR!
+[2021-12-21 08:50:08.251][ERR] Private connect 192.168.6.188:8000 sock=3508 this=0x3ab905c4 cmd=0x111021 sys_err=10060, timeout= 2000
+[2021-12-21 08:50:08.251][ERR] [0] CArmingSession::LinkToDVR, CreateLink Failed, Cmd[1118241], Reconnect ID[-1]
+[2021-12-21 08:50:08.251][ERR] ReConnect Alarm chan [0] LinkToDVR failed![err:7]
+[2021-12-21 08:50:18.252][DBG] Alarm chan [0] LinkToDVR!
+[2021-12-21 08:50:20.252][ERR] Private connect 192.168.6.188:8000 sock=3196 this=0x3ab905c4 cmd=0x111021 sys_err=10060, timeout= 2000
+[2021-12-21 08:50:20.252][ERR] [0] CArmingSession::LinkToDVR, CreateLink Failed, Cmd[1118241], Reconnect ID[-1]
+[2021-12-21 08:50:20.252][ERR] ReConnect Alarm chan [0] LinkToDVR failed![err:7]
+[2021-12-21 08:50:30.252][DBG] Alarm chan [0] LinkToDVR!
+[2021-12-21 08:50:32.253][ERR] Private connect 192.168.6.188:8000 sock=3532 this=0x3ab905c4 cmd=0x111021 sys_err=10060, timeout= 2000
+[2021-12-21 08:50:32.253][ERR] [0] CArmingSession::LinkToDVR, CreateLink Failed, Cmd[1118241], Reconnect ID[-1]
+[2021-12-21 08:50:32.253][ERR] ReConnect Alarm chan [0] LinkToDVR failed![err:7]
+[2021-12-21 08:50:42.254][DBG] Alarm chan [0] LinkToDVR!
+[2021-12-21 08:50:44.254][ERR] Private connect 192.168.6.188:8000 sock=3196 this=0x3ab905c4 cmd=0x111021 sys_err=10060, timeout= 2000
+[2021-12-21 08:50:44.254][ERR] [0] CArmingSession::LinkToDVR, CreateLink Failed, Cmd[1118241], Reconnect ID[-1]
+[2021-12-21 08:50:44.254][ERR] ReConnect Alarm chan [0] LinkToDVR failed![err:7]
+[2021-12-21 08:50:54.255][DBG] Alarm chan [0] LinkToDVR!
+[2021-12-21 08:50:56.255][ERR] Private connect 192.168.6.188:8000 sock=3496 this=0x3ab905c4 cmd=0x111021 sys_err=10060, timeout= 2000
+[2021-12-21 08:50:56.255][ERR] [0] CArmingSession::LinkToDVR, CreateLink Failed, Cmd[1118241], Reconnect ID[-1]
+[2021-12-21 08:50:56.255][ERR] ReConnect Alarm chan [0] LinkToDVR failed![err:7]
+[2021-12-21 08:51:06.256][DBG] Alarm chan [0] LinkToDVR!
+[2021-12-21 08:51:08.256][ERR] Private connect 192.168.6.188:8000 sock=3496 this=0x3ab905c4 cmd=0x111021 sys_err=10060, timeout= 2000
+[2021-12-21 08:51:08.256][ERR] [0] CArmingSession::LinkToDVR, CreateLink Failed, Cmd[1118241], Reconnect ID[-1]
+[2021-12-21 08:51:08.256][ERR] ReConnect Alarm chan [0] LinkToDVR failed![err:7]
+[2021-12-21 08:51:18.256][DBG] Alarm chan [0] LinkToDVR!
+[2021-12-21 08:51:20.257][ERR] Private connect 192.168.6.188:8000 sock=3496 this=0x3ab905c4 cmd=0x111021 sys_err=10060, timeout= 2000
+[2021-12-21 08:51:20.257][ERR] [0] CArmingSession::LinkToDVR, CreateLink Failed, Cmd[1118241], Reconnect ID[-1]
+[2021-12-21 08:51:20.257][ERR] ReConnect Alarm chan [0] LinkToDVR failed![err:7]
+[2021-12-21 08:51:30.258][DBG] Alarm chan [0] LinkToDVR!
+[2021-12-21 08:51:32.259][ERR] Private connect 192.168.6.188:8000 sock=3496 this=0x3ab905c4 cmd=0x111021 sys_err=10060, timeout= 2000
+[2021-12-21 08:51:32.259][ERR] [0] CArmingSession::LinkToDVR, CreateLink Failed, Cmd[1118241], Reconnect ID[-1]
+[2021-12-21 08:51:32.259][ERR] ReConnect Alarm chan [0] LinkToDVR failed![err:7]
+[2021-12-21 08:51:42.259][DBG] Alarm chan [0] LinkToDVR!
+[2021-12-21 08:51:44.259][ERR] Private connect 192.168.6.188:8000 sock=3496 this=0x3ab905c4 cmd=0x111021 sys_err=10060, timeout= 2000
+[2021-12-21 08:51:44.259][ERR] [0] CArmingSession::LinkToDVR, CreateLink Failed, Cmd[1118241], Reconnect ID[-1]
+[2021-12-21 08:51:44.259][ERR] ReConnect Alarm chan [0] LinkToDVR failed![err:7]
+[2021-12-21 08:51:54.260][DBG] Alarm chan [0] LinkToDVR!
+[2021-12-21 08:51:56.260][ERR] Private connect 192.168.6.188:8000 sock=3384 this=0x3ab90d30 cmd=0x111021 sys_err=10060, timeout= 2000
+[2021-12-21 08:51:56.260][ERR] [0] CArmingSession::LinkToDVR, CreateLink Failed, Cmd[1118241], Reconnect ID[-1]
+[2021-12-21 08:51:56.260][ERR] ReConnect Alarm chan [0] LinkToDVR failed![err:7]
+[2021-12-21 08:51:58.097][ERR] Private connect 192.168.6.188:8000 sock=3192 this=0x3ab905c4 cmd=0x10200 sys_err=10060, timeout= 5000
+[2021-12-21 08:51:58.097][DBG] [0]CUser::SendHeartWithExceptCB network error[7], times[1]
+[2021-12-21 08:51:58.097][ERR] [0]Exception changes 1
+[2021-12-21 08:51:58.097][DBG]  CUser::ProcessException[0]
+[2021-12-21 08:52:06.261][DBG] Alarm chan [0] LinkToDVR!
+[2021-12-21 08:52:08.261][ERR] Private connect 192.168.6.188:8000 sock=3532 this=0x3ab905c4 cmd=0x111021 sys_err=10060, timeout= 2000
+[2021-12-21 08:52:08.261][ERR] [0] CArmingSession::LinkToDVR, CreateLink Failed, Cmd[1118241], Reconnect ID[-1]
+[2021-12-21 08:52:08.261][ERR] ReConnect Alarm chan [0] LinkToDVR failed![err:7]
+[2021-12-21 08:52:18.262][DBG] Alarm chan [0] LinkToDVR!
+[2021-12-21 08:52:20.262][ERR] Private connect 192.168.6.188:8000 sock=3384 this=0x3ab905c4 cmd=0x111021 sys_err=10060, timeout= 2000
+[2021-12-21 08:52:20.262][ERR] [0] CArmingSession::LinkToDVR, CreateLink Failed, Cmd[1118241], Reconnect ID[-1]
+[2021-12-21 08:52:20.262][ERR] ReConnect Alarm chan [0] LinkToDVR failed![err:7]
+[2021-12-21 08:52:30.262][DBG] Alarm chan [0] LinkToDVR!
+[2021-12-21 08:52:32.263][ERR] Private connect 192.168.6.188:8000 sock=3384 this=0x3ab905c4 cmd=0x111021 sys_err=10060, timeout= 2000
+[2021-12-21 08:52:32.263][ERR] [0] CArmingSession::LinkToDVR, CreateLink Failed, Cmd[1118241], Reconnect ID[-1]
+[2021-12-21 08:52:32.263][ERR] ReConnect Alarm chan [0] LinkToDVR failed![err:7]
+[2021-12-21 08:52:42.264][DBG] Alarm chan [0] LinkToDVR!
+[2021-12-21 08:52:44.264][ERR] Private connect 192.168.6.188:8000 sock=3192 this=0x3ab905c4 cmd=0x111021 sys_err=10060, timeout= 2000
+[2021-12-21 08:52:44.264][ERR] [0] CArmingSession::LinkToDVR, CreateLink Failed, Cmd[1118241], Reconnect ID[-1]
+[2021-12-21 08:52:44.264][ERR] ReConnect Alarm chan [0] LinkToDVR failed![err:7]
+[2021-12-21 08:52:54.264][DBG] Alarm chan [0] LinkToDVR!
+[2021-12-21 08:52:56.265][ERR] Private connect 192.168.6.188:8000 sock=3192 this=0x3ab905c4 cmd=0x111021 sys_err=10060, timeout= 2000
+[2021-12-21 08:52:56.265][ERR] [0] CArmingSession::LinkToDVR, CreateLink Failed, Cmd[1118241], Reconnect ID[-1]
+[2021-12-21 08:52:56.265][ERR] ReConnect Alarm chan [0] LinkToDVR failed![err:7]
+[2021-12-21 08:53:06.265][DBG] Alarm chan [0] LinkToDVR!
+[2021-12-21 08:53:08.265][ERR] Private connect 192.168.6.188:8000 sock=3532 this=0x3ab905c4 cmd=0x111021 sys_err=10060, timeout= 2000
+[2021-12-21 08:53:08.265][ERR] [0] CArmingSession::LinkToDVR, CreateLink Failed, Cmd[1118241], Reconnect ID[-1]
+[2021-12-21 08:53:08.265][ERR] ReConnect Alarm chan [0] LinkToDVR failed![err:7]
+[2021-12-21 08:53:18.266][DBG] Alarm chan [0] LinkToDVR!
+[2021-12-21 08:53:20.267][ERR] Private connect 192.168.6.188:8000 sock=3532 this=0x3ab905c4 cmd=0x111021 sys_err=10060, timeout= 2000
+[2021-12-21 08:53:20.267][ERR] [0] CArmingSession::LinkToDVR, CreateLink Failed, Cmd[1118241], Reconnect ID[-1]
+[2021-12-21 08:53:20.267][ERR] ReConnect Alarm chan [0] LinkToDVR failed![err:7]
+[2021-12-21 08:53:30.268][DBG] Alarm chan [0] LinkToDVR!
+[2021-12-21 08:53:32.269][ERR] Private connect 192.168.6.188:8000 sock=3532 this=0x3ab905c4 cmd=0x111021 sys_err=10060, timeout= 2000
+[2021-12-21 08:53:32.269][ERR] [0] CArmingSession::LinkToDVR, CreateLink Failed, Cmd[1118241], Reconnect ID[-1]
+[2021-12-21 08:53:32.269][ERR] ReConnect Alarm chan [0] LinkToDVR failed![err:7]
+[2021-12-21 08:53:42.269][DBG] Alarm chan [0] LinkToDVR!
+[2021-12-21 08:53:44.270][ERR] Private connect 192.168.6.188:8000 sock=3532 this=0x3ab905c4 cmd=0x111021 sys_err=10060, timeout= 2000
+[2021-12-21 08:53:44.270][ERR] [0] CArmingSession::LinkToDVR, CreateLink Failed, Cmd[1118241], Reconnect ID[-1]
+[2021-12-21 08:53:44.270][ERR] ReConnect Alarm chan [0] LinkToDVR failed![err:7]
+[2021-12-21 08:53:54.270][DBG] Alarm chan [0] LinkToDVR!
+[2021-12-21 08:53:56.271][ERR] Private connect 192.168.6.188:8000 sock=3532 this=0x3ab90d30 cmd=0x111021 sys_err=10060, timeout= 2000
+[2021-12-21 08:53:56.271][ERR] [0] CArmingSession::LinkToDVR, CreateLink Failed, Cmd[1118241], Reconnect ID[-1]
+[2021-12-21 08:53:56.271][ERR] ReConnect Alarm chan [0] LinkToDVR failed![err:7]
+[2021-12-21 08:53:58.108][ERR] Private connect 192.168.6.188:8000 sock=3536 this=0x3ab905c4 cmd=0x10200 sys_err=10060, timeout= 5000
+[2021-12-21 08:53:58.108][DBG] [0]CUser::SendHeartWithExceptCB network error[7], times[1]
+[2021-12-21 08:53:58.108][ERR] [0]Exception changes 1
+[2021-12-21 08:53:58.108][DBG]  CUser::ProcessException[0]
+[2021-12-21 08:54:06.271][DBG] Alarm chan [0] LinkToDVR!
+[2021-12-21 08:54:08.272][ERR] Private connect 192.168.6.188:8000 sock=3532 this=0x3ab905c4 cmd=0x111021 sys_err=10060, timeout= 2000
+[2021-12-21 08:54:08.272][ERR] [0] CArmingSession::LinkToDVR, CreateLink Failed, Cmd[1118241], Reconnect ID[-1]
+[2021-12-21 08:54:08.272][ERR] ReConnect Alarm chan [0] LinkToDVR failed![err:7]
+[2021-12-21 08:54:18.272][DBG] Alarm chan [0] LinkToDVR!
+[2021-12-21 08:54:20.273][ERR] Private connect 192.168.6.188:8000 sock=3532 this=0x3ab905c4 cmd=0x111021 sys_err=10060, timeout= 2000
+[2021-12-21 08:54:20.273][ERR] [0] CArmingSession::LinkToDVR, CreateLink Failed, Cmd[1118241], Reconnect ID[-1]
+[2021-12-21 08:54:20.273][ERR] ReConnect Alarm chan [0] LinkToDVR failed![err:7]
+[2021-12-21 08:54:30.273][DBG] Alarm chan [0] LinkToDVR!
+[2021-12-21 08:54:32.274][ERR] Private connect 192.168.6.188:8000 sock=3532 this=0x3ab905c4 cmd=0x111021 sys_err=10060, timeout= 2000
+[2021-12-21 08:54:32.274][ERR] [0] CArmingSession::LinkToDVR, CreateLink Failed, Cmd[1118241], Reconnect ID[-1]
+[2021-12-21 08:54:32.274][ERR] ReConnect Alarm chan [0] LinkToDVR failed![err:7]
+[2021-12-21 08:54:42.275][DBG] Alarm chan [0] LinkToDVR!
+[2021-12-21 08:54:44.276][ERR] Private connect 192.168.6.188:8000 sock=3532 this=0x3ab905c4 cmd=0x111021 sys_err=10060, timeout= 2000
+[2021-12-21 08:54:44.276][ERR] [0] CArmingSession::LinkToDVR, CreateLink Failed, Cmd[1118241], Reconnect ID[-1]
+[2021-12-21 08:54:44.276][ERR] ReConnect Alarm chan [0] LinkToDVR failed![err:7]
+[2021-12-21 08:54:54.276][DBG] Alarm chan [0] LinkToDVR!
+[2021-12-21 08:54:56.276][ERR] Private connect 192.168.6.188:8000 sock=3384 this=0x3ab905c4 cmd=0x111021 sys_err=10060, timeout= 2000
+[2021-12-21 08:54:56.276][ERR] [0] CArmingSession::LinkToDVR, CreateLink Failed, Cmd[1118241], Reconnect ID[-1]
+[2021-12-21 08:54:56.276][ERR] ReConnect Alarm chan [0] LinkToDVR failed![err:7]
+[2021-12-21 08:55:06.276][DBG] Alarm chan [0] LinkToDVR!
+[2021-12-21 08:55:08.277][ERR] Private connect 192.168.6.188:8000 sock=3416 this=0x3ab905c4 cmd=0x111021 sys_err=10060, timeout= 2000
+[2021-12-21 08:55:08.277][ERR] [0] CArmingSession::LinkToDVR, CreateLink Failed, Cmd[1118241], Reconnect ID[-1]
+[2021-12-21 08:55:08.277][ERR] ReConnect Alarm chan [0] LinkToDVR failed![err:7]
+[2021-12-21 08:55:18.278][DBG] Alarm chan [0] LinkToDVR!
+[2021-12-21 08:55:20.278][ERR] Private connect 192.168.6.188:8000 sock=3516 this=0x3ab905c4 cmd=0x111021 sys_err=10060, timeout= 2000
+[2021-12-21 08:55:20.278][ERR] [0] CArmingSession::LinkToDVR, CreateLink Failed, Cmd[1118241], Reconnect ID[-1]
+[2021-12-21 08:55:20.278][ERR] ReConnect Alarm chan [0] LinkToDVR failed![err:7]
+[2021-12-21 08:55:30.278][DBG] Alarm chan [0] LinkToDVR!
+[2021-12-21 08:55:32.279][ERR] Private connect 192.168.6.188:8000 sock=3416 this=0x3ab905c4 cmd=0x111021 sys_err=10060, timeout= 2000
+[2021-12-21 08:55:32.279][ERR] [0] CArmingSession::LinkToDVR, CreateLink Failed, Cmd[1118241], Reconnect ID[-1]
+[2021-12-21 08:55:32.279][ERR] ReConnect Alarm chan [0] LinkToDVR failed![err:7]
+[2021-12-21 08:55:42.280][DBG] Alarm chan [0] LinkToDVR!
+[2021-12-21 08:55:44.280][ERR] Private connect 192.168.6.188:8000 sock=3416 this=0x3ab905c4 cmd=0x111021 sys_err=10060, timeout= 2000
+[2021-12-21 08:55:44.280][ERR] [0] CArmingSession::LinkToDVR, CreateLink Failed, Cmd[1118241], Reconnect ID[-1]
+[2021-12-21 08:55:44.280][ERR] ReConnect Alarm chan [0] LinkToDVR failed![err:7]
+[2021-12-21 08:55:54.280][DBG] Alarm chan [0] LinkToDVR!
+[2021-12-21 08:55:56.281][ERR] Private connect 192.168.6.188:8000 sock=3188 this=0x3ab90d30 cmd=0x111021 sys_err=10060, timeout= 2000
+[2021-12-21 08:55:56.281][ERR] [0] CArmingSession::LinkToDVR, CreateLink Failed, Cmd[1118241], Reconnect ID[-1]
+[2021-12-21 08:55:56.281][ERR] ReConnect Alarm chan [0] LinkToDVR failed![err:7]
+[2021-12-21 08:55:58.119][ERR] Private connect 192.168.6.188:8000 sock=3548 this=0x3ab905c4 cmd=0x10200 sys_err=10060, timeout= 5000
+[2021-12-21 08:55:58.119][DBG] [0]CUser::SendHeartWithExceptCB network error[7], times[1]
+[2021-12-21 08:55:58.119][ERR] [0]Exception changes 1
+[2021-12-21 08:55:58.119][DBG]  CUser::ProcessException[0]
+[2021-12-21 08:56:06.282][DBG] Alarm chan [0] LinkToDVR!
+[2021-12-21 08:56:08.282][ERR] Private connect 192.168.6.188:8000 sock=3416 this=0x3ab905c4 cmd=0x111021 sys_err=10060, timeout= 2000
+[2021-12-21 08:56:08.282][ERR] [0] CArmingSession::LinkToDVR, CreateLink Failed, Cmd[1118241], Reconnect ID[-1]
+[2021-12-21 08:56:08.282][ERR] ReConnect Alarm chan [0] LinkToDVR failed![err:7]
+[2021-12-21 08:56:18.283][DBG] Alarm chan [0] LinkToDVR!
+[2021-12-21 08:56:20.283][ERR] Private connect 192.168.6.188:8000 sock=3384 this=0x3ab905c4 cmd=0x111021 sys_err=10060, timeout= 2000
+[2021-12-21 08:56:20.283][ERR] [0] CArmingSession::LinkToDVR, CreateLink Failed, Cmd[1118241], Reconnect ID[-1]
+[2021-12-21 08:56:20.283][ERR] ReConnect Alarm chan [0] LinkToDVR failed![err:7]
+[2021-12-21 08:56:30.284][DBG] Alarm chan [0] LinkToDVR!
+[2021-12-21 08:56:32.285][ERR] Private connect 192.168.6.188:8000 sock=3212 this=0x3ab905c4 cmd=0x111021 sys_err=10060, timeout= 2000
+[2021-12-21 08:56:32.285][ERR] [0] CArmingSession::LinkToDVR, CreateLink Failed, Cmd[1118241], Reconnect ID[-1]
+[2021-12-21 08:56:32.285][ERR] ReConnect Alarm chan [0] LinkToDVR failed![err:7]

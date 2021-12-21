@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/zyportal-common/zyportal-common.iml" filepath="$PROJECT_DIR$/zyportal-common/zyportal-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zyportal-common/zyportal-common-redis/zyportal-common-redis.iml" filepath="$PROJECT_DIR$/zyportal-common/zyportal-common-redis/zyportal-common-redis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zyportal-common/zyportal-common-utils/zyportal-common-utils.iml" filepath="$PROJECT_DIR$/zyportal-common/zyportal-common-utils/zyportal-common-utils.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zyportal-hikbox/zyportal-hikbox.iml" filepath="$PROJECT_DIR$/zyportal-hikbox/zyportal-hikbox.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zyportal-hikbox/zyportal-hikbox-api/zyportal-hikbox-api.iml" filepath="$PROJECT_DIR$/zyportal-hikbox/zyportal-hikbox-api/zyportal-hikbox-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zyportal-hikbox/zyportal-hikbox-server/zyportal-hikbox-server.iml" filepath="$PROJECT_DIR$/zyportal-hikbox/zyportal-hikbox-server/zyportal-hikbox-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zyportal-parent.iml" filepath="$PROJECT_DIR$/zyportal-parent.iml" />
+    </modules>
+  </component>
+</project>
